@@ -1,3 +1,3 @@
 # Shopify
 
-coming soon...!
+Coming soon....!

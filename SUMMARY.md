@@ -16,7 +16,7 @@
     * [Federation simplified](gen/why-hypersign/for-employees/federation-simplified.md)
   * [Features & VP](gen/why-hypersign/features-and-vp.md)
 
-## DAUTH
+## 🔦 DAUTH
 
 * [Introduction](dauth/introduction/README.md)
   * [Problem Statement](dauth/introduction/problem-statement/README.md)
@@ -50,6 +50,18 @@
     * [VueJs](dauth/sdk/frontend/vuejs.md)
 * [Plugins](dauth/plugins/README.md)
   * [Wordpress](dauth/plugins/wordpress.md)
+  * [Shopify](dauth/plugins/shopify.md)
+* [Authenticators](dauth/authenticators/README.md)
+  * [Hosted Cloud Wallet](dauth/authenticators/hosted-cloud-wallet.md)
+  * [Mobile Wallet](dauth/authenticators/mobile-wallet.md)
+  * [Browser Wallet](dauth/authenticators/browser-wallet.md)
+* [Enterprise IAM Integrations](dauth/enterprise-iam-integrations/README.md)
+  * [Keycloak](dauth/enterprise-iam-integrations/keycloak.md)
+  * [Okta](dauth/enterprise-iam-integrations/okta.md)
+  * [Auth0](dauth/enterprise-iam-integrations/auth0.md)
+* [More than passwordless](dauth/more-than-passwordless.md)
+* [Quick Comparision With Social Login and OTP](dauth/quick-comparision-with-social-login-and-otp.md)
+* [Roadmap](dauth/roadmap.md)
 
 ## DEVELOPER
 
