@@ -10,6 +10,6 @@ On successful login and if you are a new user, you will be asked to subscribe to
 
 ![](<../../.gitbook/assets/image (18).png>)
 
-It is the right time to take the decision, which way you want to proceed; whether you want to implement registration page or not. If yes, read the [Schema section next](../../dauth/developer-dashboard/schema.md) or skip to the [Application section](../../dauth/developer-dashboard/application/) directly.
+It is the right time to take the decision, which way you want to proceed; whether you want to implement registration page or not. If yes, read the [Schema section next](../../dauth/developer-dashboard/schema.md) or skip to the [Application section](../../dauth/developer-dashboard/application.md) directly.
 
 > You might have noticed, you need NOT to fill registration form in the Developer Dashboard portal. Well, that's because the Developer Dashboard portal implemented Hypersign Authentication without registration.
