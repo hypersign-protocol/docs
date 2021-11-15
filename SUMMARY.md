@@ -31,7 +31,7 @@
   * [Application](dauth/developer-dashboard/application/README.md)
     * [Hypersign configuration](dauth/developer-dashboard/application/hypersign-configuration.md)
  
-## DAUTH <a href="developer" id="developer"></a>
+## DEVELOPER <a href="developer" id="developer"></a>
 
 * [Introduction](developer/introduction.md)
 * [Developer Dashboard](developer/developer-dashboard/README.md)
