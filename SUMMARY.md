@@ -51,4 +51,3 @@
 ***
 
 * [Privacy Policy](privacy-policy.md)
-* [Test Page](test-page.md)
