@@ -1,4 +1,8 @@
-# Protocol
+---
+description: How Hypersign dAuth protocol works?
+---
+
+# dAuth Protocol
 
 The Hypersign protocol works in three steps:
 

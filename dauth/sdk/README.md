@@ -1,6 +1,9 @@
 # SDK
 
-{% content-ref url="dev-nodejs/" %}
-[dev-nodejs](dev-nodejs/)
+{% content-ref url="frontend/" %}
+[frontend](frontend/)
 {% endcontent-ref %}
 
+{% content-ref url="backend/" %}
+[backend](backend/)
+{% endcontent-ref %}

@@ -1,12 +1,10 @@
 # Login Page
 
-
-
 Now that server-side code is implemented, we can go ahead to implement client-side code in order to display QR code on the login page. For sake of simplicity, we will use HTML and Jquery for this purpose. You can surely use any other frameworks, like Vue, React etc, to design your login page and to show QR code. So let's get started.
 
 ### Adding HTML code to display QR
 
-At first, we will add a `div` with id `qrcode` in our `login.html` page.&#x20;
+At first, we will add a `div` with id `qrcode` in our `login.html` page.
 
 ```markup
 <!DOCTYPE html>
@@ -56,17 +54,17 @@ We have to implement two operations in `onmessage` callback.
 
 * The moment a user browse the login.html page in the browser, a new socket connection request goes to the server.
 * The server accepts the connection and sends the following information:
-  * &#x20; `Schema`: A data model required to authenticate a user. Think of this, "_This website needs name and email from a user!_".
-  * `Authentication API endpoint`: The authentication API endpoint which we exposed in server will contain a new challenge in the query. Example,  `<YOUR_NODE_SERVER_HOSTNAME>/hs/api/v2/auth?challenge=XXXXXXX`
+  * `Schema`: A data model required to authenticate a user. Think of this, "_This website needs name and email from a user!_".
+  * `Authentication API endpoint`: The authentication API endpoint which we exposed in server will contain a new challenge in the query. Example, `<YOUR_NODE_SERVER_HOSTNAME>/hs/api/v2/auth?challenge=XXXXXXX`
   * `SupportedCredentialType: `The supported credential type by this website. By default, it would be `HypersignAuthCredential`.
-* The browser displays the QR with the above information.  Look at line number 7.
+* The browser displays the QR with the above information. Look at line number 7.
 
-![QR code on login page.](<../../../../.gitbook/assets/image (14).png>)
+![QR code on login page.](<../../../../../.gitbook/assets/image (14).png>)
 
 **`end`**
 
 * The end user now scans the QR code using **Hypersign Idenitty Wallet** and sends the required credential to the server using the authentication API endpoint.
-* Upon successful verification of user credential by the server, the server notifies the browser (client) via WebSocket with an Authorization token. The browser will receive an authorization token in this operation. The browser is now ready to access any "protected" resource, say a home page.&#x20;
+* Upon successful verification of user credential by the server, the server notifies the browser (client) via WebSocket with an Authorization token. The browser will receive an authorization token in this operation. The browser is now ready to access any "protected" resource, say a home page.
 
 ### Calling protected resources using the Authorization token
 
@@ -77,8 +75,8 @@ Once user has successfully authenticated using the Hypersign Identity Wallet, th
 Post resource protected by Hypersign
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
-Bearer <Authorization Token>
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
+Bearer
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
@@ -92,7 +90,7 @@ Bearer <Authorization Token>
 Get resource protected by Hypersign
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="token" type="string" %}
+{% swagger-parameter in="query" name="token" type="string" required="false" %}
 \<Authorization token>
 {% endswagger-parameter %}
 
@@ -101,8 +99,6 @@ Get resource protected by Hypersign
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-
 
 * Demo implementation of client-side code is present [here](https://github.com/hypersign-protocol/hypersign-auth-js-sdk/blob/master/demo/public/index.html) \[source code].
 * [Full implementation of this demo.](https://github.com/hypersign-protocol/hypersign-auth-js-sdk/tree/master/demo) \[source code]

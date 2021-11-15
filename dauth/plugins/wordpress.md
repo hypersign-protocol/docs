@@ -1,3 +1,2 @@
 # Wordpress
 
-coming soon...!
