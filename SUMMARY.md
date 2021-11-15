@@ -63,14 +63,6 @@
 * [Quick Comparision With Social Login and OTP](dauth/quick-comparision-with-social-login-and-otp.md)
 * [Roadmap](dauth/roadmap.md)
 
-## DEVELOPER
-
-* [Developer Dashboard](developer/developer-dashboard/README.md)
-  * [Schema](developer/developer-dashboard/schema.md)
-  * [Application](developer/developer-dashboard/application/README.md)
-    * [Hypersign configuration](developer/developer-dashboard/application/hypersign-configuration.md)
-* [SDK](developer/sdk.md)
-
 ***
 
 * [Privacy Policy](privacy-policy.md)
