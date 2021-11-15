@@ -10,7 +10,7 @@ Make sure you have created schema in the developer dashboard portal.
 
 Add form to take inputs from user. Make sure your form must contains input fields as taken in the schema.
 
-&#x20;Here we are adding a simple HTML form with a button.&#x20;
+Here we are adding a simple HTML form with a button.
 
 ```markup
 <body>
@@ -24,9 +24,9 @@ Add form to take inputs from user. Make sure your form must contains input field
 </body>
 ```
 
-Notice field's _name _ attribute are exactly as we have taken in our **PetShop Credential** schema.&#x20;
+Notice field's \_name \_ attribute are exactly as we have taken in our **PetShop Credential** schema.
 
-Finally, implement **`register()`**in JavaScript and make a call to Register API.
+Finally, implement \*\*`register()`\*\*in JavaScript and make a call to Register API.
 
 ```markup
 <script>
@@ -63,6 +63,5 @@ The SDK will send an email to the user with a QR code. Where user need to scan t
 Once user has the credential, he can use that credential to login. Read the next section to implement Login page.
 
 \
-&#x20;\
-&#x20;\
-&#x20;
+\
+\
