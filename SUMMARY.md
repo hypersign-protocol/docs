@@ -20,7 +20,7 @@
   * [Credential Issuance](gen/protocol/credential-issuance.md)
   * [Registration & Login](gen/protocol/registration-and-login.md)
 
-## DAUTH <a href="dauth" id="dauth"></a>
+## DAUTH
 
 * [Introduction](dauth/introduction/README.md)
   * [Problem Statement](dauth/introduction/problem-statement/README.md)
@@ -30,8 +30,8 @@
   * [Schema](dauth/developer-dashboard/schema.md)
   * [Application](dauth/developer-dashboard/application/README.md)
     * [Hypersign configuration](dauth/developer-dashboard/application/hypersign-configuration.md)
- 
-## DEVELOPER <a href="developer" id="developer"></a>
+
+## DEVELOPER
 
 * [Introduction](developer/introduction.md)
 * [Developer Dashboard](developer/developer-dashboard/README.md)

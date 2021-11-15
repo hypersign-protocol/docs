@@ -10,8 +10,6 @@ On successful login and if you are a new user, you will be asked to subscribe to
 
 ![](<../../.gitbook/assets/image (18).png>)
 
-It is the right time to take the decision, which way you want to proceed; whether you want to implement registration page or not. If yes, read the [Schema section next](schema.md) or skip to the [Application section](application/) directly.
+It is the right time to take the decision, which way you want to proceed; whether you want to implement registration page or not. If yes, read the [Schema section next](../../developer/developer-dashboard/schema.md) or skip to the [Application section](../../developer/developer-dashboard/application/) directly.
 
-> You might have noticed, you need NOT to fill registration form in the Developer Dashboard portal. Well, that's because the Developer Dashboard portal implemented Hypersign Authentication without registration.&#x20;
-
-&#x20;
+> You might have noticed, you need NOT to fill registration form in the Developer Dashboard portal. Well, that's because the Developer Dashboard portal implemented Hypersign Authentication without registration.
