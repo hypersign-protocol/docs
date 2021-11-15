@@ -25,6 +25,8 @@
   * [Social Logins](dauth/problem-statement/social-logins.md)
 * [Solution](dauth/solution/README.md)
   * [FIDO](dauth/solution/fido.md)
+  * [How Does FIDO Works?](dauth/solution/how-does-fido-work.md)
+  * [What FIDO is Not?](dauth/solution/what-fido-is-not.md)
 * [dAuth Protocol](dauth/protocol/README.md)
   * [Actors Onboarding](dauth/protocol/actors-onboarding.md)
   * [Credential Issuance](dauth/protocol/credential-issuance.md)
