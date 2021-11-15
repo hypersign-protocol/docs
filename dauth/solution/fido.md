@@ -21,10 +21,13 @@ The concept of **Authenticators** is introduced in the FIDO authentication stand
 FIDO proposes various **types of Authenticators** like _smartphones_, _USB_, _NFC_,  or special hardware chips like _Trusted Platform Module (TPM)_, _Secure Execution Environment (SSE)_ etc. Enterprises can use them depending on their need. Read more about Authenticator types in this [whitepaper published by FIDO Alliance.](https://media.fidoalliance.org/wp-content/uploads/2021/09/FIDO-White-Paper-Choosing-FIDO-Authenticators-for-Enterprise-Use-Cases.pdf)&#x20;
 
 
+## The answer to the first question
 
-> It looks like we have answer to our first question  - <mark style="color:green;">**"**</mark>_<mark style="color:green;">**How does a prover/user manage private keys?**</mark>_<mark style="color:green;">**". **</mark>
+It looks like we have the answer to our first question - <mark style="color:green;">**"How does a prover/user manage private keys?"**</mark>. 
 
-> What about the second question? - <mark style="color:blue;">**"**</mark>_<mark style="color:blue;">**How does a verifier gets the public key of prover to verifiy the digital signature?**</mark>_<mark style="color:blue;">**"**</mark>
+> A user/prover can store private keys in authenticators devices securely and can obtain the private key when producing the digital signature.
+
+What about the second question? - <mark style="color:blue;">**"How does a verifier get the public key of prover to verify the digital signature?"**</mark>. How does that work in FIDO? Read the next section to understand the problem with FIDO.
 
 
 
