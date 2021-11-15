@@ -26,6 +26,8 @@
   * [Problem Statement](dauth/introduction/problem-statement/README.md)
     * [Passwords](dauth/introduction/problem-statement/password.md)
     * [OTP](dauth/introduction/problem-statement/otp.md)
+    * [Social Logins](dauth/introduction/problem-statement/social-logins.md)
+  * [Solution](dauth/introduction/solution.md)
 * [Developer Dashboard](dauth/developer-dashboard/README.md)
   * [Schema](dauth/developer-dashboard/schema.md)
   * [Application](dauth/developer-dashboard/application/README.md)
