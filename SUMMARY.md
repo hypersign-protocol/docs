@@ -18,13 +18,13 @@
 
 ## 🔦 DAUTH
 
-* [Introduction](dauth/introduction/README.md)
-  * [Problem Statement](dauth/introduction/problem-statement/README.md)
-    * [Passwords](dauth/introduction/problem-statement/password.md)
-    * [OTP](dauth/introduction/problem-statement/otp.md)
-    * [Social Logins](dauth/introduction/problem-statement/social-logins.md)
-  * [Solution](dauth/introduction/solution/README.md)
-    * [FIDO](dauth/introduction/solution/fido.md)
+* [Introduction](dauth/introduction.md)
+* [Problem Statement](dauth/problem-statement/README.md)
+  * [Passwords](dauth/problem-statement/password.md)
+  * [OTP](dauth/problem-statement/otp.md)
+  * [Social Logins](dauth/problem-statement/social-logins.md)
+* [Solution](dauth/solution/README.md)
+  * [FIDO](dauth/solution/fido.md)
 * [dAuth Protocol](dauth/protocol/README.md)
   * [Actors Onboarding](dauth/protocol/actors-onboarding.md)
   * [Credential Issuance](dauth/protocol/credential-issuance.md)
