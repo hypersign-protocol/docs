@@ -1,4 +1,4 @@
-# A Shift From Web2.0 to Web3.0
+# FIDO Does Not Fit Into Web3.0
 
 ![Source: Fabric Ventures](<../../.gitbook/assets/image (35).png>)
 
@@ -22,4 +22,4 @@ Read more about Web2.0 vs Web3.0 and why it matters, [here](https://ethereum.org
 
 
 
-If you think from the context of Web3.0, you will realise FIDO has a _**trust problem **_and does really fit for Web3.0 internet. Read the next section to know how?
+If you think from the context of Web3.0, you will realise FIDO has a _**trust problem **_and does NOT really fit for Web3.0 internet. Read the next section to know how?
