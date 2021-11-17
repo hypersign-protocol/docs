@@ -26,6 +26,8 @@
 * [Solution](dauth/solution/README.md)
   * [FIDO](dauth/solution/fido.md)
   * [How Does FIDO Works?](dauth/solution/how-does-fido-work.md)
+  * [A Shift From Web2.0 to Web3.0](dauth/solution/a-shift-from-web2.0-to-web3.0.md)
+  * [FIDO Does Not Fit to Web3.0](dauth/solution/fido-does-not-fit-to-web3.0.md)
   * [What FIDO is Not?](dauth/solution/what-fido-is-not.md)
 * [dAuth Protocol](dauth/protocol/README.md)
   * [Actors Onboarding](dauth/protocol/actors-onboarding.md)

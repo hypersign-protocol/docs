@@ -22,7 +22,7 @@ FIDO proposes various **types of Authenticators** like _smartphones_, _USB_, _NF
 
 It looks like we have the answer to our first question - <mark style="color:green;">**"How does a prover/user manage private keys?"**</mark>.
 
-> A user/prover can store private keys in authenticators devices securely and can obtain the private key when producing the digital signature.
+> A user/prover can store private keys in authenticators devices / softwares securely and can obtain the private key when producing the digital signature.
 
 What about the second question? - <mark style="color:blue;">**"How does a verifier get the public key of prover to verify the digital signature?"**</mark>. How does that work in FIDO?&#x20;
 
