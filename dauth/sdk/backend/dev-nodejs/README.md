@@ -11,18 +11,12 @@
     * Protect any resource using `hypersign.authorize()`middleware.
   * [Client Side](client-side/)
     * Implement code snippet to display QR code on the login page
-* Now the user will download [Hypersign Identity Mobile wallet](https://install.appcenter.ms/orgs/hypermine/apps/hypersign/distribution\_groups/cvv) and register himself.&#x20;
+* Now the user will download [Hypersign Identity Mobile wallet](https://install.appcenter.ms/orgs/hypermine/apps/hypersign/distribution\_groups/cvv) and register himself.
   * Upon registration, he will get `HypersignAuthCredenital` which he can use to login to websites which supports Hypersign authentication.
 * For the detailed flow of protocol please visit protocol section.
 
-
-
 Watch the demo on Youtube and follow the steps to integrate Hypersign in node js project.
 
-{% embed url="https://www.youtube.com/watch?v=pSCmCZfeQKo&feature=youtu.be" %}
-
-
-
-###
+{% embed url="https://www.youtube.com/watch?v=1c0VMnWDhr8" %}
 
 ##
