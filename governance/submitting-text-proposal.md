@@ -9,7 +9,7 @@
 |   **title**   |  Title of the proposal |
 |   **description**  |  Description of the proposal |
 |   **type**      | Proposal type. That value would be `text` |
-|   **deposit**      | Deposit for the proposal (in `uhid`) |
+|   **deposit**      | Deposit for the proposal |
 
 ## CLI
 
