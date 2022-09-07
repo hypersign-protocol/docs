@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Hypersign Identity Network](README.md)
 
-## GENERAL <a href="gen" id="gen"></a>
+## GENERAL <a href="#gen" id="gen"></a>
 
 * [Introduction](gen/intro/README.md)
   * [Blockchain](gen/intro/blockchain.md)
@@ -15,6 +15,12 @@
     * [Integrable](gen/why-hypersign/for-employees/integrable.md)
     * [Federation simplified](gen/why-hypersign/for-employees/federation-simplified.md)
   * [Features & VP](gen/why-hypersign/features-and-vp.md)
+
+## 💻 Validator
+
+* [Installation of Node](validator/roadmap.md)
+* [Running a Localnet](validator/running-a-localnet.md)
+* [Running a Testnet Validator Node](validator/running-a-testnet-validator-node.md)
 
 ## 🔦 DAUTH
 
