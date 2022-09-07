@@ -2,7 +2,7 @@
 
 If you are looking to simulate a single-node blockchain on a local environment, following are the steps
 
-* Follow the installation instruction [here](roadmap.md).
+* Follow the installation instruction [here](broken-reference).
 * Head over to cloned `hid-node` repo directory
 
 ```bash
