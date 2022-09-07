@@ -37,7 +37,7 @@ hid-noded keys add <key-name>
 hid-noded keys add <key-name> --recover
 ```
 
-### Configure and Run the Full Node
+### Configure the Full Node
 
 * Initialise the node with a moniker name.
 
@@ -50,16 +50,34 @@ Configuration files of the node are stored in the default location: `$HOME/.hid-
 * Replace `genesis.json` present in `<hid-node-home-directory>/config` with the Testnet genesis [here](https://github.com/hypersign-protocol/launch/blob/main/testnet/jagrat/final\_genesis.json).
 * Copy the final peers from [here](https://github.com/hypersign-protocol/launch/blob/main/testnet/jagrat/final\_peers.txt). Open `<hid-node-home-directory>/config/config.toml` and the add the peers in the field `persistent_peers`.
 * Set the `minimum-gas-price` in `<hid-node-home-directory>/config/app.toml`.
-* Run the node
+
+### Run Full Node using Cosmovisor
+> Cosmovisor is a tool which will enable automatic upgrade of a blockchain, once a software upgrade governance proposal is passed. More information on Cosmovisor here.
+
+* Download and Install Cosmovisor
 
 ```
-hid-noded start --home <hid-node-home-directory>
+wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.2.0/cosmovisor-v1.2.0-linux-amd64.tar.gz && tar -C /usr/local/bin/ -xzf cosmovisor-v1.2.0-linux-amd64.tar.gz
 ```
 
-* In a separate terminal window, check if the node is running.
+* Export the following environment variables
 
 ```
-hid-noded status
+export DAEMON_PATH=<Complete Path of Blockchain Binary>
+export DAEMON_HOME=<Blockchain Config Path Directory>/.hid-node  # Example: $HOME/.hid-node
+```
+
+* Create a `cosmovisor` and copy the existing blockchain binary to the following location
+
+```
+mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
+cp $DAEMON_PATH $DAEMON_HOME/cosmovisor/genesis/bin
+```
+
+* Start node using Cosmovisor
+
+```
+cosmovisor run start
 ```
 
 ### Promotion of Full Node to Validator Node

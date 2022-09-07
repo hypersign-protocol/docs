@@ -21,6 +21,15 @@ Voting is essential is deciding whether a blockchain proposal will be accepted o
   - Refrains from voting on the proposal
 - **No With Vote** 
   - Strongly Disagrees on the proposal with intention of discarding the propsal
-  - If 33.4% or more votes `No With Veto`, the proposal is discarded and the deposit is burned
+  - If 33.4% or more votes `No With Veto`, the proposal is discarded and the deposit is burned, unlike in above scenarios where the deposit is refunded to the proposer.
 
+Proposals have the following types of statuses:
 
+- **StatusDepositPeriod**
+  - Time until necessary minimum deposit is made for a proposal
+- **StatusVotingPeriod**
+  - Time frame during which votes are accepted.
+- **StatusPassed**
+  - Proposal is passed and successfully executed
+- **StatusRejected**
+  - Proposal is Reject
