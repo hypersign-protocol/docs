@@ -1,3 +1,0 @@
-# Scalability Challenge With FIDO
-
-Todo...
