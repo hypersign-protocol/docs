@@ -41,7 +41,7 @@ Following are the supported hash algorithms for the attribute `credentialHash`:
 
 ## Register/Update VC Status
 
-Both registering and update of VC Status happens through the RPC `RegisterCredentialStatus`.
+Both registeration and update of VC Status happens through the RPC `RegisterCredentialStatus`.
 
 **CLI Signature**
 

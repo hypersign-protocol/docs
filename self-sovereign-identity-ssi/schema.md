@@ -27,6 +27,8 @@ sch:hid:<chain-namespace>:<method-specific-id>:<version-number>
 
 ### Register/Update Schema
 
+Both registration and update of Schema happens through the RPC `CreateSchema`
+
 **CLI Signature**
 
 ```
