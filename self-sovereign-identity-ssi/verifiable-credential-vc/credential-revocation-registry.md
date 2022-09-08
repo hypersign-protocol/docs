@@ -13,7 +13,7 @@ vc:hid:<chain-namespace>:<method-specific-id>:<version-id>
 ```
 
 - `vc:hid` - VC Method, where `vc` is the document identifier and `hid` is the method name
-- `<chain-namespace>` - (Optional) Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
+- `<chain-namespace>` - *(Optional)* Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
 - `<method-specific-id>` - Multibase-encoded unique identifier of length 45
 
 ## Supported VC Statuses
@@ -46,14 +46,14 @@ Usage:
 ```json
 {
     "claim": {
-            "id": "vc:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4",
-            "currentStatus": "Live",
-            "statusReason": "Credential Active"
-        },
-        "issuer": "did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf",
-        "issuanceDate": "2022-04-10T04:07:12Z",
-        "expirationDate": "2023-02-22T13:45:55Z",
-        "credentialHash": "< -- Hash -->"
+        "id": "vc:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4",
+        "currentStatus": "Live",
+        "statusReason": "Credential Active"
+    },
+    "issuer": "did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf",
+    "issuanceDate": "2022-04-10T04:07:12Z",
+    "expirationDate": "2023-02-22T13:45:55Z",
+    "credentialHash": "< -- SHA-256 Hash of VC -->"
 }
 ```
 
@@ -77,7 +77,7 @@ The field `proofValue` holds the signature that was produced by signing the `cre
 The following command registers the status of a VC with id `vc_example1`:
 
 ```sh
-hid-noded tx ssi register-credential-status '{"claim":{"id":"vc:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4,"currentStatus":"Live","statusReason":"Credential Active"},"issuer":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf","issuanceDate":"2022-04-10T04:07:12Z","expirationDate":"2023-02-22T13:45:55Z","credentialHash":"< -- Hash -->"}' '{"type":"Ed25519VerificationKey2020","created":"2022-04-10T04:07:12Z","updated":"2022-04-10T04:07:12Z","verificationMethod":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1","proofValue":"<-- Base64 encoded signature -->","proofPurpose":"assertion"}' --from <hid-account>
+hid-noded tx ssi register-credential-status '{"claim":{"id":"vc:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4,"currentStatus":"Live","statusReason":"Credential Active"},"issuer":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf","issuanceDate":"2022-04-10T04:07:12Z","expirationDate":"2023-02-22T13:45:55Z","credentialHash":"< -- SHA-256 Hash of VC -->"}' '{"type":"Ed25519VerificationKey2020","created":"2022-04-10T04:07:12Z","updated":"2022-04-10T04:07:12Z","verificationMethod":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1","proofValue":"<-- Base64 encoded signature -->","proofPurpose":"assertion"}' --from <hid-account>
 ```
 
 ### Querying Credential Status
