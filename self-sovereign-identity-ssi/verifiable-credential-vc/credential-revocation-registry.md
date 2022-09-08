@@ -4,14 +4,26 @@
 
 Storing Verifiable Credential on a distributed ledger could lead to privacy violation. However, we can store the status of a Verifiable Credential on-chain, with no private information attached to it. Issuers of a Verifiable Credential have the ability to revoke the credential and provide the reason behind it.
 
+## Syntax of Verifiable Credential (VC) ID 
+
+The syntax for Verifiable Credential ID is as follows:
+
+```
+vc:hid:<chain-namespace>:<method-specific-id>:<version-id>
+```
+
+- `sch:hid` - VC Method, where `vc` is the document identifier and `hid` is the method name
+- `<chain-namespace>` - (Optional) Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
+- `<method-specific-id>` - Multibase-encoded unique identifier of length 45
+
 ## Supported VC Statuses
 
 Following are the VC statuses supported by `hid-node`:
 
 - Live
--	Suspended
--	Revoked
--	Expired
+- Suspended
+- Revoked
+- Expired
 
 ## Supported Hash Algorithm
 

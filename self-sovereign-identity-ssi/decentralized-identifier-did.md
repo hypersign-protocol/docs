@@ -2,7 +2,24 @@
 
 > In Progress
 
-## Features
+Decentralised Identifiers are cryptographically-verifiable identifiers which are stored on a decentralised ledger, which enables users to own and manage their ID.
+
+## Syntax of `did:hid` method
+
+The syntax for `did:hid` method are as follows:
+
+```
+did                = "did:" method-name ":" chain-namespace ":" method-specific-id
+method-name        = "hid"
+chain-namespace    = ALPHA / DIGIT / Null
+method-specific-id = 45 * (Multibase Encoded String)
+```
+
+Only in case of `mainnet` chain, the `chain-namespace` is empty
+
+## Supported DID Method Operations
+
+The `did:hid` operations supports the following operations:
 
 - Transaction Based:
   - Registering a DID Document
@@ -11,16 +28,6 @@
 - Querying Based:
   - Resolve a DID Document based on an input DID Id
   - Get the count and list of DID Documents registered on chain
-
-## DID Id Format
-
-A typical format for DID Id for Hypersign Identity Network is: `did:<did-method>:<did-namespace>:<method-specific-id>`
-
-
-- `did` - the "did" keyword
-- `<did-method>` - It is a scheme, which specifies the precise operations of the DID.
-- `<did-namespace>` - (Optional) It specifies under which the DID is store. Examples include `mainnet`, `testnet`. If left blank, `hid-node` takes the value of `mainnet` by default
-- `<method-specific-id>` - It acts as unique identifier. Currently, `hid-node` expects it to be a multibase-encoded ed25519 public key
 
 ## CLI Signature
 
