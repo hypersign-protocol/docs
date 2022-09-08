@@ -6,8 +6,6 @@ Decentralised Identifiers are cryptographically-verifiable identifiers which are
 
 ## Syntax of `did:hid` method
 
-Format of DID Id:
-
 The `did:hid` method are as follows:
 
 ```

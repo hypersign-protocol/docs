@@ -9,7 +9,7 @@ Storing Verifiable Credential on a distributed ledger could lead to privacy viol
 The syntax for Verifiable Credential ID is as follows:
 
 ```
-vc:hid:<chain-namespace>:<method-specific-id>:<version-id>
+vc:hid:<chain-namespace>:<method-specific-id>
 ```
 
 - `vc:hid` - VC Method, where `vc` is the document identifier and `hid` is the method name
