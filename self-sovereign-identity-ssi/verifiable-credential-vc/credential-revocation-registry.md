@@ -16,32 +16,45 @@ vc:hid:<chain-namespace>:<method-specific-id>
 - `<chain-namespace>` - *(Optional)* Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
 - `<method-specific-id>` - Multibase-encoded unique identifier of length 45
 
+## VC Status Operations
+
+- **Transaction Based**
+  - Register/Update a VC Status Document
+- **Query Based**
+  - Query a VC Status Document
+  - Query Registered VC Status Documents
+
 ## Supported VC Statuses
 
 Following are the VC statuses supported by `hid-node`:
 
-- Live
-- Suspended
-- Revoked
-- Expired
+- **Live**
+- **Suspended**
+- **Revoked**
+- **Expired**
 
 ## Supported Hash Algorithm
 
-We support the following hash algorithm for the attribute `credentialHash`:
-- SHA-256
+Following are the supported hash algorithms for the attribute `credentialHash`:
 
-## Register VC Status
+- **SHA-256**
 
-For instance, an issuer with id `did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf` has issue a VC, following which they want to register it's status.
+## Register/Update VC Status
 
-CLI Signature is as follow:
+Both registering and update of VC Status happens through the RPC `RegisterCredentialStatus`.
+
+**CLI Signature**
 
 ```
 Usage:
   hid-noded tx ssi register-credential-status [credential-status] [proof]
+
+Params:
+ - credential-status : Credential Status Document
+ - proof : Issuer's Signature Format
 ```
 
-**credential-status Structure**
+**`credential-status` Structure**
 
 ```json
 {
@@ -57,7 +70,7 @@ Usage:
 }
 ```
 
-**proof Structure**
+**`proof` Structure**
 
 ```json
 {
@@ -72,17 +85,30 @@ Usage:
 
 The field `proofValue` holds the signature that was produced by signing the `credential-status` document. 
 
-### Usage
-
-The following command registers the status of a VC with id `vc_example1`:
+**Example**
 
 ```sh
-hid-noded tx ssi register-credential-status '{"claim":{"id":"vc:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4,"currentStatus":"Live","statusReason":"Credential Active"},"issuer":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf","issuanceDate":"2022-04-10T04:07:12Z","expirationDate":"2023-02-22T13:45:55Z","credentialHash":"< -- SHA-256 Hash of VC -->"}' '{"type":"Ed25519VerificationKey2020","created":"2022-04-10T04:07:12Z","updated":"2022-04-10T04:07:12Z","verificationMethod":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1","proofValue":"<-- Base64 encoded signature -->","proofPurpose":"assertion"}' --from <hid-account>
+hid-noded tx ssi register-credential-status '{"claim":{"id":"vc:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4","currentStatus":"Live","statusReason":"Credential Active"},"issuer":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf","issuanceDate":"2022-04-10T04:07:12Z","expirationDate":"2023-02-22T13:45:55Z","credentialHash":"< -- SHA-256 Hash of VC -->"}' '{"type":"Ed25519VerificationKey2020","created":"2022-04-10T04:07:12Z","updated":"2022-04-10T04:07:12Z","verificationMethod":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1","proofValue":"<-- Base64 encoded signature -->","proofPurpose":"assertion"}' --from <hid-account>
 ```
 
-### Querying Credential Status
+## Query VC Status
 
-1. Query credential status for given credential id:
+**CLI Signature**
+
+```
+Usage:
+  hid-noded q ssi credential-status [credential-id]
+```
+
+**Example**
+
+```
+hid-noded q ssi credential-status vc:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4
+```
+
+**REST**
+
+1. Query credential status for an inpug credential id:
 
 ```
 http://<REST-URL>/hypersign-protocol/hidnode/ssi/credential/{credId}
