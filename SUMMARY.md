@@ -34,7 +34,8 @@
 
 * [Decentralized Identifier (DID)](self-sovereign-identity-ssi/decentralized-identifier-did.md)
 * [Schema](self-sovereign-identity-ssi/schema.md)
-* [Verifiable Credential (VC)](self-sovereign-identity-ssi/verifiable-credential-vc.md)
+* [Verifiable Credential (VC)](self-sovereign-identity-ssi/verifiable-credential-vc/README.md)
+  * [Credential Revocation Registry](self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
 * [Verifiable Presentation (VP)](self-sovereign-identity-ssi/verifiable-presentation-vp.md)
 
 ***
