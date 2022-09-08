@@ -33,3 +33,6 @@ Proposals have the following types of statuses:
   - Proposal is passed and successfully executed
 - **StatusRejected**
   - Proposal is Reject
+
+
+--
