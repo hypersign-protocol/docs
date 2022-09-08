@@ -10,4 +10,4 @@ Moreover, converting username and password based legacy systems into passwordles
 
 Participating in the Hypersign network would not just give an enterprise an opportunity to earn rewards as validators, but also get access to applications and tools for managing the identity and access control of their employees at a minimal cost. This makes it not just secure but also trust less and a very scalable solution.
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (11).png>)

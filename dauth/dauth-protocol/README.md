@@ -1,2 +1,0 @@
-# dAuth Protocol
-

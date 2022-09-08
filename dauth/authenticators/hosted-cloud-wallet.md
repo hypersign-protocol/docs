@@ -1,2 +1,0 @@
-# Hosted Cloud Wallet
-

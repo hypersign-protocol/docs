@@ -1,2 +1,0 @@
-# How Does FIDO Works?
-
