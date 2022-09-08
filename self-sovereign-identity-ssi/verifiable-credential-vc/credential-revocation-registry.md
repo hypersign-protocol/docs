@@ -12,7 +12,7 @@ The syntax for Verifiable Credential ID is as follows:
 vc:hid:<chain-namespace>:<method-specific-id>:<version-id>
 ```
 
-- `sch:hid` - VC Method, where `vc` is the document identifier and `hid` is the method name
+- `vc:hid` - VC Method, where `vc` is the document identifier and `hid` is the method name
 - `<chain-namespace>` - (Optional) Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
 - `<method-specific-id>` - Multibase-encoded unique identifier of length 45
 
