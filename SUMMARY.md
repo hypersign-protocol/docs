@@ -21,6 +21,11 @@
 * [Installation of Node](validator/roadmap.md)
 * [Running a Localnet](validator/running-a-localnet.md)
 * [Running a Testnet Validator Node](validator/running-a-testnet-validator-node.md)
+* [Page 1](validator/page-1.md)
+
+## 💻 Governance
+
+* [Page 1](governance/page-1.md)
 
 ***
 
