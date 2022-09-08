@@ -25,6 +25,7 @@
 
 ## 💻 Governance
 
+* [Submitting Blockchain Parameter Change Proposal](governance/submitting-blockchain-parameter-change-proposal.md)
 * [Page 1](governance/page-1.md)
 
 ***
