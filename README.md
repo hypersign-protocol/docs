@@ -13,4 +13,3 @@ Welcome to Hypersign Wikki.
 * If you are a developer and wants to integrate Hypersign in your _Node js based project_, you can visit [Developer section](broken-reference) to quicky integrate and try out the software.
 * For more, you can read our whitepaper or visit our [website](https://hypersign.id)
 
---
