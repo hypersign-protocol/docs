@@ -26,6 +26,7 @@
 ## 💻 Governance
 
 * [Page 1](governance/page-1.md)
+* [Introduction](governance/introduction.md)
 
 ***
 
