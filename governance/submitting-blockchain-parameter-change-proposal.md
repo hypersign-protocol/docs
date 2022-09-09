@@ -1,7 +1,5 @@
 # Submitting Blockchain Parameter Change Proposal
 
-> In Progress
-
 ## Proposal Structure
 
 This proposal requires information to be passed in JSON file as follows:

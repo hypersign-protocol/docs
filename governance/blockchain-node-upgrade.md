@@ -1,7 +1,5 @@
 # Blockchain Node Upgrade
 
-> In Progress
-
 ## Proposal Structure
 
 | Field | Description |

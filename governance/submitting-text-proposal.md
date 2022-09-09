@@ -1,7 +1,5 @@
 # Submitting Text Proposal
 
-> In Progress
-
 ## Proposal Structure
 
 | Field | Description |

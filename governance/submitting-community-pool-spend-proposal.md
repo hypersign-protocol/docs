@@ -1,7 +1,5 @@
 # Submitting Community Pool Spend Proposal
 
-> In Progress
-
 ## Proposal Structure
 
 This proposal requires information to be passed in a JSON file as follows:
