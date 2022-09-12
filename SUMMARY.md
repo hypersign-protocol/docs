@@ -26,8 +26,8 @@
 
 ## 👩💻 Developers
 
-* [HID-SSI-SDK](developers/hid-ssi-sdk.md)
 * [HID Node](developers/hid-node.md)
+* [HID-SSI-SDK](developers/hid-ssi-sdk.md)
 * [Github](https://github.com/hypersign-protocol/)
 
 ## 🌐 Ecosystem
