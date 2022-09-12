@@ -1,2 +1,284 @@
-# HID Node
+# HID Node - Project Overview
 
+> In Progress
+
+Hypersign Identity Network (HID Node) is built on top of Cosmos SDK. This documentation only covers the SSI module and the basic commands of other Cosmos Modules. It is recommended to have a good understanding of Cosmos SDK. Please refer Cosmos SDK docs [here](https://docs.cosmos.network/v0.45/).
+
+The knowledge of Protocol Buffers is also essential.
+
+## Project Structure
+
+Following is the high level folder structure of HID Node
+
+```
+├── app
+├── cmd
+├── docs
+├── proto
+│   └── ssi
+│       └── v1
+│           ├── credential.proto
+│           ├── did.proto
+│           ├── genesis.proto
+│           ├── query.proto
+│           ├── schema.proto
+│           └── tx.proto
+├── scripts
+├── tests
+├── testutil
+├── third_party
+│   └── proto
+│       ├── gogoproto
+│       │   └── gogo.proto
+│       └── google
+│           └── protobuf
+│               └── descriptor.proto
+└── x
+    └── ssi
+        ├── abci.go
+        ├── client
+        │   └── cli
+        │       ├── query.go
+        │       ├── query_ssi.go
+        │       ├── tx.go
+        │       ├── tx_ssi.go
+        │       └── tx_utils.go
+        ├── genesis.go
+        ├── genesis_test.go
+        ├── handler.go
+        ├── keeper
+        │   ├── credential.go
+        │   ├── did.go
+        │   ├── document_verification
+        │   │   ├── common_checks.go
+        │   │   ├── credential_verification.go
+        │   │   ├── did_verification.go
+        │   │   └── vars.go
+        │   ├── grpc_query_credential.go
+        │   ├── grpc_query_did.go
+        │   ├── grpc_query.go
+        │   ├── grpc_query_schema.go
+        │   ├── keeper.go
+        │   ├── msg_server_credential.go
+        │   ├── msg_server_did.go
+        │   ├── msg_server.go
+        │   ├── msg_server_schema.go
+        │   ├── schema.go
+        │   └── signature_verification.go
+        ├── module.go
+        ├── tests
+        ├── types
+        └── utils
+```
+
+# Protobuf
+The interaction between a client the HID Node happens through RPC, which is built using Protobuf. The proto files are defined under `proto/ssi/v1`. The are two RPC `service` namely `Msg` and `Query`, defined in `proto/ssi/v1/tx.proto` and `proto/ssi/v1/query.proto` respectively. List of HID Node RPCs are:
+
+**Transaction Based**
+
+- MsgCreateDID 
+- MsgUpdateDID
+- MsgDeactivateDID
+- MsgCreateSchema
+- MsgRegisterCredentialStatus    
+
+**Query Based**
+
+- QueryDidDocument
+- QueryDidDocuments
+- QuerySchema
+- QuerySchemas
+- QueryCredential
+- QueryCredentials
+
+The generation of golang files of Protobuf files is done by the script `scripts/protogenc.sh`. The generated files are present in `x/ssi/types`. 
+
+## Protobuf Description
+
+### DID Document
+
+The DID-Core W3C Specification has been followed to frame the structure of a DID. It's proto representation is mentioned in `proto/ssi/v1/did.proto`. The message `DidDocumentState` is the one which is store on chain.
+
+```proto
+// proto/ssi/v1/did.proto
+
+message DidDocumentState {
+  Did didDocument = 1;
+  Metadata didDocumentMetadata = 2;
+}
+```
+
+### Schema Document
+
+The proto representation is mentioned in `proto/ssi/v1/schema.proto`. The message `Schema` is stored on chain.
+
+```proto
+// proto/ssi/v1/schema.proto
+
+message Schema {
+    string type = 1;
+    string modelVersion = 2;
+    string id = 3;
+    string name = 4;
+    string author = 5;
+    string authored = 6;
+    SchemaProperty schema = 7;
+    SchemaProof proof = 8;
+}
+```
+
+### Credential Status Document
+
+The proto representation is mentioned in `proto/ssi/v1/credential.proto`. The message `Credential` is stored on chain.
+
+```proto
+// proto/ssi/v1/credential.proto
+
+message Credential {
+    Claim claim = 1;
+    string issuer = 2;
+    string issuanceDate = 3;
+    string expirationDate = 4;
+    string credentialHash = 5;
+    CredentialProof proof = 6;
+}
+```
+
+## `x/ssi` Module
+
+In Cosmos SDK, every operations related to blockchain such as staking, delegation, token trasfer, etc are composed in different modules. They are defined in the `x` directory of Cosmos SDK (Check [here](https://github.com/cosmos/cosmos-sdk/tree/main/x)). For instance, `x/bank` module handles the functionality of token transfer. `x/ssi` module lets you register documents such Decentralised Identifiers (DID), Schema Document and Verifiable credential Status on chain.
+
+**Quick Overview**
+
+`x/ssi/client/cli`: CLI Client for sending transactions to and query from Blockchain. Refer the detailed list of commands [here]() //TODO: Add link to SSI Page
+
+`x/ssi/keeper`: Interaction with the state of blockchain
+
+`x/ssi/genesis.go`: Initialises genesis variables for `x/ssi` module
+
+`x/ssi/modules.go`: Defines the interface for `ssi` module
+
+### Keepers
+
+Keepers provides an abstraction to interact with the state of the blockchain. The store is a data structure which persists the state. The `Get` and `Set` methods of the store are handled by the Keeper. There are Keeper functions defined for each of the RPCs. Transaction-based RPCs share a similar workflow, while Query-based share different workflow similarity among themeselves.
+
+
+**Transaction Based Keepers**
+
+Let's take the example of `MsgCreateDID`
+
+The proto definition of RPC is as follows:
+
+```proto
+// proto/ssi/v1/tx.proto
+
+service Msg {
+    // ----
+    rpc CreateDID(MsgCreateDID) returns (MsgCreateDIDResponse);
+    // ---
+}
+
+message MsgCreateDID {
+  Did didDocString = 1; // from proto/ssi/v1/did.proto
+  repeated SignInfo signatures = 2; // from proto/ssi/v1/did.proto
+  string creator = 3; // blockchain account address who will be signing the transaction
+}
+
+message MsgCreateDIDResponse {
+  uint64 id = 1;
+}
+```
+
+Keeper Pseudocode:
+
+```go
+// x/ssi/keeper/msg_server_did.go
+
+func (k msgServer) CreateDID(goCtx context.Context, msg *types.MsgCreateDID) (*types.MsgCreateDIDResponse, error) {
+    ctx <- unwrap SDK Context from `goCtx`
+
+    // Get the document from `msg`
+    didDocument <- get the DID Document from `msg` arg
+    signature <- get the signature information from `msg` arg
+
+    // Verfication of Document //
+    err = ValidateDidDocumentElements(didDocument)
+    if err != nil {
+        return nil, err
+    }
+
+    err = CheckIfDidDocumentExistsOnChain(didDocument.Id)
+    if err != nil {
+        return nil, err
+    }
+
+    err = CheckValidityOfDidControllers(didDocument)
+    if err != nil {
+        return nil, err
+    }
+
+    err = CheckIfSignaturesAreValid(didDocument, signature)
+    if err != nil {
+        return nil, err
+    }
+    // ..................... //
+
+    // Storing DID Document on Store //
+    var metadata *types.Metadata = CreateMetadataForDIDDocument()
+
+    // Forming The DID Document State to be stored on chain
+    didDocumentState := types.DidDocumentState{
+		DidDocument:         didDocument,
+		DidDocumentMetadata: &metadata,
+	}
+
+    CreateDidDocumentInStore(ctx, didDocumentState)
+    // ---------------------------- //
+}
+```
+
+**Query Based Keepers**
+
+Let's take the example of Query RPC `QueryDidDocument`
+
+The proto definition of RPC is as follows:
+
+```proto
+service Query {
+    // ---
+    rpc QueryDidDocument(QueryDidDocumentRequest) returns (QueryDidDocumentResponse) {
+        option (google.api.http).get = "/hypersign-protocol/hidnode/ssi/did/{didId}";
+    }
+    // ---
+}
+
+message QueryDidDocumentRequest {
+  string didId = 1;
+}
+
+message QueryDidDocumentResponse {
+  Did didDocument = 1;
+  Metadata didDocumentMetadata = 2;
+}
+```
+
+Keeper Pseudocode:
+
+```go
+// x/ssi/keeper/grpc_query_did.go
+
+func (k Keeper) QueryDidDocument(goCtx context.Context, req *types.QueryDidDocumentRequest) (*types.QueryDidDocumentResponse, error) {
+    ctx <- unwrap SDK Context from `goCtx`
+    didId <- get did Id from `req`
+
+    didDocumentState, err := GetDidDocumentFrom(didId)
+    if err != nil {
+        return nil, err
+    }
+
+    return &types.QueryDidDocumentResponse{
+		DidDocument:         didDoc.GetDidDocument(),
+		DidDocumentMetadata: didDoc.GetDidDocumentMetadata(),
+	}, nil
+}
+```
