@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Hypersign Identity Network](README.md)
+* [💬 Introduction](README.md)
 
 ## 💻 Validator
 

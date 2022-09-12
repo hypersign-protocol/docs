@@ -3,10 +3,9 @@ description: >-
   The Hypersign Identity Network is a permissionless blockchain network to
   manage digital identity and access rights.
 coverY: 0
-layout: landing
 ---
 
-# Hypersign Identity Network
+# 💬 Introduction
 
 Welcome to Hypersign Wikki!
 
