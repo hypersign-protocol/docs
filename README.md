@@ -1,15 +1,35 @@
 ---
 description: >-
-  Hypersign is an Identity and access management solution that makes sure your
-  employees and customers are who they say they are!
+  The Hypersign Identity Network is a permissionless blockchain network to
+  manage digital identity and access rights.
 coverY: 0
+layout: landing
 ---
 
 # Hypersign Identity Network
 
 Welcome to Hypersign Wikki.
 
-* If you are looking to understand what is Hypersign, go to [Introduction section.](broken-reference)
-* If you are looking to understand the authentication protocol flow, go to the [Protocol section](broken-reference/).
-* If you are a developer and wants to integrate Hypersign in your _Node js based project_, you can visit [Developer section](broken-reference/) to quicky integrate and try out the software.
-* For more, you can read our whitepaper or visit our [website](https://hypersign.id)
+The Hypersign Identity Network is a permissionless blockchain network to manage digital identity and access rights. It aims to empower humans to gain control of their data and access on the internet by providing scalable, interoperable and secure [verifiable data registry (VDR)](https://www.w3.org/TR/did-core/#dfn-verifiable-data-registry) to implement use cases on Self Sovereign Identity (SSI) principles.&#x20;
+
+The Hypersign Identity Network is built using [Cosmos-SDK](https://tendermint.com/sdk/) and is fully compatible with [W3C DID specifications](https://www.w3.org/TR/did-core/).
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
