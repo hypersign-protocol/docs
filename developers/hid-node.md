@@ -282,3 +282,20 @@ func (k Keeper) QueryDidDocument(goCtx context.Context, req *types.QueryDidDocum
 	}, nil
 }
 ```
+
+### Store
+
+The Store is a Key-Value structure responsible for persisting the state of chain. The store can have multiple subspaces, which acts as individual KV Stores. The identification of these subspaces, specifically meant for `x/ssi` module, are mentioned in `x/ssi/types/keys.go`.
+
+#### Store Functions
+
+Functions related to Store such as `Get` and `Set` are defined in the following:
+
+```
+x
+└── ssi
+    └── keeper
+       ├── credential.go
+       ├── did.go
+       └── schema.go
+```
