@@ -363,6 +363,58 @@ func (k Keeper) GetDid(ctx *sdk.Context, id string) (*types.DidDocumentState, er
 }
 ```
 
+## Begin-Block
+
+The status of every Registered Credential is check at the beginning of each block. If the current block datetime is greater than the expiration datetime, the Status is set to `Expired`.
+
+The BeginBlocker function is written in `x/ssi/abci.go`
+
+```go
+// x/ssi/abci.go
+
+// BeginBlocker is called at the beginning of every block
+func BeginBlocker(ctx sdk.Context, k keeper.Keeper) {
+	// Set all the credential status that have passed their expiration date
+	// to Expired
+	if err := k.SetCredentialStatusToExpired(ctx); err != nil {
+		panic(err)
+	}
+}
+
+
+// x/ssi/keeper/credential.go
+
+func (k Keeper) SetCredentialStatusToExpired(ctx sdk.Context) error {
+	store := prefix.NewStore(ctx.KVStore(k.storeKey), []byte(types.CredKey))
+	iterator := sdk.KVStorePrefixIterator(store, []byte{})
+	defer iterator.Close()
+
+	for ; iterator.Valid(); iterator.Next() {
+		var cred types.Credential
+		if err := k.cdc.Unmarshal(iterator.Value(), &cred); err != nil {
+			return err
+		}
+
+		currentBlockTime := ctx.BlockTime()
+		expirationDate, err := time.Parse(time.RFC3339, cred.GetExpirationDate())
+		if err != nil {
+			return err
+		}
+
+		// Set the Credential Status to Expired
+		if currentBlockTime.After(expirationDate) {
+			cred.Claim.CurrentStatus = "Expired"
+			cred.Claim.StatusReason = "Credential Expired"
+			cred.Proof.Updated = currentBlockTime.Format(time.RFC3339)
+
+			updatedCredBytes := k.cdc.MustMarshal(&cred)
+			store.Set([]byte(cred.Claim.Id), updatedCredBytes)
+		}
+	}
+	return nil
+}
+```
+
 # Common CLI Commands
 
 Few points to consider:
