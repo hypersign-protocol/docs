@@ -188,7 +188,7 @@ message MsgCreateDIDResponse {
 }
 ```
 
-Keeper Pseudocode:
+Pseudocode:
 
 ```go
 // x/ssi/keeper/msg_server_did.go
@@ -261,7 +261,7 @@ message QueryDidDocumentResponse {
 }
 ```
 
-Keeper Pseudocode:
+Pseudocode:
 
 ```go
 // x/ssi/keeper/grpc_query_did.go
@@ -353,7 +353,7 @@ func (k Keeper) GetDid(ctx *sdk.Context, id string) (*types.DidDocumentState, er
     // Initialises the store of subspace DidKey
     store := prefix.NewStore(ctx.KVStore(k.storeKey), types.KeyPrefix(types.DidKey))
 
-	var didDocState types.DidDocumentState
+    var didDocState types.DidDocumentState
     // Fetch the DID Document from store (in byteArray form)
     var bytes = store.Get([]byte(id))
     // Unmarshal byteArray into DidDocumentState type
@@ -364,3 +364,74 @@ func (k Keeper) GetDid(ctx *sdk.Context, id string) (*types.DidDocumentState, er
     return &didDocState, nil
 }
 ```
+
+# Common CLI Commands
+
+Few points to consider:
+
+- If `minimum-gas-price` in `${HOME}/.hid-node/config/app.toml` is set to `0uhid`, there isn't a need to pass the `--fees` parameter in transaction based commands.
+- `--chain-id` has to be explicitly passed wherever necessary, and it should match with the chain-id value defined during the initialisation of `hid-node`.
+- The default value for `--keyring-backend`, if not passed, is `os`. The other values are `test`, `file`, `kwallet`, `pass`, `memory`.
+
+**Token Transfer**
+
+```sh
+hid-noded tx bank send <sender-wallet-address> <recipient-wallet-address> <amount-in-uhid>
+```
+
+```sh
+hid-noded tx bank send hid1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqeuj22x hid1t7xv0j9xhlkpt3fsy5hzrnh7vmg6cduef3f8p8 10000000uhid
+```
+
+**Validator Creation.** Check [here](../validator/running-a-testnet-validator-node.md)
+
+**Delegating $HID to a Validator**
+
+```sh
+hid-noded tx staking delegate <operator-address-of-validator> <amount> --from <delegator-address>
+```
+
+```sh
+hid-noded tx staking delegate hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqx79qze 10000uhid from hid1t7xv0j9xhlkpt3fsy5hzrnh7vmg6cduef3f8p8
+```
+
+**Withdrawing Rewards (Non-Validator User)**
+
+```sh
+hid-noded tx distribution withdraw-rewards <validator-addr> --from <user-wallet-address>
+```
+
+```sh
+hid-noded tx distribution withdraw-rewards hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqx79qze --from hid1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqeuj22x
+```
+
+**Withdrawing Rewards along with Commission (Validator)**
+
+```sh
+hid-noded tx distribution withdraw-rewards <validator-addr> --from <user-wallet-address>
+```
+
+```sh
+hid-noded tx distribution withdraw-rewards hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqx79qze --from hid1t7xv0j9xhlkpt3fsy5hzrnh7vmg6cduef3f8p8 --commission
+```
+
+**`x/ssi` Transactions**
+  - [Decentralised Identifier](../self-sovereign-identity-ssi/decentralized-identifier-did.md)
+  - [Schema](../self-sovereign-identity-ssi/schema.md)
+  - [Credential Status](../self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
+
+**Governance Proposal Submission** Check [here](../governance/introduction.md)
+
+**Transfer tokens through IBC**
+
+```sh
+hid-noded tx ibc-transfer transfer transfer channel-0 <desitnation chain wallet address> <amount> --from <source chain wallet address> 
+```
+
+Suppose you want transfer `1000uhid` from Hypersign Identity Network to Osmosis
+
+```
+hid-noded tx ibc-transfer transfer transfer channel-0 <osmo1..> 1000uhid --from <hid1..>
+```
+
+Refer the IBC Documentation [here]((https://ibc.cosmos.network/main/ibc/overview.html)).
