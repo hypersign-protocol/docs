@@ -322,24 +322,24 @@ Consider the `Get` and `Set` methods related to DID Document:
 
 // Adding a aew DID Document to store
 func (k Keeper) CreateDidDocumentInStore(ctx sdk.Context, didDoc *types.DidDocumentState) uint64 {
-	// Get the registered Count
+    // Get the registered Count
     count := k.GetDidCount(ctx)
 
     // Initialises the store of subspace DidKey
-	store := prefix.NewStore(ctx.KVStore(k.storeKey), []byte(types.DidKey))
+    store := prefix.NewStore(ctx.KVStore(k.storeKey), []byte(types.DidKey))
 
     // In DidKey store:
     // Key: DID Document Id
     // Value: DID Document
-	id := didDoc.GetDidDocument().GetId()
-	didDocBytes := k.cdc.MustMarshal(didDoc)
+    id := didDoc.GetDidDocument().GetId()
+    didDocBytes := k.cdc.MustMarshal(didDoc)
 
     // The KV pair is Set in Store in byte array form
-	store.Set([]byte(id), didDocBytes)
+    store.Set([]byte(id), didDocBytes)
     
     // Increment registered DID Document count by 1
     k.SetDidCount(ctx, count+1)
-	return count
+    return count
 }
 ```
 
@@ -358,8 +358,8 @@ func (k Keeper) GetDid(ctx *sdk.Context, id string) (*types.DidDocumentState, er
     var bytes = store.Get([]byte(id))
     // Unmarshal byteArray into DidDocumentState type
     if err := k.cdc.Unmarshal(bytes, &didDocState); err != nil {
-		return nil, sdkerrors.Wrap(sdkerrors.ErrInvalidType, err.Error())
-	}
+        return nil, sdkerrors.Wrap(sdkerrors.ErrInvalidType, err.Error())
+    }
 
     return &didDocState, nil
 }
