@@ -350,17 +350,17 @@ func (k Keeper) CreateDidDocumentInStore(ctx sdk.Context, didDoc *types.DidDocum
 
 // Get the DID Document from Store
 func (k Keeper) GetDid(ctx *sdk.Context, id string) (*types.DidDocumentState, error) {
-	// Initialises the store of subspace DidKey
+    // Initialises the store of subspace DidKey
     store := prefix.NewStore(ctx.KVStore(k.storeKey), types.KeyPrefix(types.DidKey))
 
 	var didDocState types.DidDocumentState
     // Fetch the DID Document from store (in byteArray form)
-	var bytes = store.Get([]byte(id))
+    var bytes = store.Get([]byte(id))
     // Unmarshal byteArray into DidDocumentState type
-	if err := k.cdc.Unmarshal(bytes, &didDocState); err != nil {
+    if err := k.cdc.Unmarshal(bytes, &didDocState); err != nil {
 		return nil, sdkerrors.Wrap(sdkerrors.ErrInvalidType, err.Error())
 	}
 
-	return &didDocState, nil
+    return &didDocState, nil
 }
 ```
