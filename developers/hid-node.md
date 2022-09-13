@@ -383,7 +383,8 @@ hid-noded tx bank send <sender-wallet-address> <recipient-wallet-address> <amoun
 hid-noded tx bank send hid1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqeuj22x hid1t7xv0j9xhlkpt3fsy5hzrnh7vmg6cduef3f8p8 10000000uhid
 ```
 
-**Validator Creation.** Check [here](../validator/running-a-testnet-validator-node.md)
+**Validator Creation** 
+  - Check [here](../validator/running-a-testnet-validator-node.md)
 
 **Delegating $HID to a Validator**
 
@@ -420,7 +421,8 @@ hid-noded tx distribution withdraw-rewards hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqh
   - [Schema](../self-sovereign-identity-ssi/schema.md)
   - [Credential Status](../self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
 
-**Governance Proposal Submission** Check [here](../governance/introduction.md)
+**Governance Proposal Submission** 
+  - Check [here](../governance/introduction.md)
 
 **Transfer tokens through IBC**
 
