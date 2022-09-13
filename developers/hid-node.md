@@ -158,10 +158,9 @@ In Cosmos SDK, every operations related to blockchain such as staking, delegatio
 
 `x/ssi/modules.go`: Defines the interface for `ssi` module
 
-## Keepers
+## Keeper
 
 Keepers provides an abstraction to interact with the state of the blockchain. The store is a data structure which persists the state. The `Get` and `Set` methods of the store are handled by the Keeper. There are Keeper functions defined for each of the RPCs. Transaction-based RPCs share a similar workflow, while Query-based share different workflow similarity among themeselves.
-
 
 **Transaction Based Keepers**
 
@@ -287,17 +286,23 @@ func (k Keeper) QueryDidDocument(goCtx context.Context, req *types.QueryDidDocum
 
 The Store is a Key-Value structure responsible for persisting the state of chain. The store can have multiple subspaces, which acts as individual KV Stores. The identification of these subspaces, specifically meant for `x/ssi` module, are mentioned in `x/ssi/types/keys.go`.
 
-### Substore Namespaces
+### Substore Namespace
 
 The following table describes the substores:
 
-| Namespace | Description |
-| --------- | ----------- |
-| Hello | World |
+| Namespace | Key | Value |
+| --------- | ----------- | ----------- |
+| DidKey | DID Document Id | DID Document |
+| DidCountKey | ```[]byte(DidCountKey)``` | Registered DID Documents Count |
+| SchemaKey | Schema Document ID | Schema Document |
+| SchemaCountKey | ```[]byte(SchemaCountKey)``` | Registered Schema Documents Count |
+| CredKey     | Credential ID | CredentialStatus Document |
+| CredCountKey | ```[]byte(CredCountKey)``` | Registered CredentialStatus Documents Count |
+| DidNamespaceKey | ```[]byte(DidNamespaceKey)``` | Chain Namespace |
 
 ### Store Functions
 
-Functions related to Store such as `Get` and `Set` are defined in the following:
+The store functions comprise of operations such as addition to, change from and query by key from the Store. These are defined in the following files: 
 
 ```
 x
