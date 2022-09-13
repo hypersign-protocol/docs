@@ -6,7 +6,7 @@ Hypersign Identity Network (HID Node) is built on top of Cosmos SDK. This docume
 
 The knowledge of Protocol Buffers is also essential.
 
-## Project Structure
+# Project Structure
 
 Following is the high level folder structure of HID Node
 
@@ -144,7 +144,7 @@ message Credential {
 }
 ```
 
-## `x/ssi` Module
+# `x/ssi` Module
 
 In Cosmos SDK, every operations related to blockchain such as staking, delegation, token trasfer, etc are composed in different modules. They are defined in the `x` directory of Cosmos SDK (Check [here](https://github.com/cosmos/cosmos-sdk/tree/main/x)). For instance, `x/bank` module handles the functionality of token transfer. `x/ssi` module lets you register documents such Decentralised Identifiers (DID), Schema Document and Verifiable credential Status on chain.
 
@@ -158,7 +158,7 @@ In Cosmos SDK, every operations related to blockchain such as staking, delegatio
 
 `x/ssi/modules.go`: Defines the interface for `ssi` module
 
-### Keepers
+## Keepers
 
 Keepers provides an abstraction to interact with the state of the blockchain. The store is a data structure which persists the state. The `Get` and `Set` methods of the store are handled by the Keeper. There are Keeper functions defined for each of the RPCs. Transaction-based RPCs share a similar workflow, while Query-based share different workflow similarity among themeselves.
 
@@ -283,11 +283,11 @@ func (k Keeper) QueryDidDocument(goCtx context.Context, req *types.QueryDidDocum
 }
 ```
 
-### Store
+## Store
 
 The Store is a Key-Value structure responsible for persisting the state of chain. The store can have multiple subspaces, which acts as individual KV Stores. The identification of these subspaces, specifically meant for `x/ssi` module, are mentioned in `x/ssi/types/keys.go`.
 
-#### Substore Namespaces
+### Substore Namespaces
 
 The following table describes the substores:
 
@@ -295,7 +295,7 @@ The following table describes the substores:
 | --------- | ----------- |
 | Hello | World |
 
-#### Store Functions
+### Store Functions
 
 Functions related to Store such as `Get` and `Set` are defined in the following:
 
