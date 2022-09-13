@@ -2,7 +2,7 @@
 
 > In Progress
 
-Hypersign Identity Network (HID Node) is built on top of Cosmos SDK. This documentation only covers the SSI module and the basic commands of other Cosmos Modules. It is recommended to have a good understanding of Cosmos SDK. Please refer Cosmos SDK docs [here](https://docs.cosmos.network/v0.45/).
+Hypersign Identity Network (HID Node) is built on top of Cosmos SDK. This documentation only covers the SSI module and the basic commands of Cosmos SDK modules. It is recommended to have a good understanding of Cosmos SDK. Please refer Cosmos SDK docs [here](https://docs.cosmos.network/v0.45/).
 
 The knowledge of Protocol Buffers is also essential.
 
@@ -72,7 +72,7 @@ Following is the high level folder structure of HID Node
 ```
 
 # Protobuf
-The interaction between a client the HID Node happens through RPC, which is built using Protobuf. The proto files are defined under `proto/ssi/v1`. The are two RPC `service` namely `Msg` and `Query`, defined in `proto/ssi/v1/tx.proto` and `proto/ssi/v1/query.proto` respectively. List of HID Node RPCs are:
+The interaction between a client and HID Node happens through RPC, built using Protobuf. The proto files are defined under `proto/ssi/v1`. The are two RPC `service` namely `Msg` and `Query`, defined in `proto/ssi/v1/tx.proto` and `proto/ssi/v1/query.proto` respectively. List of HID Node RPCs are:
 
 **Transaction Based**
 
@@ -91,11 +91,11 @@ The interaction between a client the HID Node happens through RPC, which is buil
 - QueryCredential
 - QueryCredentials
 
-The generation of golang files of Protobuf files is done by the script `scripts/protogenc.sh`. The generated files are present in `x/ssi/types`. 
+The generation of Golang code is done by the script `scripts/protogenc.sh`. The generated files are present in `x/ssi/types`. 
 
 ## DID Document
 
-The DID-Core W3C Specification has been followed to frame the structure of a DID. It's proto representation is mentioned in `proto/ssi/v1/did.proto`. The message `DidDocumentState` is the one which is store on chain.
+The [DID-Core](https://www.w3.org/TR/did-core/) W3C Specification has been followed to frame the structure of a DID Document. It's proto representation is mentioned in `proto/ssi/v1/did.proto`. The message `DidDocumentState` is stored on chain.
 
 ```proto
 // proto/ssi/v1/did.proto
@@ -144,15 +144,17 @@ message Credential {
 
 # `x/ssi` Module
 
-In Cosmos SDK, every operations related to blockchain such as staking, delegation, token trasfer, etc are composed in different modules. They are defined in the `x` directory of Cosmos SDK (Check [here](https://github.com/cosmos/cosmos-sdk/tree/main/x)). For instance, `x/bank` module handles the functionality of token transfer. `x/ssi` module lets you register documents such Decentralised Identifiers (DID), Schema Document and Verifiable credential Status on chain.
+In Cosmos SDK, every operations related to blockchain such as staking, delegation, token trasfer, etc are handled by different modules. They are defined in the `x` directory of Cosmos SDK (See [here](https://github.com/cosmos/cosmos-sdk/tree/main/x)). For instance, `x/bank` module handles the functionality of token transfer. `x/ssi` module lets you store documents such as Decentralised Identifiers (DID), Schema Document and Verifiable credential Status on chain.
 
 **Quick Overview**
 
-`x/ssi/client/cli`: CLI Client for sending transactions to and query from Blockchain. Refer the detailed list of commands [here]() //TODO: Add link to SSI Page
+`x/ssi/client/cli`: CLI Client for sending SSI-based transactions to and querying data from Blockchain. 
 
 `x/ssi/keeper`: Interaction with the state of blockchain
 
-`x/ssi/genesis.go`: Initialises genesis variables for `x/ssi` module
+`x/ssi/genesis.go`: 
+    - Initialising and Exporting of genesis variables of `x/ssi` module, such as `chain_namespace`. 
+    - For public mainnet chain, `chain_namespace` should be empty. In case of testnet, the name of the testnet should be assigned. If you are running a private network, you can specify your own chain namepsace.
 
 `x/ssi/modules.go`: Defines the interface for `ssi` module
 
@@ -365,7 +367,7 @@ func (k Keeper) GetDid(ctx *sdk.Context, id string) (*types.DidDocumentState, er
 
 ## Begin-Block
 
-The status of every Registered Credential is check at the beginning of each block. If the current block datetime is greater than the expiration datetime, the Status is set to `Expired`.
+The status of every Registered Verifiable Credential (VC) is check at the beginning of each block. If the current block datetime is greater than the expiration datetime of a VC, the Status is set to `Expired`.
 
 The BeginBlocker function is written in `x/ssi/abci.go`
 
@@ -480,7 +482,7 @@ hid-noded tx distribution withdraw-rewards hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqh
 hid-noded tx ibc-transfer transfer transfer channel-0 <desitnation chain wallet address> <amount> --from <source chain wallet address> 
 ```
 
-Suppose you want transfer `1000uhid` from Hypersign Identity Network to Osmosis
+Suppose you want to transfer `1000uhid` from Hypersign Identity Network to Osmosis
 
 ```
 hid-noded tx ibc-transfer transfer transfer channel-0 <osmo1..> 1000uhid --from <hid1..>
