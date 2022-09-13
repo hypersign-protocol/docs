@@ -93,9 +93,7 @@ The interaction between a client the HID Node happens through RPC, which is buil
 
 The generation of golang files of Protobuf files is done by the script `scripts/protogenc.sh`. The generated files are present in `x/ssi/types`. 
 
-## Protobuf Description
-
-### DID Document
+## DID Document
 
 The DID-Core W3C Specification has been followed to frame the structure of a DID. It's proto representation is mentioned in `proto/ssi/v1/did.proto`. The message `DidDocumentState` is the one which is store on chain.
 
@@ -108,7 +106,7 @@ message DidDocumentState {
 }
 ```
 
-### Schema Document
+## Schema Document
 
 The proto representation is mentioned in `proto/ssi/v1/schema.proto`. The message `Schema` is stored on chain.
 
@@ -127,7 +125,7 @@ message Schema {
 }
 ```
 
-### Credential Status Document
+## Credential Status Document
 
 The proto representation is mentioned in `proto/ssi/v1/credential.proto`. The message `Credential` is stored on chain.
 
