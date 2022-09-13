@@ -3,12 +3,11 @@ description: >-
   The Hypersign Identity Network is a permissionless blockchain network to
   manage digital identity and access rights.
 coverY: 0
-layout: landing
 ---
 
-# Hypersign Identity Network
+# 💬 Introduction
 
-Welcome to Hypersign Wikki.
+Welcome to Hypersign Wikki!
 
 The Hypersign Identity Network is a permissionless blockchain network to manage digital identity and access rights. It aims to empower humans to gain control of their data and access on the internet by providing scalable, interoperable and secure [verifiable data registry (VDR)](https://www.w3.org/TR/did-core/#dfn-verifiable-data-registry) to implement use cases on Self Sovereign Identity (SSI) principles.&#x20;
 
