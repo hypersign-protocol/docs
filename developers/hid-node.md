@@ -451,6 +451,14 @@ hid-noded keys list --keyring-backed <os | test | file>
 hid-noded keys delete <name-of-the-key> --keyring-backend <os | test | file>
 ```
 
+## Token Transfer and Staking
+
+// Todo
+
+## PayTx: Paying fee on someone's behalf
+
+// Todo
+
 # Common CLI Commands
 
 Few points to consider:
