@@ -455,7 +455,7 @@ hid-noded keys delete <name-of-the-key> --keyring-backend <os | test | file>
 
 // Todo
 
-## PayTx: Paying fee on someone's behalf
+## PayTx: Paying fee on other's behalf
 
 // Todo
 
