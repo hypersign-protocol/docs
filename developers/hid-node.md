@@ -427,6 +427,14 @@ Key Management is the first that a user need to do, when its about interacting w
 - `os`: Operating system specific credential sub-system stores the keys in an encrypted manner
 - `file`: It is similar to `test` backend, with the exception that the keys are encrypted with a passphrase.
 
+**Algorithm**
+
+`secp256k1` algorithm is used in the generation of keys, and it is the only algorithm supported for wallet key generation.
+
+**Address Format**
+
+The addressing schema used is `bech32` and the address prefix is `hid`
+
 ### Commands
 
 - Run the following to generate a key
@@ -455,7 +463,7 @@ hid-noded keys delete <name-of-the-key> --keyring-backend <os | test | file>
 
 // Todo
 
-## PayTx: Paying fee on other's behalf
+## PayTx: Pay fee on someone's behalf
 
 // Todo
 
