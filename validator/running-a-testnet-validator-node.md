@@ -102,7 +102,7 @@ hid-noded tx staking create-validator \
 --website="XXXXXXXX"
 ```
 
-### Reedeming Stake Rewards
+### Redeem Stake Rewards
 
 Having significant stake in the blockchain comes with reward in the form of tokens. The redemption of rewards needs to be done manually. Run the following to redeem rewards:
 
