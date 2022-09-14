@@ -459,7 +459,7 @@ hid-noded keys list --keyring-backed <os | test | file>
 hid-noded keys delete <name-of-the-key> --keyring-backend <os | test | file>
 ```
 
-## Token Transfer and Staking
+## Token transfer
 
 The `x/bank` module facilitates the transfer of tokens between accounts. The base denomination used in the chain is `uhid`, where `u` represents the SI prefix `micro`. So, `1 HID` represents `1000000uhid`. `uhid` also acts as a governance token.
 
