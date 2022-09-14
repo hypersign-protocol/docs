@@ -417,6 +417,28 @@ func (k Keeper) SetCredentialStatusToExpired(ctx sdk.Context) error {
 }
 ```
 
+# Features
+
+## Key Management
+
+Key Management is the first that a user need to do, when its about interacting with blockchain. `hid-node` supports the following ways to store and manage the public keys:
+
+- `test`: Public Key information is stored in `${HOME}/.hid-node/keyring-test`. This approach is **not recommended** for production use
+- `os`: Operating system specific credential sub-system stores the keys in an encrypted manner
+- `file`: It is similar to `test` backend, with the exception that the keys are encrypted with a passphrase.
+
+
+- Run the following to generate a key
+
+```
+hid-noded keys add <name-of-the-key> --keyring-backed <os | test | file>
+```
+
+Save the 24-word mnemonic which is generated in the terminal
+
+If you want to recover a wallet using a Bip39 Mnemonic, just add the `--recover` flag to the above command
+
+
 # Common CLI Commands
 
 Few points to consider:
@@ -489,3 +511,5 @@ hid-noded tx ibc-transfer transfer transfer channel-0 <osmo1..> 1000uhid --from 
 ```
 
 Refer the IBC Documentation [here]((https://ibc.cosmos.network/main/ibc/overview.html)).
+
+
