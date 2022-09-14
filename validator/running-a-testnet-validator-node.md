@@ -60,9 +60,10 @@ Configuration files of the node are stored in the default location: `$HOME/.hid-
 wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.2.0/cosmovisor-v1.2.0-linux-amd64.tar.gz && tar -C /usr/local/bin/ -xzf cosmovisor-v1.2.0-linux-amd64.tar.gz
 ```
 
-* Export the following environment variables
+* Export the following environment variables which are needed by `cosmovisor`
 
 ```
+export DAEMON_NAME=hid-noded
 export DAEMON_PATH=<Complete Path of Blockchain Binary>
 export DAEMON_HOME=<Blockchain Config Path Directory>/.hid-node  # Example: $HOME/.hid-node
 ```
@@ -100,3 +101,22 @@ hid-noded tx staking create-validator \
 --security-contact="XXXXXXXX" \
 --website="XXXXXXXX"
 ```
+
+### Reedeming Stake Rewards
+
+Having significant stake in the blockchain comes with reward in the form of tokens. The redemption of rewards needs to be done manually. Run the following to redeem rewards:
+
+```
+hid-noded tx distribution withdraw-rewards <validator-addr> --from <validator-wallet-address>
+```
+`<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)
+`<validator-wallet-address>` - Validator's wallet address from which they have stake tokens. (Prefix `hid`)
+
+If you also want to withdraw validator commission, append the `--commission` flag to the above command.
+
+To check the outstanding validator rewards.
+
+```
+hid-noded q distribution validator-outstanding-rewards <validator-addr>
+```
+`<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)

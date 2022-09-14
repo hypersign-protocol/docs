@@ -424,7 +424,7 @@ func (k Keeper) SetCredentialStatusToExpired(ctx sdk.Context) error {
 Key Management is the first that a user need to do, when its about interacting with blockchain. `hid-node` supports the following ways to store and manage the public keys:
 
 - `test`: Public Key information is stored in `${HOME}/.hid-node/keyring-test`. This approach is **not recommended** for production use
-- `os`: Operating system specific credential sub-system stores the keys in an encrypted manner
+- `os`: Operating system specific credential sub-system stores the keys encrypted with a passphrase
 - `file`: It is similar to `test` backend, with the exception that the keys are encrypted with a passphrase.
 
 **Algorithm**
@@ -461,11 +461,34 @@ hid-noded keys delete <name-of-the-key> --keyring-backend <os | test | file>
 
 ## Token Transfer and Staking
 
-// Todo
+The `x/bank` module facilitates the transfer of tokens between accounts. The base denomination used in the chain is `uhid`, where `u` represents the SI prefix `micro`. So, `1 HID` represents `1000000uhid`. `uhid` also acts as a governance token.
+
+Run the following to transfer `uhid` between blockchain accounts
+
+```
+hid-noded tx bank send <source-hid-account> <destination-hid-account> <amount-in-uhid> --chain-id <Chain ID>
+```
+
+`<source-hid-account>` - Source blockchain address
+`<destination-hid-account>` - Destination blockchain address
+`<amount-in-uhid>` - Amount to be transferred. Example - `1000uhid`
+
+## Staking
+
+// TODO
+
+## Governance
+
+// TODO
 
 ## PayTx: Pay fee on someone's behalf
 
-// Todo
+// TODO
+
+## Cross-chain Token transfer
+
+// TODO
+
 
 # Common CLI Commands
 
