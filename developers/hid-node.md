@@ -461,7 +461,7 @@ hid-noded keys delete <name-of-the-key> --keyring-backend <os | test | file>
 
 ## Token transfer
 
-The `x/bank` module facilitates the transfer of tokens between accounts. The base denomination used in the chain is `uhid`, where `u` represents the SI prefix `micro`. So, `1 HID` represents `1000000uhid`. `uhid` also acts as a governance token.
+The `x/bank` module facilitates the transfer of tokens between accounts. The base denomination used in the chain is `uhid`, where `u` represents the SI prefix `micro`. So, `1 HID` represents `1000000uhid`. `uhid` also acts as a governance token. The Coin Type is `118`
 
 Run the following to transfer `uhid` between blockchain accounts
 
@@ -487,7 +487,78 @@ hid-noded tx bank send <source-hid-account> <destination-hid-account> <amount-in
 
 ## PayTx: Pay fee on someone's behalf
 
-// TODO
+If you want to perform any transaction on chain, you have to pay fees in order to execute it. Adding tokens to your wallet isn't a seamless experience, as you first have to trade your fiat currency with a crypto-currency in a centralised exchange, and then transfer those tokens to your non-custodial wallet, such as [Keplr](https://www.keplr.app/).
+
+The `x/authz` and `x/feegrant` modules work together to enable accounts, having no balance, perform blockchain transactions and have the fee be paid by someone who have granted them authorization.
+
+Performing PayTx transactions from [CosmJS](https://github.com/cosmos/cosmjs) will be available from the version `v0.29.0`.
+
+Let's consider a scenario with two actors who will be present on the network:
+- **User**: They don't possess any `uhid` tokens
+- **Identity Provider (IdP)**: They possess abundant `uhid` tokens and will pay the fee for User's `MsgCreateDID` transaction.
+
+Lets assume the following:
+
+- `<user-addr>`: User's blockchain address
+- `<idp-addr>`: Identity Provider's address
+
+**Steps**
+
+1. Grant `User` authorization to perform `MsgCreateDID` transaction.
+
+```
+hid-noded tx authz grant <user-addr> generic --from <idp-addr> --msg-type "/hypersignprotocol.hidnode.ssi.MsgCreateDID"
+```
+
+List the authorizations
+
+```
+hid-noded q authz grants <idp-addr> <user-addr>
+```
+
+2. Specify the amount of tokens `User` is allowed to spend in fees. Once this limit exhausts, `User` cannot perform the authorized transaction 
+
+```
+hid-noded tx feegrant grant <idp-addr> <user-addr> --spend-limit 1000uhid
+```
+
+List the fee allowances
+
+```
+hid-noded q feegrant grants <user-addr>
+```
+
+3. Generate a `MsgCreateDID` transaction and store it in a json file `tx.json`
+
+```
+hid-noded tx ssi create-did '{
+"context": [
+"https://www.w3.org/ns/did/v1"
+],
+"id": "did:hs:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf",
+"controller": ["did:hs:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf"],
+"verificationMethod": [
+{
+"id": "did:hs:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1",
+"type": "Ed25519VerificationKey2020",
+"controller": "did:hs:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf",
+"publicKeyMultibase": "zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf"
+}
+],
+"authentication": [
+"did:hs:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1"
+]
+}' did:hs:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1 --ver-key <base64 encoded private key> --from <user-addr> --generate-only > tx.json
+```
+
+4. Execute the `MsgCreateDID` transaction with fee paying account being **Identity Provider**
+
+```
+hid-noded tx authz exec tx.json --from <user-addr> --fee-account <idp-addr> --fees 50uhid
+```
+
+The `50uhid` is deduced from the **Identity Provider** account
+
 
 ## Cross-chain Token transfer
 
