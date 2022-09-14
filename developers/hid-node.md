@@ -427,6 +427,7 @@ Key Management is the first that a user need to do, when its about interacting w
 - `os`: Operating system specific credential sub-system stores the keys in an encrypted manner
 - `file`: It is similar to `test` backend, with the exception that the keys are encrypted with a passphrase.
 
+### Commands
 
 - Run the following to generate a key
 
