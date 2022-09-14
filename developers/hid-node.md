@@ -433,7 +433,7 @@ Key Management is the first that a user need to do, when its about interacting w
 
 **Address Format**
 
-The addressing schema used is `bech32` and the address prefix is `hid`
+The addressing scheme used is `bech32` and the address prefix is `hid`
 
 ### Commands
 
