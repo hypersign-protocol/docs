@@ -475,15 +475,15 @@ hid-noded tx bank send <source-hid-account> <destination-hid-account> <amount-in
 
 ## Staking
 
-Check the instructions for Staking below
-
 {% content-ref url="../validator/running-a-testnet-validator-node.md" %}
 [running-a-testnet-validator-node.md](running-a-testnet-validator-node.md)
 {% endcontent-ref %}
 
 ## Governance
 
-// TODO
+{% content-ref url="../governance/introduction.md" %}
+[introduction.md](introduction.md)
+{% endcontent-ref %}
 
 ## PayTx: Pay fee on someone's behalf
 
