@@ -473,6 +473,12 @@ hid-noded tx bank send <source-hid-account> <destination-hid-account> <amount-in
 - `<destination-hid-account>` - Destination blockchain address
 - `<amount-in-uhid>` - Amount to be transferred. Example - `1000uhid`
 
+Check the balance of an address
+
+```
+hid-noded q bank balances <account-address>
+```
+
 ## Staking
 
 {% content-ref url="../validator/running-a-testnet-validator-node.md" %}
@@ -559,83 +565,12 @@ hid-noded tx authz exec tx.json --from <user-addr> --fee-account <idp-addr> --fe
 
 The `50uhid` is deduced from the **Identity Provider** account
 
-
 ## Cross-chain Token transfer
 
-// TODO
+The cross-chain transfer of tokens between Cosmos-based chains is possible using Inter-Blockchain Communication (IBC) Protocol. Refer the IBC Documentation [here](https://ibc.cosmos.network/main/ibc/overview.html).
 
-
-# Common CLI Commands
-
-Few points to consider:
-
-- If `minimum-gas-price` in `${HOME}/.hid-node/config/app.toml` is set to `0uhid`, there isn't a need to pass the `--fees` parameter in transaction based commands.
-- `--chain-id` has to be explicitly passed wherever necessary, and it should match with the chain-id value defined during the initialisation of `hid-node`.
-- The default value for `--keyring-backend`, if not passed, is `os`. The other values are `test`, `file`, `kwallet`, `pass`, `memory`.
-
-**Token Transfer**
+Run the following to transfer tokens between two accounts located on seperate chains
 
 ```sh
-hid-noded tx bank send <sender-wallet-address> <recipient-wallet-address> <amount-in-uhid>
+hid-noded tx ibc-transfer transfer <source-ibc-port> <source-ibc-channel> <destination-chain-wallet-address> <amount> --from <source-chain-wallet-address> 
 ```
-
-```sh
-hid-noded tx bank send hid1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqeuj22x hid1t7xv0j9xhlkpt3fsy5hzrnh7vmg6cduef3f8p8 10000000uhid
-```
-
-**Validator Creation** 
-  - Check [here](../validator/running-a-testnet-validator-node.md)
-
-**Delegating $HID to a Validator**
-
-```sh
-hid-noded tx staking delegate <operator-address-of-validator> <amount> --from <delegator-address>
-```
-
-```sh
-hid-noded tx staking delegate hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqx79qze 10000uhid from hid1t7xv0j9xhlkpt3fsy5hzrnh7vmg6cduef3f8p8
-```
-
-**Withdrawing Rewards (Non-Validator User)**
-
-```sh
-hid-noded tx distribution withdraw-rewards <validator-addr> --from <user-wallet-address>
-```
-
-```sh
-hid-noded tx distribution withdraw-rewards hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqx79qze --from hid1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqeuj22x
-```
-
-**Withdrawing Rewards along with Commission (Validator)**
-
-```sh
-hid-noded tx distribution withdraw-rewards <validator-addr> --from <user-wallet-address>
-```
-
-```sh
-hid-noded tx distribution withdraw-rewards hidvaloper1c0qs3eyu5pqqwr70j2klsrpuqhjd8xqqx79qze --from hid1t7xv0j9xhlkpt3fsy5hzrnh7vmg6cduef3f8p8 --commission
-```
-
-**`x/ssi` Transactions**
-  - [Decentralised Identifier](../self-sovereign-identity-ssi/decentralized-identifier-did.md)
-  - [Schema](../self-sovereign-identity-ssi/schema.md)
-  - [Credential Status](../self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
-
-**Governance Proposal Submission** 
-  - Check [here](../governance/introduction.md)
-
-**Transfer tokens through IBC**
-
-```sh
-hid-noded tx ibc-transfer transfer transfer channel-0 <desitnation chain wallet address> <amount> --from <source chain wallet address> 
-```
-
-Suppose you want to transfer `1000uhid` from Hypersign Identity Network to Osmosis
-
-```
-hid-noded tx ibc-transfer transfer transfer channel-0 <osmo1..> 1000uhid --from <hid1..>
-```
-
-Refer the IBC Documentation [here]((https://ibc.cosmos.network/main/ibc/overview.html)).
-
-
