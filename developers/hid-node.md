@@ -504,7 +504,7 @@ Lets assume the following:
 
 **Steps**
 
-1. Grant `User` authorization to perform `MsgCreateDID` transaction.
+* Grant `User` authorization to perform `MsgCreateDID` transaction.
 
 ```
 hid-noded tx authz grant <user-addr> generic --from <idp-addr> --msg-type "/hypersignprotocol.hidnode.ssi.MsgCreateDID"
@@ -516,7 +516,7 @@ List the authorizations
 hid-noded q authz grants <idp-addr> <user-addr>
 ```
 
-2. Specify the amount of tokens `User` is allowed to spend in fees. Once this limit exhausts, `User` cannot perform the authorized transaction 
+* Specify the amount of tokens `User` is allowed to spend in fees. Once this limit exhausts, `User` cannot perform the authorized transaction 
 
 ```
 hid-noded tx feegrant grant <idp-addr> <user-addr> --spend-limit 1000uhid
@@ -528,7 +528,7 @@ List the fee allowances
 hid-noded q feegrant grants <user-addr>
 ```
 
-3. Generate a `MsgCreateDID` transaction and store it in a json file `tx.json`
+* Generate a `MsgCreateDID` transaction and store it in a json file `tx.json`
 
 ```
 hid-noded tx ssi create-did '{
@@ -551,7 +551,7 @@ hid-noded tx ssi create-did '{
 }' did:hs:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1 --ver-key <base64 encoded private key> --from <user-addr> --generate-only > tx.json
 ```
 
-4. Execute the `MsgCreateDID` transaction with fee paying account being **Identity Provider**
+* Execute the `MsgCreateDID` transaction with fee paying account being **Identity Provider**
 
 ```
 hid-noded tx authz exec tx.json --from <user-addr> --fee-account <idp-addr> --fees 50uhid
