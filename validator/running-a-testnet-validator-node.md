@@ -109,8 +109,8 @@ Having significant stake in the blockchain comes with reward in the form of toke
 ```
 hid-noded tx distribution withdraw-rewards <validator-addr> --from <validator-wallet-address>
 ```
-`<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)
-`<validator-wallet-address>` - Validator's wallet address from which they have stake tokens. (Prefix `hid`)
+- `<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)
+- `<validator-wallet-address>` - Validator's wallet address from which they have stake tokens. (Prefix `hid`)
 
 If you also want to withdraw validator commission, append the `--commission` flag to the above command.
 
