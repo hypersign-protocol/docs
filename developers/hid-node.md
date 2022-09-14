@@ -437,8 +437,19 @@ hid-noded keys add <name-of-the-key> --keyring-backed <os | test | file>
 
 Save the 24-word mnemonic which is generated in the terminal
 
-If you want to recover a wallet using a Bip39 Mnemonic, just add the `--recover` flag to the above command
+If you want to recover a wallet using a Bip39 Mnemonic, append the `--recover` flag to the above command
 
+- List all the keys present in a keyring backend
+
+```
+hid-noded keys list --keyring-backed <os | test | file>
+```
+
+- Delete a key
+
+```
+hid-noded keys delete <name-of-the-key> --keyring-backend <os | test | file>
+```
 
 # Common CLI Commands
 
