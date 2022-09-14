@@ -119,4 +119,4 @@ To check the outstanding validator rewards.
 ```
 hid-noded q distribution validator-outstanding-rewards <validator-addr>
 ```
-`<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)
+- `<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)

@@ -469,9 +469,9 @@ Run the following to transfer `uhid` between blockchain accounts
 hid-noded tx bank send <source-hid-account> <destination-hid-account> <amount-in-uhid> --chain-id <Chain ID>
 ```
 
-`<source-hid-account>` - Source blockchain address
-`<destination-hid-account>` - Destination blockchain address
-`<amount-in-uhid>` - Amount to be transferred. Example - `1000uhid`
+- `<source-hid-account>` - Source blockchain address
+- `<destination-hid-account>` - Destination blockchain address
+- `<amount-in-uhid>` - Amount to be transferred. Example - `1000uhid`
 
 ## Staking
 
