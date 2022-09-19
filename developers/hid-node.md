@@ -574,3 +574,21 @@ Run the following to transfer tokens between two accounts located on seperate ch
 ```sh
 hid-noded tx ibc-transfer transfer <source-ibc-port> <source-ibc-channel> <destination-chain-wallet-address> <amount> --from <source-chain-wallet-address> 
 ```
+
+# Architecture
+
+## Modes
+
+The `hid-node` can be run in three modes:
+
+### Full Node
+
+This node stores the complete state of blockchain. However, it does not actively participate in block validation. Every connected node is, by default, a full node.
+
+### Validator Node
+
+It is a full node, but it takes part in the block validation process
+
+### Seed Node
+
+It's purpose is to introduce newly connected nodes, to other nodes in the network, and disconnects after doing so.
