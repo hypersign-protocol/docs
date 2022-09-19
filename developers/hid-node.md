@@ -583,12 +583,21 @@ The `hid-node` can be run in three modes:
 
 ### Full Node
 
-This node stores the complete state of blockchain. However, it does not actively participate in block validation. Every connected node is, by default, a full node.
+This node stores the complete state of blockchain. However, it does not actively participate in the validation process. Every connected node is, by default, a full node.
 
 ### Validator Node
 
-It is a full node, but it takes part in the block validation process
+It is a full node, which has a significant stake in the network and activately takes part in the validation process.
 
 ### Seed Node
 
 It's purpose is to introduce newly connected nodes, to other nodes in the network, and disconnects after doing so.
+
+In order to run in seed mode, set `pex = true` and `seed_mode = true` in `<hid-node config dir>/config/config.toml`
+
+## Sentry Node Architecture
+
+In order to mitigate DDoS or similar attacks on the validator node, it is recommended to spin a full node, which will be connected to the full node. This architecture is known as **Sentry Node Architecture**.
+
+The Validator Node is isolated from the outside world, through private subnetting. The `Sentry` node is connected to the Validator Node. RPC Endpoint and Node ID of Sentry Node are exposed for everyone to connect with. Sentry Node can be thought of as a reverse proxy.
+
