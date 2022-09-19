@@ -577,7 +577,7 @@ hid-noded tx ibc-transfer transfer <source-ibc-port> <source-ibc-channel> <desti
 
 # Architecture
 
-## Modes
+## Modes of Operation
 
 The `hid-node` can be run in three modes:
 
