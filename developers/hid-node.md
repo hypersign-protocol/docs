@@ -583,7 +583,7 @@ The `hid-node` can be run in three modes:
 
 ### Full Node
 
-This node stores the complete state of blockchain. However, it does not actively participate in the validation process. Every connected node is, by default, a full node.
+This node stores the complete state of blockchain. However, it does not actively participate in the validation process. Every connected node is, by default, is a full node.
 
 ### Validator Node
 
