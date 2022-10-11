@@ -47,11 +47,11 @@ hid-noded init <moniker-name> --chain-id jagrat
 
 Configuration files of the node are stored in the default location: `$HOME/.hid-node`. If you want to specify a different location, append the flag `--home <hid-node-home-directory>` to the above command.
 
-* Replace `genesis.json` present in `<hid-node-home-directory>/config` with the Testnet genesis [here](https://github.com/hypersign-protocol/launch/blob/main/testnet/jagrat/final\_genesis.json).
-* Copy the final peers from [here](https://github.com/hypersign-protocol/launch/blob/main/testnet/jagrat/final\_peers.txt). Open `<hid-node-home-directory>/config/config.toml` and the add the peers in the field `persistent_peers`.
-* Set the `minimum-gas-price` in `<hid-node-home-directory>/config/app.toml`.
+* Replace `genesis.json` present in `<hid-node-home-directory>/config` with the Testnet genesis [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/jagrat/final_genesis.json).
+* Copy the final peers from [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/jagrat/final_peers.txt). Open `<hid-node-home-directory>/config/config.toml` and the add the peers in the field `persistent_peers`.
+* Set the `minimum-gas-price` in `<hid-node-home-directory>/config/app.toml` to `0.02uhid`.
 
-### Run Full Node using Cosmovisor
+### Set-up Full Node
 > Cosmovisor is a tool which will enable automatic upgrade of a blockchain, once a software upgrade governance proposal is passed. More information on Cosmovisor here.
 
 * Download and Install Cosmovisor
@@ -64,7 +64,7 @@ wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.2.0/
 
 ```
 export DAEMON_NAME=hid-noded
-export DAEMON_PATH=<Complete Path of Blockchain Binary>
+export DAEMON_PATH=$(which hid-noded)
 export DAEMON_HOME=<Blockchain Config Path Directory>/.hid-node  # Example: $HOME/.hid-node
 ```
 
@@ -75,11 +75,29 @@ mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
 cp $DAEMON_PATH $DAEMON_HOME/cosmovisor/genesis/bin
 ```
 
+### Run Full Node
+
+You can run cosmovisor in either of the following ways:
+
+**Standalone**
+
 * Start node using Cosmovisor
 
 ```
 cosmovisor run start
 ```
+> Note: `cosmovisor` looks for the environment variable `DAEMON_NAME` and `DAEMON_HOME`. Make sure to run the above command in the same terminal window where the said environment variables are set.
+
+**As a system service**
+
+- Change directory: `cd /etc/systemd/system`
+- Add the [Cosmovisor system service file](https://github.com/hypersign-protocol/hid-node/blob/main/contrib/hidnoded-cosmovisor.service) to `/etc/systemd/system` directory.
+- Open the system service file and make necessary changes in line 7, in case your `hid-node` config path is different.
+- Reload service files: `sudo systemctl daemon-reload`
+- To enable your service on every reboot: `sudo systemctl enable hidnoded-cosmovisor.service`
+- To start the service: `sudo systemctl start hidnoded-cosmovisor.service`
+- To check the status of service: `sudo systemctl status hidnoded-cosmovisor.service`
+- To restart the service: `sudo systemctl restart hidnoded-cosmovisor.service`
 
 ### Promotion of Full Node to Validator Node
 
