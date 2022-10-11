@@ -101,6 +101,7 @@ cosmovisor run start
 
 ### Promotion of Full Node to Validator Node
 
+* Perform these steps only when your node is completely **synced** with the testnet.
 * Acquire some **$HID** tokens. Use the faucet channel of Hypersign Protocol's Discord Server from [here](https://discord.com/channels/777575858075861033/1024638479818293318)
 * Perform the following validator creation transaction.
 
