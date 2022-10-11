@@ -51,15 +51,15 @@ hid-noded q gov proposal <Proposal ID>
 
 If the Software Upgrade proposal is `Passed`, then following steps are needed to be performed in order to upgrade your node.
 
-* Download and Install the latest binary.
+* Download and Install the **latest** binary.
 
 * Create the following directory structure
 
 ```
-mkdir -p <Binary Config Directory>/cosmovisor/upgrades/<Proposal Name>/bin
+mkdir -p <hid-node Config Directory>/cosmovisor/upgrades/<Proposal Name>/bin
 ```
 
-> Note: Make sure that `<Proposal Name>` matches exactly with Upgrade Proposal's name
+> Note: Make sure that `<Proposal Name>` matches exactly with Upgrade Proposal's name. Please note that `Proposal Name` is different from `Proposal Title`.
 
 * Copy the latest binary to the newly created directory
 
