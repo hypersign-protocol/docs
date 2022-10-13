@@ -130,14 +130,14 @@ hid-noded start
 ```
 hid-noded tx staking create-validator \
 --from <key-name> \
---amount 1000000000000uhid \
+--amount 1000000uhid \
 --pubkey "$(hid-noded tendermint show-validator)" \
 --chain-id jagrat \
 --moniker="<validator-name>" \
 --commission-max-change-rate=0.01 \
 --commission-max-rate=1.0 \
 --commission-rate=0.07 \
---min-self-delegation="500000000000" \
+--min-self-delegation="1000000" \
 --details="<enter details about your validator node or validation service>" \
 --security-contact="<contain details>" \
 --website="<your website>"
