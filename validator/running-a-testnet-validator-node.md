@@ -141,6 +141,7 @@ hid-noded tx staking create-validator \
 --details="<enter details about your validator node or validation service>" \
 --security-contact="<contain details>" \
 --website="<your website>"
+--fees="<Transaction fees in uhid. Example: 4000uhid>"
 ```
 
 ### Redeem Stake Rewards
