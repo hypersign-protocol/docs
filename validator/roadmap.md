@@ -16,7 +16,7 @@ git clone https://github.com/hypersign-protocol/hid-node.git
 
 ```bash
 cd hid-node
-git checkout v0.1.0 #v0.1.0 is the current testnet binary
+git checkout v0.1.1 #v0.1.1 is the current testnet binary
 make install
 ```
 
@@ -35,7 +35,7 @@ hid-noded version
 </strong><strong>
 </strong><strong># Get the list of tags: https://github.com/hypersign-protocol/hid-node/tags
 </strong><strong># Exclude the `v` prefix while entering
-</strong><strong>export TAG=0.1.0  # Latest Testnet Tag
+</strong><strong>export TAG=0.1.1  # Latest Testnet Tag
 </strong><strong>
 </strong><strong># Download the binary
 </strong><strong>wget https://github.com/hypersign-protocol/hid-node/releases/download/v${TAG}/hid-noded-${TAG}-${OS}-${ARCH}.tar.gz</strong></code></pre>
