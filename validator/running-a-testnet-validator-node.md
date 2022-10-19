@@ -45,7 +45,7 @@ hid-noded keys add <key-name> --recover
 hid-noded init <moniker-name> --chain-id jagrat
 ```
 
-Configuration files of the node are stored in the default location: `$HOME/.hid-node`. If you want to specify a different location, append the flag `--home <hid-node-home-directory>` to the above command.
+Configuration files of the node are stored in the default location: `$HOME/.hid-node`. If you want to specify a different location, append the flag `--home <hid-node-home-directory>` to the above command. In this case, for every transaction based commands, you have to explicitly pass this flag.
 
 * Replace `genesis.json` present in `<hid-node-home-directory>/config` with the Testnet genesis [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/jagrat/final_genesis.json).
 * Copy the final peers from [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/jagrat/final_peers.txt). Open `<hid-node-home-directory>/config/config.toml` and the add the peers in the field `persistent_peers`.
@@ -121,6 +121,23 @@ hid-noded start
     - To check the status of service: `sudo systemctl status hidnoded-cosmovisor.service`
     - To restart the service: `sudo systemctl restart hidnoded-cosmovisor.service`
 
+### Important Points
+
+If you haven't run any Tendermint-based chains before, please note the following points before moving to the upcoming sections below:
+
+- RPC and gRPC ports can be modified in `<blockchain-config-dir>/config/config.toml`
+- API port can be modified in `<blockchain-config-dir>/config/app.toml`
+- There are primarily two types of commands:
+  - Transaction based. It starts with `hid-noded tx ...`
+  - Query based. It starts with `hid-noded q ...`
+- Transaction based commands may/always require the following flags:
+  - `--chain-id jagrat`
+  - `--fees 4000uhid`: The value of fees is arbitrary, but it should be sufficiently high enough for the transaction to go through. `4000uhid` is an appropriate value for almost every transaction
+  - `--node <rpc-ip-or-dns:rpc-port>`: The node expects RPC to run on default port 26657. If your RPC port is different from default, you need to explicitly pass this flag. In case of default port, it can be skipped.
+- Query based commands may require the following flag:
+  - `--node <rpc-ip-or-dns:rpc-port>`: The node expects RPC to run on default port 26657. If your RPC port is different from default, you need to explicitly pass this flag. In case of default port, it can be skipped.
+- Learn more about Cosmos SDK's modules and their respective commands from [here](https://docs.cosmos.network/v0.45/modules/) 
+
 ### Promotion of Full Node to Validator Node
 
 * Perform these steps only when your node is completely **synced** with the testnet.
@@ -144,12 +161,12 @@ hid-noded tx staking create-validator \
 --fees="<Transaction fees in uhid. Example: 4000uhid>"
 ```
 
-### Redeem Stake Rewards
+### Redeeming Staked Rewards
 
 Having significant stake in the blockchain comes with reward in the form of tokens. The redemption of rewards needs to be done manually. Run the following to redeem rewards:
 
 ```
-hid-noded tx distribution withdraw-rewards <validator-addr> --from <validator-wallet-address>
+hid-noded tx distribution withdraw-rewards <validator-addr> --from <validator-wallet-address> --chain-id jagrat --fees <Transaction fees in uhid. Example: 4000uhid>
 ```
 - `<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)
 - `<validator-wallet-address>` - Validator's wallet address from which they have stake tokens. (Prefix `hid`)
@@ -161,4 +178,16 @@ To check the outstanding validator rewards.
 ```
 hid-noded q distribution validator-outstanding-rewards <validator-addr>
 ```
+
 - `<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)
+
+## Unjailing a validator node
+
+In Tendermint-based blockchain, if a node is not active for a certain period of time or if the current self stake falls below the minimum self stake, it is temporarily moved out of the validator set. This situation is called Jailing of a validator. The validator remains in the jailed period for about 10 minutes.
+
+The validator can only be unjailed manually through a transaction after the jailed period is over and if the current self stake is above the required self stake at the time the time of performing the following unjail transaction:
+
+```
+hid-noded tx slashing unjail --from <validator-associated-wallet-address> --chain-id jagrat --fees <amount-in-uhid>
+```
+

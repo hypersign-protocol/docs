@@ -43,25 +43,3 @@ Example:
 ```
 hid-noded tx gov submit-proposal param-change "<path-of-proposal-json-file>" --from <key-name> --yes
 ```
-
-* Query the list of proposals
-
-```
-hid-noded q gov proposals
-```
-
-Proposal IDs start with `1`, which means that the first proposal submitted on chain, would have the proposal ID, and subsequent proposals will have their ID incremented by `1`.
-
-* Run the following to vote on the proposal
-
-```
-hid-noded tx gov vote <Proposal ID> <Vote=(yes|no|abstain|no_with_veto)> \
---from <wallet-address> \
---chain-id <Chain ID>
-```
-
-* You can check the status of the proposal
-
-```
-hid-noded q gov proposal <Proposal ID>
-```
