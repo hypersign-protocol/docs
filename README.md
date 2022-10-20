@@ -19,5 +19,5 @@ The Hypersign Identity Network is built using [Cosmos-SDK](https://tendermint.co
 {% endcontent-ref %}
 
 {% content-ref url="./governance/introduction.md" %}
-[introduction.md](introduction.md)
+[Governance](introduction.md)
 {% endcontent-ref %}
