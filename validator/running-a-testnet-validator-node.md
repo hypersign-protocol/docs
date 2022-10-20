@@ -123,7 +123,7 @@ hid-noded start
 
 ### Important Points
 
-If you haven't run any Tendermint-based chains before, please note the following points before moving to the upcoming sections below:
+If you haven't run any Tendermint-based chains before, please note the following points before moving to the upcoming sections below:-
 
 - RPC and gRPC ports can be modified in `<blockchain-config-dir>/config/config.toml`
 - API port can be modified in `<blockchain-config-dir>/config/app.toml`
