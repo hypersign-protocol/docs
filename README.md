@@ -10,26 +10,14 @@ The Hypersign Identity Network is built using [Cosmos-SDK](https://tendermint.co
 
 ## Blockchain Explorers
 
-**Testnet Explorer (Jagrat)**: https://explorer.hypersign.id/hypersign-testnet
+[Testnet Explorer (Jagrat)](https://explorer.hypersign.id/hypersign-testnet)
 
 ## Sections
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="./validator/running-a-testnet-validator-node.md" %}
+[running-a-testnet-validator-node.md](running-a-testnet-validator-node.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="./governance/introduction.md" %}
+[introduction.md](introduction.md)
 {% endcontent-ref %}
