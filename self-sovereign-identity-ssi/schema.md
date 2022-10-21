@@ -64,13 +64,19 @@ hid-noded query ssi schema sch:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8D
 
 **REST**
 
-1. Query a schema document for given schema id:
+1. Query a specific version of schema document for given schema id:
 
 ```
-http://<REST-URL>/hypersign-protocol/hidnode/ssi/schema/{schemaId}
+http://<REST-URL>/hypersign-protocol/hidnode/ssi/schema/sch:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf:1.0
 ```
 
-2. Query a list of registered schema documents:
+2. Query all versions of a schema document:
+
+```
+http://<REST-URL>/hypersign-protocol/hidnode/ssi/schema/sch:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf
+```
+
+3. Query a list of registered schema documents:
 
 ```
 http://<REST-URL>/hypersign-protocol/hidnode/ssi/schema

@@ -31,6 +31,14 @@ Following are the VC statuses supported by `hid-node`:
 - **Revoked**
 - **Expired**
 
+**NOTE**: VC Statuses are **case sensetive**. `Live` is valid, while `live` is invalid
+
+### Status Change Rules
+
+- Unregistered VC Status Document should only have the status as `Live`
+- `Suspended` status can be changed to `Revoked` and `Live`
+- `Revoked` and `Expired` statuses cannot be changed
+
 ## Supported Hash Algorithm
 
 Following are the supported hash algorithms for the attribute `credentialHash`:
