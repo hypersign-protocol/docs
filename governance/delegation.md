@@ -1,6 +1,6 @@
 # Delegation
 
-Users can stake their `$HID` tokens with Validators to earn incentives. Having stake in the networks enables them to participate and vote on governance proposals. It is **highly recommended** to research about the background of a Validator before staking. If a validator happens to get slashed, delegated tokens are subject to slashing as well 
+Users can stake their `$HID` tokens with Validators to earn incentives. Having stake in the network enables them to participate and vote on governance proposals. It is **highly recommended** to research about the background of a Validator before staking. If a validator happens to get slashed, delegated tokens are subject to slashing as well 
 
 ## Staking HID
 
