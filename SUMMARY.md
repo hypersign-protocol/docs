@@ -4,7 +4,7 @@
 
 ## 💻 Validator
 
-* [Installation of Node](validator/roadmap.md)
+* [Installation of Node](validator/installation-of-node.md)
 * [Running a Localnet](validator/running-a-localnet.md)
 * [Running a Testnet Validator Node](validator/running-a-testnet-validator-node.md)
 
