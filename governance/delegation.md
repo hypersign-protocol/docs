@@ -38,4 +38,4 @@ If you want to remove partial/complete stake from a validator, run the following
 hid-noded tx staking unbond <Validator's Operator Address> <Amount of tokens to unbond in 'uhid'> --from <your wallet address> --chain-id <Chain ID of the network>
 ```
 
-**Note**: Unline Stake Redelegation, it takes 7 days for tokens to move back in the wallet. 
+**Note**: Unlike Stake Redelegation, it takes 7 days for tokens to move back in the wallet. 
