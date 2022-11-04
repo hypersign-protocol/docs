@@ -25,7 +25,7 @@
   * [Credential Revocation Registry](self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
 * [Verifiable Presentation (VP)](self-sovereign-identity-ssi/verifiable-presentation-vp.md)
 
-## 👩💻 👩💻 👩💻 Developers
+## 👩💻  Developers
 
 * [HID Node](developers/hid-node.md)
 * [HID-SSI-SDK](developers/hid-ssi-sdk.md)
