@@ -2,13 +2,13 @@
 
 ## Proposal Structure
 
-| Field | Description |
-| :--------------: | :----: |
-|   **name**   |  Name of the Upgrade |
-|   **title**   |  Title of the proposal |
-|   **description**  |  Description of the proposal |
-|   **upgrade-height**  |  Height at which node upgrade should happen |
-|   **deposit**      | Deposit for the proposal (in `uhid`) |
+|        Field       |                 Description                |
+| :----------------: | :----------------------------------------: |
+|      **name**      |             Name of the Upgrade            |
+|      **title**     |            Title of the proposal           |
+|   **description**  |         Description of the proposal        |
+| **upgrade-height** | Height at which node upgrade should happen |
+|     **deposit**    |    Deposit for the proposal (in `uhid`)    |
 
 ## Submitting Node Upgrade Proposal
 
@@ -30,7 +30,6 @@ hid-noded tx gov submit-proposal software-upgrade <Proposal Name> \
 If the Software Upgrade proposal is `Passed`, then following steps are needed to be performed in order to upgrade your node.
 
 * Download and Install the **latest** binary.
-
 * Create the following directory structure
 
 ```
