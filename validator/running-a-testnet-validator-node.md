@@ -181,7 +181,7 @@ hid-noded q distribution validator-outstanding-rewards <validator-addr>
 
 * `<validator-addr>` - Validator's Operator address. (Prefix is `hidvaloper`)
 
-## Unjailing a validator node
+### Unjailing a validator node
 
 In Tendermint-based blockchain, if a node is not active for a certain period of time or if the current self stake falls below the minimum self stake, it is temporarily moved out of the validator set. This situation is called Jailing of a validator. The validator remains in the jailed period for about 10 minutes.
 
