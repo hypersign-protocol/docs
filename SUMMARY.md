@@ -10,11 +10,11 @@
 
 ## 🗳 Governance
 
-* [Introduction](governance/introduction.md)
-* [Blockchain Node Upgrade](governance/blockchain-node-upgrade.md)
-* [Submitting Community Pool Spend Proposal](governance/submitting-community-pool-spend-proposal.md)
-* [Submitting Blockchain Parameter Change Proposal](governance/submitting-blockchain-parameter-change-proposal.md)
-* [Submitting Text Proposal](governance/submitting-text-proposal.md)
+* [Proposals](governance/proposals/README.md)
+  * [Blockchain Node Upgrade](governance/proposals/blockchain-node-upgrade.md)
+  * [Submitting Community Pool Spend Proposal](governance/proposals/submitting-community-pool-spend-proposal.md)
+  * [Submitting Blockchain Parameter Change Proposal](governance/proposals/submitting-blockchain-parameter-change-proposal.md)
+  * [Submitting Text Proposal](governance/proposals/submitting-text-proposal.md)
 
 ## 🆔 Self Sovereign Identity (SSI)
 
@@ -24,7 +24,7 @@
   * [Credential Revocation Registry](self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
 * [Verifiable Presentation (VP)](self-sovereign-identity-ssi/verifiable-presentation-vp.md)
 
-## 👩💻 👩💻 Developers
+## 👩💻 👩💻 👩💻 Developers
 
 * [HID Node](developers/hid-node.md)
 * [HID-SSI-SDK](developers/hid-ssi-sdk.md)
