@@ -12,9 +12,9 @@
 
 * [Proposals](governance/proposals/README.md)
   * [Blockchain Node Upgrade](governance/blockchain-node-upgrade.md)
-  * [Submitting Community Pool Spend Proposal](governance/submitting-community-pool-spend-proposal.md)
-  * [Submitting Blockchain Parameter Change Proposal](governance/submitting-blockchain-parameter-change-proposal.md)
-  * [Submitting Text Proposal](governance/submitting-text-proposal.md)
+  * [Community Pool Spend Proposal](governance/submitting-community-pool-spend-proposal.md)
+  * [Blockchain Parameter Change Proposal](governance/submitting-blockchain-parameter-change-proposal.md)
+  * [Text Proposal](governance/submitting-text-proposal.md)
 * [Delegation](governance/delegation.md)
 
 ## 🆔 Self Sovereign Identity (SSI)
