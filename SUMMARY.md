@@ -31,6 +31,10 @@
 * [HID-SSI-SDK](developers/hid-ssi-sdk.md)
 * [Github](https://github.com/hypersign-protocol/)
 
+## 🆔 Entity Studio
+
+* [Introduction](entity-studio/introduction.md)
+
 ## 🌐 Ecosystem
 
 * [🔍 HID Explorer](https://explorer.hypersign.id/hypersign-devnet)
