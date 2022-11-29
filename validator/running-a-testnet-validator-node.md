@@ -53,7 +53,7 @@ Configuration files of the node are stored in the default location: `$HOME/.hid-
 
 ### Run Full Node
 
-**NOTE: The network is live since 28th September 2022, and have since gone through two governance based upgrades. Hence, it's highly advisable to use State Sync. Please donot rely on Foundation Node for state sync, as we don't provide the service yet.**
+**NOTE: The network is live since 28th September 2022, and have gone through two governance based upgrades. Hence, it's highly advisable to use State Sync. Please donot rely on Foundation Node for state sync, as we don't provide the service yet.**
 
 The node can be run in either of the following ways:
 
