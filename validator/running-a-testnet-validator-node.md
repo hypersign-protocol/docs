@@ -53,6 +53,8 @@ Configuration files of the node are stored in the default location: `$HOME/.hid-
 
 ### Run Full Node
 
+**NOTE: The network is live since 28th September 2022, and have since gone through two governance based upgrades. Hence, it's highly advisable to use State Sync. Please donot rely on Foundation Node for state sync, as we don't provide the service yet.**
+
 The node can be run in either of the following ways:
 
 **Standalone**
@@ -75,8 +77,6 @@ hid-noded start
   * To restart the service: `sudo systemctl restart hidnoded-standalone.service`
 
 **Cosmovisor**
-
-**NOTE: The network is live since 28th September 2022, and have since gone through two governance based upgrades. Hence, it's highly advisable to use State Sync. Please donot rely on Foundation Node for state sync, as we don't provide the service yet.**
 
 > Cosmovisor is a tool which will enable automatic upgrade of a blockchain, once a software upgrade governance proposal is passed. More information on Cosmovisor [here](https://docs.cosmos.network/v0.45/run-node/cosmovisor.html).
 
