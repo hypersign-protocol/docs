@@ -76,6 +76,8 @@ hid-noded start
 
 **Cosmovisor**
 
+**NOTE: The network is live since 28th September 2022, and have since gone through two governance based upgrades. Hence, it's highly advisable to use State Sync. Please donot rely on Foundation Node for state sync, as we don't provide the service yet.**
+
 > Cosmovisor is a tool which will enable automatic upgrade of a blockchain, once a software upgrade governance proposal is passed. More information on Cosmovisor [here](https://docs.cosmos.network/v0.45/run-node/cosmovisor.html).
 
 > Use this approach only if you already have some basic understanding or experience in running Cosmovisor.
