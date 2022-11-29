@@ -3,11 +3,11 @@
 ### Hardware Requirements
 
 * **Minimal**
-  * 4 GB RAM
+  * 8 GB RAM
   * 250 GB SSD Storage
   * 1.4 GHz x2 CPU
 * **Recommended**
-  * 8 GB RAM
+  * 16 GB RAM
   * 500 GB SSD Storage
   * 2.0 GHx x4 CPU
 
