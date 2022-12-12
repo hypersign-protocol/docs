@@ -10,7 +10,7 @@ sch:hid:<chain-namespace>:<method-specific-id>:<version-number>
 
 - `sch:hid` - Schema Method, where `sch` is the document identifier and `hid` is the method name
 - `<chain-namespace>` - *(Optional)* Name of the blockchain where the schema document is registered. It is omitted for the document registered on mainnet chain
-- `<method-specific-id>` - Multibase-encoded unique identifier of length 45
+- `<method-specific-id>` - Alpha-numeric string of minimum 32 character length
 - `<version-number>` - Model version of schema. For instance, `1.0`, `1.1` and `2.1`
 
 ## Schema Operations
@@ -18,8 +18,7 @@ sch:hid:<chain-namespace>:<method-specific-id>:<version-number>
 - **Transaction Based**
   - Register/Update a Schema Document
 - **Query Based**
-  - Query a Schema Document
-  - Query Registered Schema Documents
+  - Query Schema Document(s)
 
 ## Usage
 
