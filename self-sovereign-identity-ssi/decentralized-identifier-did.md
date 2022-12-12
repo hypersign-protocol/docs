@@ -10,7 +10,7 @@ The `did:hid` method are as follows:
 did                = "did:" method-name ":" [chain-namespace] ":" method-specific-id
 method-name        = "hid"
 chain-namespace    = ALPHA / DIGIT
-method-specific-id = 45 * id-char
+method-specific-id = Minimum 32 Length alphanumeric string
 id-char            = ALPHA / DIGIT
 ```
 
@@ -21,6 +21,11 @@ id-char            = ALPHA / DIGIT
 - `<chain-namespace>` - *(Optional)* Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
 - `<method-specific-id>` - Multibase-encoded unique identifier of length 45
 
+## Supported Digital Signature Algorithms
+
+- **ed25519**
+- **secp256k1**
+
 ## Supported DID Method Operations
 
 The `did:hid` method supports the following operations:
@@ -30,10 +35,9 @@ The `did:hid` method supports the following operations:
   - Update a DID document
   - Deactivate a DID document
 - **Query Based**:
-  - Query a DID Document
-  - Query registered DID Documents
+  - Query DID Document(s)
 
-## Usage
+## CLI Usage
 
 ### Register DID
 
@@ -41,14 +45,13 @@ The `did:hid` method supports the following operations:
 
 ```
 Usage:
-  hid-noded tx ssi create-did [did-doc-string] [verification-method-id] [flags]
+  hid-noded tx ssi create-did [did-doc-string] [vm-id-1] [sign-key-1] [sign-key-algo-1] ... [vm-id-N] [sign-key-N] [sign-key-algo-N] [flags]
 
 Params:
  - did-doc-string : Did Document String
- - verification-method-id : Id of verification Method Key
-
-Flags:
- - ver-key : Private Key of the Signer
+ - vm-id-N : Verification Method Id
+ - sign-key-N : Base64-encoded signing key
+ - sign-key-algo-N: Supported Signing Key Algorithm
 ```
 
 **Example**
@@ -60,35 +63,35 @@ hid-noded tx ssi create-did '{
 "https://w3id.org/security/v1",
 "https://schema.org"
 ],
-"id": "did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4",
-"controller": ["did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4"],
-"alsoKnownAs": ["did:hid:<chain-namespace>:1f49341a-de30993e6c52"],
+"id": "did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4",
+"controller": ["did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4"],
+"alsoKnownAs": ["did:hid:devnet:1f49341a-de30993e6c52"],
 "verificationMethod": [
 {
-"id": "did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1",
+"id": "did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1",
 "type": "Ed25519VerificationKey2020",
-"controller": "did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4",
+"controller": "did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4",
 "publicKeyMultibase": "z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4"
 }
 ],
 "service": [{
-"id":"did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#vcs",
+"id":"did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#vcs",
 "type": "LinkedDomains",
 "serviceEndpoint": "http://example.onion"
 },
 {
-"id":"did:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#file",
+"id":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#file",
 "type": "LinkedDomains",
 "serviceEndpoint": "http://service.onion"
 }
 ],
 "authentication": [
-"did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1"
+"did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1"
 ],
 "assertionMethod": [
-"did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1"
+"did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1"
 ]
-}' did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1 --ver-key <base64-encoded-private-key> --from <key-name-or-address> --chain-id <Chain ID> --yes
+}' did:hid:devnet:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1 <base64-encoded-private-key> ed25519 --from <key-name-or-address> --chain-id <Chain ID> --yes
 ```
 
 ### Query DID
