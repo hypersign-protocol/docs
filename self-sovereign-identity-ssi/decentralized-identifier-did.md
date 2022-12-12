@@ -295,7 +295,7 @@ Usage:
 
 Params:
  - did-doc-string : Did Document String
- - version-id : Version ID of the latest DID Document
+ - version-id : Version ID of the DID Document to be updated. It is expected that version Id should match latest DID Document's version Id
  - vm-id-N : Verification Method Id
  - sign-key-N : Base64-encoded signing key
  - sign-key-algo-N: Supported Signing Key Algorithm
@@ -333,19 +333,18 @@ hid-noded tx ssi update-did '{
 
 ```
 Usage:
-  hid-noded tx ssi deactivate-did [did-id] [version-id] [verification-method-id] [flags]
+  hid-noded tx ssi deactivate-did [did-id] [version-id] [vm-id-1] [sign-key-1] [sign-key-algo-1] ... [vm-id-N] [sign-key-N] [sign-key-algo-N]
 
 Params:
  - did-id : DID Document ID
  - version-id : Version ID of the DID Document to be deactivated. It is expected that version Id should match latest DID Document's version Id
- - verification-method-id : Id of verification Method Key
-
-Flags:
- - --ver-key : Private Key of the Signer
+ - vm-id-N : Verification Method Id
+ - sign-key-N : Base64-encoded signing key
+ - sign-key-algo-N: Supported Signing Key Algorithm
 ```
 
 **Example**
 
 ```sh
-hid-noded tx ssi deactivate-did 'did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4' <version-id> did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1 --ver-key <private-key> --from <key-name-or-address> --chain-id <Chain Id> --yes
+hid-noded tx ssi deactivate-did 'did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4' <version-id> did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1 <private-key> ed25519 --from <key-name-or-address> --chain-id <Chain Id> --yes
 ```
