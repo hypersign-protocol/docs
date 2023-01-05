@@ -8,6 +8,14 @@ The Hypersign Identity Network is a permissionless blockchain network to manage 
 
 The Hypersign Identity Network is built using [Cosmos-SDK](https://tendermint.com/sdk/) and is fully compatible with [W3C DID specifications](https://www.w3.org/TR/did-core/).
 
+## Public Endpoints
+
+|  Type  |   Link  |
+| ------ | ------- |
+|  RPC   | https://rpc.jagrat.hypersign.id/ |
+|  API   | https://api.jagrat.hypersign.id/ |
+|  gRPC  | https://grpc.jagrat.hypersign.id:5099/|
+
 ## Blockchain Explorers
 
 [Testnet Explorer (Jagrat)](https://explorer.hypersign.id/hypersign-testnet)
