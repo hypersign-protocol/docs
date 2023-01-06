@@ -10,7 +10,7 @@ Note: `did:hid` DID scheme is yet to be offcially registered on [W3C DID registr
 
 ## What is a DID?
 
-As per [W3C DID v1.0 specification document](https://www.w3.org/TR/did-core/): 
+As per [W3C DID v1.0 specification document](https://www.w3.org/TR/did-core/):
 
 > Decentralized identifiers (DIDs) are a new type of identifier that enables verifiable, decentralized digital identity. A DID refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID.
 
@@ -21,22 +21,22 @@ In simple words, decentralised identifiers are cryptographically-verifiable iden
 Is a javascript library to interact with Hypersign DID and to perform onchain and offchain operations.
 
 ## Table of Contents
-- [Install The Package](#install-the-package)
-- [Import The Package](#import-the-package)
-- [OffChain APIs](#offchain-apis)
-    - [Initialize Instance of HypersignDID](#initialize-instance-of-hypersigndid)
-    - [generateKeys()](#generatekeys)
-    - [generate()](#generate)
-    - [sign()](#sign)
-    - [verify()](#verify)
-- [OnChain APIs](#onchain-apis)
-    - [Initialize Instance of HypersignDID with offlineSigner](#initialize-with-offlinesigner)
-    - [register()](#register)
-    - [resolve()](#resolve)
-    - [update()](#update)
-    - [deactivate()](#deactivate)
-- [Security Concerns](#security)
 
+* [Install The Package](hypersign-decentralized-identifier-dids.md#install-the-package)
+* [Import The Package](hypersign-decentralized-identifier-dids.md#import-the-package)
+* [OffChain APIs](hypersign-decentralized-identifier-dids.md#offchain-apis)
+  * [Initialize Instance of HypersignDID](hypersign-decentralized-identifier-dids.md#initialize-instance-of-hypersigndid)
+  * [generateKeys()](hypersign-decentralized-identifier-dids.md#generatekeys)
+  * [generate()](hypersign-decentralized-identifier-dids.md#generate)
+  * [sign()](hypersign-decentralized-identifier-dids.md#sign)
+  * [verify()](hypersign-decentralized-identifier-dids.md#verify)
+* [OnChain APIs](hypersign-decentralized-identifier-dids.md#onchain-apis)
+  * [Initialize Instance of HypersignDID with offlineSigner](hypersign-decentralized-identifier-dids.md#initialize-with-offlinesigner)
+  * [register()](hypersign-decentralized-identifier-dids.md#register)
+  * [resolve()](hypersign-decentralized-identifier-dids.md#resolve)
+  * [update()](hypersign-decentralized-identifier-dids.md#update)
+  * [deactivate()](hypersign-decentralized-identifier-dids.md#deactivate)
+* [Security Concerns](hypersign-decentralized-identifier-dids.md#security)
 
 ## Install The Package
 
@@ -46,7 +46,7 @@ npm i hid-ssi-sdk --save
 
 ## Import The Package
 
-```js
+```javascript
 import { HypersignDID } from 'hid-ssi-sdk';
 ```
 
@@ -54,7 +54,7 @@ import { HypersignDID } from 'hid-ssi-sdk';
 
 ### Initialize Instance of HypersignDID
 
-```js
+```javascript
 const hypersignDID = new HypersignDID();
 
 // OR initialize by passing a namepace. Default 'did:hid'
@@ -69,46 +69,50 @@ Generate a new key pair of type `Ed25519VerificationKey2020`
 
 **API Definition**
 
-```js
+```javascript
 generateKeys(params: { seed?: string }): Promise<{ privateKeyMultibase: string; publicKeyMultibase: string }>;
 ```
 
 **Usage**
 
-```js
+```javascript
 const kp = await hypersignDID.generateKeys();
 
 // OR pass a seed / mnemonic to generated deterministic key pair
 const seed = Bip39.decode("three image merge verb tenant tree modify million hotel decade hurt alien loop illegal day judge beyond anxiety term there improve mad gossip car")
 const kp = await hypersignDID.generateKeys({seed});
 ```
+
 **Outputs**
 
-```js
+```javascript
 {
   privateKeyMultibase: 'zrv5GBX5VGiyxUS6iWyRHDWVYSkKEGk8Qsmuj9GBJQK8KMFPVrReX1rBKHoFqgf2HGwYqVzH92pwnqbxhDAJNqsa668',
   publicKeyMultibase: 'z6MkhHLrnL288X2dXRBVQ9KUDRi8LLUb6sb7zo1oUUjEqTVN'
 }
 ```
+
 // TODO: It should also outputs algorithm
 
-### `generate()` 
+### `generate()`
 
 Generates a new DID Document
 
 **API Definition**
 
-```js
+```javascript
 generate(params: { publicKeyMultibase: string }): Promise<object>;
 ```
+
 **Usage**
 
-```js
+```javascript
 const didDocument = await hypersignDID.generate({ publicKeyMultibase });
 ```
+
 **Outputs**
 
-```js
+```javascript
 {
   '@context': [ 'https://www.w3.org/ns/did/v1' ],
   id: 'did:hid:testnet:z3q5pC5mgnyYAQvLniaMdNLA8WmCjgzLmJn6seCmDvEhz',
@@ -142,11 +146,12 @@ const didDocument = await hypersignDID.generate({ publicKeyMultibase });
 ```
 
 ### `sign()`
-Sing a DID Document and generated proof 
+
+Sing a DID Document and generated proof
 
 **API Definition**
 
-```js
+```javascript
 sign(params: {
     didDocument: object;            // A DID Document to signed
     privateKeyMultibase: string;    // private key mulibase of type ED25519
@@ -159,7 +164,7 @@ sign(params: {
 
 **Usage**
 
-```js
+```javascript
 const params = {
       privateKey: privateKeyMultibase, 
       challenge: '1231231231', 
@@ -173,7 +178,8 @@ const signedDocument = await hypersignDID.sign(params);
 ```
 
 **Outputs**
-```json
+
+```javascript
 {
     "@context": [
       "https://www.w3.org/ns/did/v1",
@@ -228,7 +234,7 @@ Verifies a signed DID Document.
 
 **API Definition**
 
-```js
+```javascript
 verify(params: { 
   didDocument: object;            // Signed did documen
   verificationMethodId: string;   // The verification method
@@ -236,9 +242,10 @@ verify(params: {
   domain?: string                 // The domain name
 }): Promise<object>;
 ```
+
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.verify({
       didDocument: signedDocument, 
       verificationMethodId, 
@@ -249,7 +256,7 @@ const result = await hypersignDID.verify({
 
 **Outputs**
 
-```json
+```javascript
 {
     "verified": true,
     "results": [
@@ -290,10 +297,11 @@ const result = await hypersignDID.verify({
 
 ## Onchain APIs
 
-### Initialize with offlineSigner 
+### Initialize with offlineSigner
 
 **Create Instance of the class**
-```js
+
+```javascript
 const hypersignDid = new HypersignDID({
     offlineSigner,                    // OPTIONAL signer of type OfflineSigner
     nodeRestEndpoint: hidNodeEp.rest, // OPTIONAL RPC endpoint of the Hypersign blockchain, Default 'TEST'
@@ -306,9 +314,10 @@ const hypersignDid = new HypersignDID({
     offlineSigner
 })
 ```
+
 **Call `init()` to initalize the offlineSigner**
 
-```js
+```javascript
 await hypersignDid.init();
 ```
 
@@ -318,16 +327,17 @@ Registers a DID and DIDDocument on blockchain
 
 **API Definition**
 
-```js
+```javascript
 register(params: { 
   didDocument: object; 
   privateKeyMultibase: string; 
   verificationMethodId: string
 }): Promise<object>;
 ```
+
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.register({ 
   didDocument, 
   privateKeyMultibase, 
@@ -336,7 +346,8 @@ const result = await hypersignDID.register({
 ```
 
 **Outputs**
-```js
+
+```javascript
 {
   code: 0,
   height: 1432291,
@@ -353,15 +364,16 @@ Resolves a DID document from blockchain provided the DID.
 
 **API Definition**
 
-```js
+```javascript
 resolve(params: { 
   did: string; 
   ed25519verificationkey2020?: boolean 
 }): Promise<object>;
 ```
+
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.resolve({
       did,
 });
@@ -369,7 +381,7 @@ const result = await hypersignDID.resolve({
 
 **Outputs**
 
-```js
+```javascript
 {
   didDocument: {
     '@context': [ 'https://www.w3.org/ns/did/v1' ],
@@ -414,7 +426,7 @@ Updates the DID document on blockchain
 
 **API Definition**
 
-```js
+```javascript
 update(params: {
     didDocument: object;
     privateKeyMultibase: string;
@@ -425,7 +437,7 @@ update(params: {
 
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.update({
   didDocument,
   privateKeyMultibase,
@@ -436,7 +448,7 @@ const result = await hypersignDID.update({
 
 **Outputs**
 
-```js
+```javascript
 {
   code: 0,
   height: 1432293,
@@ -453,7 +465,7 @@ Deactivates the DID document on blockchain
 
 **API Definition**
 
-```js
+```javascript
 deactivate(params: {
     didDocument: object;
     privateKeyMultibase: string;
@@ -461,9 +473,10 @@ deactivate(params: {
     versionId: string;
   }): Promise<object>;
 ```
+
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.deactivate({
       didDocument,
       privateKeyMultibase,
@@ -474,7 +487,7 @@ const result = await hypersignDID.deactivate({
 
 **Outputs**
 
-```js
+```javascript
 {
   code: 0,
   height: 1432295,
