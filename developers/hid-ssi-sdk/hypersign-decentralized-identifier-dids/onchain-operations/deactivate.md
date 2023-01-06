@@ -1,11 +1,10 @@
 # deactivate()
 
-
 Deactivates the DID document on blockchain
 
 **API Definition**
 
-```js
+```javascript
 deactivate(params: {
     didDocument: object;
     privateKeyMultibase: string;
@@ -13,9 +12,10 @@ deactivate(params: {
     versionId: string;
   }): Promise<object>;
 ```
+
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.deactivate({
       didDocument,
       privateKeyMultibase,
@@ -25,7 +25,8 @@ const result = await hypersignDID.deactivate({
 ```
 
 **Outputs**
-```js
+
+```javascript
 {
   code: 0,
   height: 1432295,

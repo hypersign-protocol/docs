@@ -1,11 +1,10 @@
 # update()
 
-
 Updates the DID document on blockchain
 
 **API Definition**
 
-```js
+```javascript
 update(params: {
     didDocument: object;
     privateKeyMultibase: string;
@@ -16,7 +15,7 @@ update(params: {
 
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.update({
   didDocument,
   privateKeyMultibase,
@@ -27,7 +26,7 @@ const result = await hypersignDID.update({
 
 **Outputs**
 
-```js
+```javascript
 {
   code: 0,
   height: 1432293,

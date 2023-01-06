@@ -1,10 +1,10 @@
 # Onchain Operations
 
-
-### Initialize with offlineSigner 
+### Initialize with offlineSigner
 
 **Create Instance of the class**
-```js
+
+```javascript
 const hypersignDid = new HypersignDID({
     offlineSigner,                    // OPTIONAL signer of type OfflineSigner
     nodeRestEndpoint: hidNodeEp.rest, // OPTIONAL RPC endpoint of the Hypersign blockchain, Default 'TEST'
@@ -17,8 +17,9 @@ const hypersignDid = new HypersignDID({
     offlineSigner
 })
 ```
+
 **Call `init()` to initalize the offlineSigner**
 
-```js
+```javascript
 await hypersignDid.init();
 ```

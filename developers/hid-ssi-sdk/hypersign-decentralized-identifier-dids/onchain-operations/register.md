@@ -1,20 +1,20 @@
 # register()
 
-
 Registers a DID and DIDDocument on blockchain
 
 **API Definition**
 
-```js
+```javascript
 register(params: { 
   didDocument: object; 
   privateKeyMultibase: string; 
   verificationMethodId: string
 }): Promise<object>;
 ```
+
 **Usage**
 
-```js
+```javascript
 const result = await hypersignDID.register({ 
   didDocument, 
   privateKeyMultibase, 
@@ -23,7 +23,8 @@ const result = await hypersignDID.register({
 ```
 
 **Outputs**
-```js
+
+```javascript
 {
   code: 0,
   height: 1432291,
