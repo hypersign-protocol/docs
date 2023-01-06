@@ -30,15 +30,16 @@ hid-noded version
 
 * Export the environment variables according to your Operating System and Architecture, and install the binary
 
-<pre class="language-bash"><code class="lang-bash"><strong>export OS=&#x3C;operating-system>
-</strong><strong>export ARCH=&#x3C;system-architecture>
-</strong><strong>
-</strong><strong># Get the list of tags: https://github.com/hypersign-protocol/hid-node/tags
-</strong><strong># Exclude the `v` prefix while entering
-</strong><strong>export TAG=0.1.2  # Latest Testnet Tag
-</strong><strong>
-</strong><strong># Download the binary
-</strong><strong>wget https://github.com/hypersign-protocol/hid-node/releases/download/v${TAG}/hid-noded-${TAG}-${OS}-${ARCH}.tar.gz</strong></code></pre>
+<pre class="language-bash"><code class="lang-bash">export OS=&#x3C;operating-system>
+<strong>export ARCH=&#x3C;system-architecture>
+</strong>
+<strong># Get the list of tags: https://github.com/hypersign-protocol/hid-node/tags
+</strong># Exclude the `v` prefix while entering
+<strong>export TAG=0.1.2  # Latest Testnet Tag
+</strong>
+<strong># Download the binary
+</strong>wget https://github.com/hypersign-protocol/hid-node/releases/download/v${TAG}/hid-noded-${TAG}-${OS}-${ARCH}.tar.gz
+</code></pre>
 
 Refer the following table to obtain the environment variables for your system configuration.
 
