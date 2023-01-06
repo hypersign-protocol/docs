@@ -25,11 +25,21 @@
   * [Credential Revocation Registry](self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
 * [Verifiable Presentation (VP)](self-sovereign-identity-ssi/verifiable-presentation-vp.md)
 
-## 👩💻 👩💻 Developers
+## 👩💻 👩💻 👩💻 Developers
 
 * [HID Node](developers/hid-node.md)
 * [HID-SSI-SDK](developers/hid-ssi-sdk/README.md)
-  * [Hypersign Decentralized Identifier (DIDs)](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
+  * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/README.md)
+    * [OffChain Operations](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/offchain-operations/README.md)
+      * [generateKeys()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/offchain-operations/generatekeys.md)
+      * [generate()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/offchain-operations/generate.md)
+      * [sign()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/offchain-operations/sign.md)
+      * [verify()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/offchain-operations/verify.md)
+    * [Onchain Operations](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/onchain-operations/README.md)
+      * [register()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/onchain-operations/register.md)
+      * [resolve()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/onchain-operations/resolve.md)
+      * [update()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/onchain-operations/update.md)
+      * [deactivate()](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids/onchain-operations/deactivate.md)
 * [Github](https://github.com/hypersign-protocol/)
 
 ## 🆔 Entity Studio
