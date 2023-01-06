@@ -1,10 +1,11 @@
 # verify()
 
+
 Verifies a signed DID Document.
 
 **API Definition**
 
-```javascript
+```js
 verify(params: { 
   didDocument: object;            // Signed did documen
   verificationMethodId: string;   // The verification method
@@ -12,10 +13,9 @@ verify(params: {
   domain?: string                 // The domain name
 }): Promise<object>;
 ```
-
 **Usage**
 
-```javascript
+```js
 const result = await hypersignDID.verify({
       didDocument: signedDocument, 
       verificationMethodId, 
@@ -26,7 +26,7 @@ const result = await hypersignDID.verify({
 
 **Outputs**
 
-```javascript
+```json
 {
     "verified": true,
     "results": [

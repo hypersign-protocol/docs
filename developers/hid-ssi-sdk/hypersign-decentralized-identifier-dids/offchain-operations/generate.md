@@ -4,19 +4,17 @@ Generates a new DID Document
 
 **API Definition**
 
-```javascript
+```js
 generate(params: { publicKeyMultibase: string }): Promise<object>;
 ```
-
 **Usage**
 
-```javascript
+```js
 const didDocument = await hypersignDID.generate({ publicKeyMultibase });
 ```
-
 **Outputs**
 
-```javascript
+```js
 {
   '@context': [ 'https://www.w3.org/ns/did/v1' ],
   id: 'did:hid:testnet:z3q5pC5mgnyYAQvLniaMdNLA8WmCjgzLmJn6seCmDvEhz',

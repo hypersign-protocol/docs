@@ -1,8 +1,9 @@
 # OffChain Operations
 
+
 ### Initialize Instance of HypersignDID
 
-```javascript
+```js
 const hypersignDID = new HypersignDID();
 
 // OR initialize by passing a namepace. Default 'did:hid'
@@ -10,3 +11,4 @@ const hypersignDID = new HypersignDID();
 const namespace = 'did:hid';
 const hypersignDID = new HypersignDID({ namespace });
 ```
+

@@ -1,10 +1,10 @@
 # sign()
 
-Sign a DID Document and generated proof
+Sign a DID Document and generated proof 
 
 **API Definition**
 
-```javascript
+```js
 sign(params: {
     didDocument: object;            // A DID Document to signed
     privateKeyMultibase: string;    // private key mulibase of type ED25519
@@ -17,7 +17,7 @@ sign(params: {
 
 **Usage**
 
-```javascript
+```js
 const params = {
       privateKey: privateKeyMultibase, 
       challenge: '1231231231', 
@@ -31,8 +31,7 @@ const signedDocument = await hypersignDID.sign(params);
 ```
 
 **Outputs**
-
-```javascript
+```json
 {
     "@context": [
       "https://www.w3.org/ns/did/v1",

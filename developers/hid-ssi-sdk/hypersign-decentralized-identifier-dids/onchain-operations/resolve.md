@@ -1,19 +1,19 @@
 # resolve()
 
+
 Resolves a DID document from blockchain provided the DID.
 
 **API Definition**
 
-```javascript
+```js
 resolve(params: { 
   did: string; 
   ed25519verificationkey2020?: boolean 
 }): Promise<object>;
 ```
-
 **Usage**
 
-```javascript
+```js
 const result = await hypersignDID.resolve({
       did,
 });
@@ -21,7 +21,7 @@ const result = await hypersignDID.resolve({
 
 **Outputs**
 
-```javascript
+```js
 {
   didDocument: {
     '@context': [ 'https://www.w3.org/ns/did/v1' ],
