@@ -1,8 +1,5 @@
 # Hypersign Decentralized Identifier (DIDs)
 
-
-
-```markup
 Hypersign Decentralized Identifiers (Hypersign DID) comply [W3C DID specification](https://www.w3.org/TR/did-core/) and is built on top of [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet). It implements [Hypersign DID scheme (`did:hid`)](https://docs.hypersign.id/self-sovereign-identity-ssi/decentralized-identifier-did).
 
 Note: `did:hid` DID scheme is yet to be offcially registered on [W3C DID registry](https://www.w3.org/TR/did-spec-registries/).
@@ -19,4 +16,32 @@ In simple words, decentralised identifiers are cryptographically-verifiable iden
 
 Is a javascript library to interact with Hypersign DID and to perform onchain and offchain operations.
 
+## Table of Contents
+- [Install The Package](#install-the-package)
+- [Import The Package](#import-the-package)
+- [OffChain APIs](#offchain-apis)
+    - [Initialize Instance of HypersignDID](#initialize-instance-of-hypersigndid)
+    - [generateKeys()](#generatekeys)
+    - [generate()](#generate)
+    - [sign()](#sign)
+    - [verify()](#verify)
+- [OnChain APIs](#onchain-apis)
+    - [Initialize Instance of HypersignDID with offlineSigner](#initialize-with-offlinesigner)
+    - [register()](#register)
+    - [resolve()](#resolve)
+    - [update()](#update)
+    - [deactivate()](#deactivate)
+- [Security Concerns](#security)
+
+
+## Install The Package
+
+```bash
+npm i hid-ssi-sdk --save
+```
+
+## Import The Package
+
+```js
+import { HypersignDID } from 'hid-ssi-sdk';
 ```
