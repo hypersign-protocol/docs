@@ -30,6 +30,7 @@
 * [HID Node](developers/hid-node.md)
 * [HID-SSI-SDK](developers/hid-ssi-sdk/README.md)
   * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
+  * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)
 * [Github](https://github.com/hypersign-protocol/)
 
 ## 🆔 Entity Studio
