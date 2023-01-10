@@ -19,7 +19,10 @@
 
 ## 🆔 Self Sovereign Identity (SSI)
 
-* [Decentralized Identifier (DID)](self-sovereign-identity-ssi/decentralized-identifier-did.md)
+* [Decentralized Identifier (DID)](self-sovereign-identity-ssi/decentralized-identifier-did/README.md)
+  * [Private and Public DID](self-sovereign-identity-ssi/decentralized-identifier-did/private-and-public-did.md)
+  * [DID Authentication](self-sovereign-identity-ssi/decentralized-identifier-did/did-authentication.md)
+  * [DID Communication (DIDComm)](self-sovereign-identity-ssi/decentralized-identifier-did/did-communication-didcomm.md)
 * [Schema](self-sovereign-identity-ssi/schema.md)
 * [Verifiable Credential (VC)](self-sovereign-identity-ssi/verifiable-credential-vc/README.md)
   * [Credential Revocation Registry](self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
