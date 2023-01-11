@@ -1,12 +1,12 @@
-# Hypersign Verifiable Credential
+# Hypersign Verifiable Credential SDK
 
-The Hypersign Verifiable Credential comply [W3C Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/) specification whoes status can be stored in [Hypersign Credential Revocation Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry) on [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet).
+The Hypersign Verifiable Credential comply [W3C Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/) specification whose status can be stored in [Hypersign Credential Revocation Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry) on [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet).
 
 Read Hypersign [verifiable-credential-vc](../../self-sovereign-identity-ssi/verifiable-credential-vc/ "mention")for more details.&#x20;
 
 ### HypersignVerifiableCredentail SDK
 
-Is a javascript library for verifiable credentials operation (generate, issue etc). It also provides APIs to store/update/retrive credential status to/from the [Hypersign Credential Revocation Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry) on the Hypersign Blockchain network easily.
+Is a javascript library for verifiable credentials operation (generate, issue etc). It also provides APIs to store/update/retrieve credential status to/from the [Hypersign Credential Revocation Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry) on the Hypersign Blockchain network easily.
 
 #### **NOTES**
 
@@ -17,15 +17,15 @@ Is a javascript library for verifiable credentials operation (generate, issue et
 
 ### Table of Contents
 
-* Install The Package
-* Import The Package
-* APIs
-  * Initialize Instance of HypersignVerifiableCredential with offlineSigner
-  * generate()
-  * issue()
-  * resolveCredentialStatus()
-  * updateCredentialStatus()
-* Security Concerns
+* [Install The Package](hypersign-verifiable-credential-sdk.md#install-the-package)
+* [Import The Package](hypersign-verifiable-credential-sdk.md#import-the-package)
+* [APIs](hypersign-verifiable-credential-sdk.md#apis)
+  * [Initialize Instance of HypersignVerifiableCredential with offlineSigner](hypersign-verifiable-credential-sdk.md#initialize-instance-of-hypersignverifiablecredential-with-offlinesigner)
+  * [generate()](hypersign-verifiable-credential-sdk.md#generate)
+  * [issue()](hypersign-verifiable-credential-sdk.md#issue)
+  * [resolveCredentialStatus()](hypersign-verifiable-credential-sdk.md#resolvecredentialstatus)
+  * [updateCredentialStatus()](hypersign-verifiable-credential-sdk.md#updatecredentialstatus)
+* [Security Concerns](hypersign-verifiable-credential-sdk.md#security-concerns)
 
 ### Install The Package
 
