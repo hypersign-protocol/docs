@@ -37,6 +37,7 @@
   * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
   * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)
   * [Hypersign Verifiable Credential](developers/hid-ssi-sdk/hypersign-verifiable-credential.md)
+  * [OfflineSigner](developers/hid-ssi-sdk/offlinesigner.md)
 * [Github](https://github.com/hypersign-protocol/)
 
 ## 🆔 Entity Studio
