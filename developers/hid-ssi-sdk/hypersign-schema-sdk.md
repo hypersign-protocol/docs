@@ -10,7 +10,7 @@ Read  [Hypersign Schema](../../self-sovereign-identity-ssi/schema/)  section for
 
 ## HypersignSchema SDK
 
-Is a javascript library to interact with Hypersign Blockchain and to perform onchain and offchain schema operations.
+Is a javascript library for Schema related operation (generate, sign, register etc). It also provides APIs to store/update/retrive Schema to/from the [Hypersign Schema Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/schema/schema-registry) on the Hypersign Blockchain network easily.
 
 **NOTES**
 
