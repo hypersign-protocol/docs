@@ -24,6 +24,8 @@
   * [Private and Public DID](self-sovereign-identity-ssi/decentralized-identifier-did/private-and-public-did.md)
   * [DID Authentication](self-sovereign-identity-ssi/decentralized-identifier-did/did-authentication.md)
   * [DID Communication (DIDComm)](self-sovereign-identity-ssi/decentralized-identifier-did/did-communication-didcomm.md)
+  * [Adding multiple controller to DID](self-sovereign-identity-ssi/decentralized-identifier-did/adding-multiple-controller-to-did.md)
+  * [Adding multiple verification methods](self-sovereign-identity-ssi/decentralized-identifier-did/adding-multiple-verification-methods.md)
 * [Schema](self-sovereign-identity-ssi/schema/README.md)
   * [Schema Registry](self-sovereign-identity-ssi/schema/schema-registry.md)
 * [Verifiable Credential (VC)](self-sovereign-identity-ssi/verifiable-credential-vc/README.md)
@@ -42,6 +44,14 @@
 
 ## 🆔 Entity Studio
 
+* [API References](entity-studio/api-references/README.md)
+  * [Authentication](entity-studio/api-references/authentication.md)
+  * [DID](entity-studio/api-references/did.md)
+  * [Schema](entity-studio/api-references/schema.md)
+  * [Verifiable Credential](entity-studio/api-references/verifiable-credential.md)
+  * [Verifiable Presentation](entity-studio/api-references/verifiable-presentation/README.md)
+    * [Presentation Template](entity-studio/api-references/verifiable-presentation/presentation-template.md)
+    * [Presentation](entity-studio/api-references/verifiable-presentation/presentation.md)
 * [Introduction](entity-studio/introduction.md)
 
 ## 🌐 Ecosystem
