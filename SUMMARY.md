@@ -44,14 +44,14 @@
 
 ## 🆔 Entity Studio
 
-* [API References](entity-studio/api-references/README.md)
-  * [Authentication](entity-studio/api-references/authentication.md)
-  * [DID](entity-studio/api-references/did.md)
-  * [Schema](entity-studio/api-references/schema.md)
-  * [Verifiable Credential](entity-studio/api-references/verifiable-credential.md)
-  * [Verifiable Presentation](entity-studio/api-references/verifiable-presentation/README.md)
-    * [Presentation Template](entity-studio/api-references/verifiable-presentation/presentation-template.md)
-    * [Presentation](entity-studio/api-references/verifiable-presentation/presentation.md)
+* [📖 API Doc](entity-studio/api-doc/README.md)
+  * [Authentication](entity-studio/api-doc/authentication.md)
+  * [DID](entity-studio/api-doc/did.md)
+  * [Schema](entity-studio/api-doc/schema.md)
+  * [Verifiable Credential](entity-studio/api-doc/verifiable-credential.md)
+  * [Verifiable Presentation](entity-studio/api-doc/verifiable-presentation/README.md)
+    * [Presentation Template](entity-studio/api-doc/verifiable-presentation/presentation-template.md)
+    * [Presentation](entity-studio/api-doc/verifiable-presentation/presentation.md)
 * [Introduction](entity-studio/introduction.md)
 
 ## 🌐 Ecosystem
