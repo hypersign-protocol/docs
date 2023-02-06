@@ -6,7 +6,7 @@ description: REST API documentation
 
 ## Registration and Authentication
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Application</strong></mark></td><td>Register one or more applications to get API keys</td><td></td><td><a href="authentication.md">authentication.md</a></td></tr><tr><td><mark style="color:blue;"><strong>Authentication</strong></mark></td><td>Generate Access Token using API keys</td><td></td><td><a href="authentication.md">authentication.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Application</strong></mark></td><td>Register one or more applications to get API keys</td><td></td><td><a href="application.md">application.md</a></td></tr><tr><td><mark style="color:blue;"><strong>Authentication</strong></mark></td><td>Generate Access Token using API keys</td><td></td><td><a href="authentication.md">authentication.md</a></td></tr></tbody></table>
 
 ### Self Sovereign Identity (SSI) APIs
 

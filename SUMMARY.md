@@ -45,6 +45,7 @@
 ## 🆔 Entity Studio
 
 * [📖 API Doc](entity-studio/api-doc/README.md)
+  * [Application](entity-studio/api-doc/application.md)
   * [Authentication](entity-studio/api-doc/authentication.md)
   * [DID](entity-studio/api-doc/did.md)
   * [Schema](entity-studio/api-doc/schema.md)
