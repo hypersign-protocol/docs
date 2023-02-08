@@ -1,6 +1,12 @@
-# Decentralized Identifier (DID)
+# DID Registry
 
-Decentralised Identifiers are cryptographically-verifiable identifiers which are stored on a decentralised ledger, which enables users to own and manage their ID.
+Hypersign Decentralized Identifiers (Hypersign DID) comply [W3C DID specification](https://www.w3.org/TR/did-core/) and is built on top of [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet). It implements [Hypersign DID scheme (`did:hid`)](https://docs.hypersign.id/self-sovereign-identity-ssi/decentralized-identifier-did).
+
+Note: `did:hid` DID scheme is yet to be officially registered on [W3C DID registry](https://www.w3.org/TR/did-spec-registries/).
+
+
+
+> Decentralised Identifiers are cryptographically-verifiable identifiers which are stored on a decentralised ledger, which enables users to own and manage their ID.
 
 ## Syntax of `did:hid` method
 
@@ -16,26 +22,26 @@ id-char            = ALPHA / DIGIT
 
 **Description of ID segments**
 
-- `did` - Document Identifier of DID Document
-- `hid` - Method name
-- `<chain-namespace>` - *(Optional)* Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
-- `<method-specific-id>` - Alpha-numeric string of minimum 32 character length
+* `did` - Document Identifier of DID Document
+* `hid` - Method name
+* `<chain-namespace>` - _(Optional)_ Name of the blockchain where the VC status is registered. It is omitted for the document registered on mainnet chain
+* `<method-specific-id>` - Alpha-numeric string of minimum 32 character length
 
 ## Supported Digital Signature Algorithms
 
-- **ed25519**
-- **secp256k1**
+* **ed25519**
+* **secp256k1**
 
 ## Supported DID Method Operations
 
 The `did:hid` method supports the following operations:
 
-- **Transaction Based**:
-  - Register a DID document
-  - Update a DID document
-  - Deactivate a DID document
-- **Query Based**:
-  - Query DID Document(s)
+* **Transaction Based**:
+  * Register a DID document
+  * Update a DID document
+  * Deactivate a DID document
+* **Query Based**:
+  * Query DID Document(s)
 
 ## CLI Usage
 
@@ -56,7 +62,7 @@ Params:
 
 **Example**
 
-```sh
+```
 hid-noded tx ssi create-did '{
 "context": [
 "https://www.w3.org/ns/did/v1",`
@@ -114,7 +120,7 @@ hid-noded q ssi did did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14Hx
 
 **REST**
 
-1) Get the list of registered DID Documents
+1. Get the list of registered DID Documents
 
 URL: `http://<REST-URL>/hypersign-protocol/hidnode/ssi/did`
 
@@ -229,11 +235,11 @@ Output:
 }
 ```
 
-2) Query the DID Document for an input DID id
+1. Query the DID Document for an input DID id
 
 URL: `http://<REST-URL>/hypersign-protocol/hidnode/ssi/did/did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4`
 
-Output: 
+Output:
 
 ```json
 {
@@ -303,7 +309,7 @@ Params:
 
 **Example**
 
-```sh
+```
 hid-noded tx ssi update-did '{
 "context": [
 "https://www.w3.org/ns/did/v1",
@@ -345,6 +351,6 @@ Params:
 
 **Example**
 
-```sh
+```
 hid-noded tx ssi deactivate-did 'did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4' <version-id> did:hid:<chain-namespace>:z8BXg2zjwBRTrjPs7uCnkFBKrL9bPD14HxEJMENxm3CJ4#key-1 <private-key> ed25519 --from <key-name-or-address> --chain-id <Chain Id> --yes
 ```

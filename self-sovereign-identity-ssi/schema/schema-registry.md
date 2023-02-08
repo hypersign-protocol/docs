@@ -1,6 +1,10 @@
-# Credential Schema
+# Schema Registry
 
-## Syntax of Schema ID 
+## Hypersign Schema Registry
+
+The Hypersign Schema comply [Verifiable Credentials JSON Schema 2022 data model](https://w3c-ccg.github.io/vc-json-schemas/#data\_model) specification and is stored on [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet) as it is [adviced to store](https://w3c-ccg.github.io/vc-json-schemas/#storage) schema documents and made available as immutable objects.
+
+## Syntax of Hypersign Schema ID
 
 The syntax of Schema ID is as follows:
 
@@ -8,17 +12,17 @@ The syntax of Schema ID is as follows:
 sch:hid:<chain-namespace>:<method-specific-id>:<version-number>
 ```
 
-- `sch:hid` - Schema Method, where `sch` is the document identifier and `hid` is the method name
-- `<chain-namespace>` - *(Optional)* Name of the blockchain where the schema document is registered. It is omitted for the document registered on mainnet chain
-- `<method-specific-id>` - Alpha-numeric string of minimum 32 character length
-- `<version-number>` - Model version of schema. For instance, `1.0`, `1.1` and `2.1`
+* `sch:hid` - Schema Method, where `sch` is the document identifier and `hid` is the method name
+* `<chain-namespace>` - _(Optional)_ Name of the blockchain where the schema document is registered. It is omitted for the document registered on mainnet chain
+* `<method-specific-id>` - Alpha-numeric string of minimum 32 character length
+* `<version-number>` - Model version of schema. For instance, `1.0`, `1.1` and `2.1`
 
 ## Schema Operations
 
-- **Transaction Based**
-  - Register/Update a Schema Document
-- **Query Based**
-  - Query Schema Document(s)
+* **Transaction Based**
+  * Register/Update a Schema Document
+* **Query Based**
+  * Query Schema Document(s)
 
 ## Usage
 
@@ -39,7 +43,7 @@ Params:
 
 **Example**
 
-```sh
+```
 hid-noded tx ssi create-schema '{"type":"https://w3c-ccg.github.io/vc-json-schemas/schema/1.0/schema.json","modelVersion":"v1.0","id":"sch:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf:1.0","name":"HS credential template","author":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf","authored":"2022-04-10T04:07:12Z","schema":{"schema":"https://json-schema.org/draft-07/schema#","description":"test","type":"object","properties":"{myString:{type:string},myNumner:{type:number},myBool:{type:boolean}}","required":["myString","myNumner","myBool"],"additionalProperties":false}}' '{"type":"Ed25519VerificationKey2020","created":"2022-04-10T04:07:12Z","verificationMethod":"did:hid:devnet:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf#key-1","proofValue":"gLFhwYfObNJEOjNDaeYjprv7FpK0lIhZnFwgOsdRqRHOjQswfm3Hk9EehcYGePrFFwgy4lna73iA5J0BtjfCAw==","proofPurpose":"assertionMethod"}' --from <key-name-or-address> --chain-id <Chain ID> --yes
 ```
 
@@ -69,13 +73,13 @@ hid-noded query ssi schema sch:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8D
 http://<REST-URL>/hypersign-protocol/hidnode/ssi/schema/sch:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf:1.0
 ```
 
-2. Query all versions of a schema document:
+1. Query all versions of a schema document:
 
 ```
 http://<REST-URL>/hypersign-protocol/hidnode/ssi/schema/sch:hid:<chain-namespace>:zEYJrMxWigf9boyeJMTRN4Ern8DJMoCXaLK77pzQmxVjf
 ```
 
-3. Query a list of registered schema documents:
+1. Query a list of registered schema documents:
 
 ```
 http://<REST-URL>/hypersign-protocol/hidnode/ssi/schema
