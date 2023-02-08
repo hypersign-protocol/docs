@@ -12,11 +12,14 @@ description: Instructions to install hid-node binary
 git clone https://github.com/hypersign-protocol/hid-node.git
 ```
 
-* Checkout the tag and build the node. Look [here](https://github.com/hypersign-protocol/hid-node/tags) for a list of tags.
+* Checkout the tag that the network is currently running on and build the node.
 
 ```bash
 cd hid-node
-git checkout v0.1.2 #v0.1.2 is the current testnet binary
+
+HIDNODE_VERSION=v$(curl -s https://rpc.jagrat.hypersign.id/abci_info | jq -r .result.response.version)
+git checkout $HIDNODE_VERSION
+
 make install
 ```
 
