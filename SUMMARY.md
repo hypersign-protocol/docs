@@ -32,7 +32,7 @@
   * [Credential Revocation Registry](self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
 * [Verifiable Presentation (VP)](self-sovereign-identity-ssi/verifiable-presentation-vp.md)
 
-## 👩💻 👩💻 👩💻 Developers
+## 👩💻 Developers
 
 * [HID Node](developers/hid-node.md)
 * [HID-SSI-SDK](developers/hid-ssi-sdk/README.md)
@@ -44,7 +44,9 @@
 
 ## 🆔 Entity Studio
 
-* [📖 API Doc](entity-studio/api-doc/README.md)
+* [Introduction](entity-studio/introduction.md)
+* [Developer Dashboard](entity-studio/developer-dashboard.md)
+* [API Documentation](entity-studio/api-doc/README.md)
   * [Application](entity-studio/api-doc/application.md)
   * [Authentication](entity-studio/api-doc/authentication.md)
   * [DID](entity-studio/api-doc/did.md)
@@ -53,7 +55,8 @@
   * [Verifiable Presentation](entity-studio/api-doc/verifiable-presentation/README.md)
     * [Presentation Template](entity-studio/api-doc/verifiable-presentation/presentation-template.md)
     * [Presentation](entity-studio/api-doc/verifiable-presentation/presentation.md)
-* [Introduction](entity-studio/introduction.md)
+* [SSI Playground](entity-studio/ssi-playground.md)
+* [API Playground](entity-studio/api-playground.md)
 
 ## 🌐 Ecosystem
 

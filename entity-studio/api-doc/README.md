@@ -1,13 +1,15 @@
 ---
-description: REST API documentation
+description: >-
+  Dive into our API documentation to create innovative identity products on our
+  infrastructure.
 ---
 
-# 📖 API Doc
+# API Documentation
 
-## Registration and Authentication
+## Authentication
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Application</strong></mark></td><td>Register one or more applications to get API keys</td><td></td><td><a href="application.md">application.md</a></td></tr><tr><td><mark style="color:blue;"><strong>Authentication</strong></mark></td><td>Generate Access Token using API keys</td><td></td><td><a href="authentication.md">authentication.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Authentication</strong></mark></td><td>Generate Access Token using API keys</td><td></td><td><a href="authentication.md">authentication.md</a></td></tr></tbody></table>
 
-### Self Sovereign Identity (SSI) APIs
+### sSelf Sovereign Identity (SSI) APIs
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Decentralized Identifiers</strong></mark> </td><td>APIs to manage DIDs for your apps</td><td></td><td></td></tr><tr><td><mark style="color:blue;"><strong>Schema</strong></mark></td><td>APIs to manage schemas for credentials for your apps</td><td></td><td><a href="schema.md">schema.md</a></td></tr><tr><td><mark style="color:blue;"><strong>Verifiable Credentials</strong></mark></td><td>APIs to manage verifiable credentials for your apps</td><td></td><td><a href="verifiable-presentation/">verifiable-presentation</a></td></tr><tr><td><mark style="color:blue;"><strong>Verifiable Presentation</strong></mark></td><td>API to manage presentation template and verification</td><td></td><td><a href="verifiable-presentation/">verifiable-presentation</a></td></tr></tbody></table>
