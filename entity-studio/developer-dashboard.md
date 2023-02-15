@@ -30,7 +30,9 @@ Upon successful registration, an API secret key will be generated for your app. 
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 1.01.50 AM.png" alt=""><figcaption><p>Regenerate a new API secret by clicking on this icon</p></figcaption></figure>
 
+\---
 
+Now that you have generated your API secret Key you can either go through our [API documentation](api-doc/) and start coding or jump into the [SSI API playground](api-playground.md) to play around with SSI APIs right before coding. Optionally, if you want  to get hands with concepts of the Self sovereign identiy (SSI), you can checkout [SSI playground](ssi-playground.md) for that.&#x20;
 
 ###
 
