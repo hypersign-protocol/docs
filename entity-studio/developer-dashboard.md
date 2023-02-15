@@ -28,4 +28,10 @@ Upon successful registration, an API secret key will be generated for your app. 
 
 > [Make sure to copy and save API secret key securely. If lost, this key can not be recovered. However, you can regenerate a new one.](#user-content-fn-1)[^1]
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 1.01.50 AM.png" alt=""><figcaption><p>Regenerate a new API secret by clicking on this icon</p></figcaption></figure>
+
+
+
+###
+
 [^1]: 
