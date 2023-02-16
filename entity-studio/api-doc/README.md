@@ -1,7 +1,7 @@
 ---
 description: >-
-  Dive into our API documentation to create innovative identity products on our
-  infrastructure.
+  Dive into our API documentation to create innovative identity products on the
+  Entity Studio infrastructure.
 ---
 
 # API Reference
