@@ -1,21 +1,25 @@
 # Verifiable Credential
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/credential" method="get" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+### Issue a credential
+
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential" method="post" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/credential" method="post" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+### Fetch a credential by Id
+
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/{credentialId}" method="get" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/credential/{credentialId}" method="get" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential" method="get" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/credential/{credentialId}" method="patch" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/{credentialId}" method="patch" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/credential/verify" method="post" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/verify" method="post" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}

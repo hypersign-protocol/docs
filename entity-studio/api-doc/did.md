@@ -20,20 +20,20 @@ Please [generate access token](authentication.md) before proceeding.  Once you g
 
 ### Resolve a DID
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/did/{did}" method="get" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did" method="get" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 ### Fetch all DIDs for your apps
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/did" method="get" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did" method="get" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 ### Update a DID
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/did" method="patch" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did" method="patch" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 ###
