@@ -6,7 +6,7 @@ description: >-
 
 # API Reference
 
-Register your application on [Entity Studio Developer Dashboard](../developer-dashboard.md) and generate your API secret Key before proceeding.&#x20;
+Register your application on [Entity Studio Developer Dashboard](../developer-dashboard/) and generate your API secret Key before proceeding.&#x20;
 
 ## Authentication
 

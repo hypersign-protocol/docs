@@ -4,7 +4,7 @@ description: Generate access token using API secret Key
 
 # Authentication
 
-Register your application on [Entity Studio Developer Dashboard](../developer-dashboard.md) and generate your API secret Key before proceeding.&#x20;
+Register your application on [Entity Studio Developer Dashboard](../developer-dashboard/) and generate your API secret Key before proceeding.&#x20;
 
 Once the API secret key is generated, you can use the API below to generate a new access token. Just pass your API secret Key in `X-Api-Secret-Key` header to generate access token. The `access_token` is required to access all SSI APIs. Read the next section for more details.&#x20;
 

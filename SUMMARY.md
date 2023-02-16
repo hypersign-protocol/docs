@@ -22,7 +22,8 @@
 ## 🆔 Entity Studio
 
 * [Introduction](entity-studio/introduction.md)
-* [Developer Dashboard](entity-studio/developer-dashboard.md)
+* [Developer Dashboard](entity-studio/developer-dashboard/README.md)
+  * [Network Fee](entity-studio/developer-dashboard/network-fee.md)
 * [API Reference](entity-studio/api-doc/README.md)
   * [Authentication](entity-studio/api-doc/authentication.md)
   * [DID](entity-studio/api-doc/did.md)
