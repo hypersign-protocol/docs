@@ -8,8 +8,8 @@ Please [generate access token](authentication.md) before proceeding.  Once you g
 
 ### Create a DID
 
-{% swagger src="../../.gitbook/assets/entity-api-json.json" path="/api/v1/did" method="post" %}
-[entity-api-json.json](../../.gitbook/assets/entity-api-json.json)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did" method="post" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 ### Resolve a DID
