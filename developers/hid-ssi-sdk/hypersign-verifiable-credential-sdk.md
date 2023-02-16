@@ -2,7 +2,7 @@
 
 The Hypersign Verifiable Credential comply [W3C Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/) specification whose status can be stored in [Hypersign Credential Revocation Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry) on [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet).
 
-Read Hypersign [verifiable-credential-vc](../../self-sovereign-identity-ssi/verifiable-credential-vc/ "mention")for more details.&#x20;
+Read Hypersign [verifiable-credential-vc](../../self-sovereign-identity-concepts/verifiable-credential-vc/ "mention")for more details.&#x20;
 
 ### HypersignVerifiableCredentail SDK
 

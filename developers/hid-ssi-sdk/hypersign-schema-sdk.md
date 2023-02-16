@@ -6,7 +6,7 @@ description: A Javascript  based SDK for Schema Operations
 
 The Hypersign Schema comply [Verifiable Credentials JSON Schema 2022 data model](https://w3c-ccg.github.io/vc-json-schemas/#data\_model) specification and is stored on [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet) as it is [adviced to store](https://w3c-ccg.github.io/vc-json-schemas/#storage) schema documents and made available as immutable objects.
 
-Read  [Hypersign Schema](../../self-sovereign-identity-ssi/schema/)  section for more details.&#x20;
+Read  [Hypersign Schema](../../self-sovereign-identity-concepts/schema/)  section for more details.&#x20;
 
 ## HypersignSchema SDK
 

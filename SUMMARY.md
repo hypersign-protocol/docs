@@ -17,28 +17,29 @@
   * [Text Proposal](governance/submitting-text-proposal.md)
 * [Delegation](governance/delegation.md)
 
-## 🆔 Self Sovereign Identity (SSI)
+## 📖 Self Sovereign Identity Concepts
 
-* [Decentralized Identifier (DID)](self-sovereign-identity-ssi/decentralized-identifier-did/README.md)
-  * [DID Registry](self-sovereign-identity-ssi/decentralized-identifier-did/did-registry.md)
-  * [Private and Public DID](self-sovereign-identity-ssi/decentralized-identifier-did/private-and-public-did.md)
-  * [DID Authentication](self-sovereign-identity-ssi/decentralized-identifier-did/did-authentication.md)
-  * [DID Communication (DIDComm)](self-sovereign-identity-ssi/decentralized-identifier-did/did-communication-didcomm.md)
-  * [Adding multiple controller to DID](self-sovereign-identity-ssi/decentralized-identifier-did/adding-multiple-controller-to-did.md)
-  * [Adding multiple verification methods](self-sovereign-identity-ssi/decentralized-identifier-did/adding-multiple-verification-methods.md)
-* [Schema](self-sovereign-identity-ssi/schema/README.md)
-  * [Schema Registry](self-sovereign-identity-ssi/schema/schema-registry.md)
-* [Verifiable Credential (VC)](self-sovereign-identity-ssi/verifiable-credential-vc/README.md)
-  * [Credential Revocation Registry](self-sovereign-identity-ssi/verifiable-credential-vc/credential-revocation-registry.md)
-* [Verifiable Presentation (VP)](self-sovereign-identity-ssi/verifiable-presentation-vp.md)
+* [Decentralized Identifier (DID)](self-sovereign-identity-concepts/decentralized-identifier-did/README.md)
+  * [DID Registry](self-sovereign-identity-concepts/decentralized-identifier-did/did-registry.md)
+  * [Private and Public DID](self-sovereign-identity-concepts/decentralized-identifier-did/private-and-public-did.md)
+  * [DID Authentication](self-sovereign-identity-concepts/decentralized-identifier-did/did-authentication.md)
+  * [DID Communication (DIDComm)](self-sovereign-identity-concepts/decentralized-identifier-did/did-communication-didcomm.md)
+  * [Adding multiple controller to DID](self-sovereign-identity-concepts/decentralized-identifier-did/adding-multiple-controller-to-did.md)
+  * [Adding multiple verification methods](self-sovereign-identity-concepts/decentralized-identifier-did/adding-multiple-verification-methods.md)
+* [Schema](self-sovereign-identity-concepts/schema/README.md)
+  * [Schema Registry](self-sovereign-identity-concepts/schema/schema-registry.md)
+* [Verifiable Credential (VC)](self-sovereign-identity-concepts/verifiable-credential-vc/README.md)
+  * [Credential Revocation Registry](self-sovereign-identity-concepts/verifiable-credential-vc/credential-revocation-registry.md)
+* [Verifiable Presentation (VP)](self-sovereign-identity-concepts/verifiable-presentation-vp.md)
 
 ## 👩💻 Developers
 
 * [HID Node](developers/hid-node.md)
-* [HID-SSI-SDK](developers/hid-ssi-sdk/README.md)
+* [Hypersign-SSI-SDK](developers/hid-ssi-sdk/README.md)
   * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
   * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)
   * [Hypersign Verifiable Credential SDK](developers/hid-ssi-sdk/hypersign-verifiable-credential-sdk.md)
+  * [Hypersign Verifiable Presentation SDK](developers/hid-ssi-sdk/hypersign-verifiable-presentation-sdk.md)
   * [OfflineSigner](developers/hid-ssi-sdk/offlinesigner.md)
 * [Github](https://github.com/hypersign-protocol/)
 

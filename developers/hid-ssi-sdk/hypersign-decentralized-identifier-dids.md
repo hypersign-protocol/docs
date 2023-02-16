@@ -8,7 +8,7 @@ Hypersign Decentralized Identifiers (Hypersign DID) comply [W3C DID specificatio
 
 Note: `did:hid` DID scheme is yet to be offcially registered on [W3C DID registry](https://www.w3.org/TR/did-spec-registries/).
 
-Read [decentralized-identifier-did](../../self-sovereign-identity-ssi/decentralized-identifier-did/ "mention") section for more details.&#x20;
+Read [decentralized-identifier-did](../../self-sovereign-identity-concepts/decentralized-identifier-did/ "mention") section for more details.&#x20;
 
 ## Hypersign DID SDK
 
