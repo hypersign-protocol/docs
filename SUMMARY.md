@@ -34,6 +34,7 @@
 
 ## 📖 Self Sovereign Identity Concepts
 
+* [Introduction](self-sovereign-identity-concepts/introduction.md)
 * [Decentralized Identifier (DID)](self-sovereign-identity-concepts/decentralized-identifier-did/README.md)
   * [DID Registry](self-sovereign-identity-concepts/decentralized-identifier-did/did-registry.md)
   * [Private and Public DID](self-sovereign-identity-concepts/decentralized-identifier-did/private-and-public-did.md)
