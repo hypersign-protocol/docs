@@ -17,6 +17,21 @@
     * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
   * [Delegation](hypersign-identity-network/governance/delegation.md)
 
+## 🆔 Entity Studio
+
+* [Introduction](entity-studio/introduction.md)
+* [Developer Dashboard](entity-studio/developer-dashboard.md)
+* [API Reference](entity-studio/api-doc/README.md)
+  * [Authentication](entity-studio/api-doc/authentication.md)
+  * [DID](entity-studio/api-doc/did.md)
+  * [Schema](entity-studio/api-doc/schema.md)
+  * [Verifiable Credential](entity-studio/api-doc/verifiable-credential.md)
+  * [Verifiable Presentation](entity-studio/api-doc/verifiable-presentation/README.md)
+    * [Presentation Template](entity-studio/api-doc/verifiable-presentation/presentation-template.md)
+    * [Presentation](entity-studio/api-doc/verifiable-presentation/presentation.md)
+* [SSI Playground](entity-studio/ssi-playground.md)
+* [API Playground](entity-studio/api-playground.md)
+
 ## 📖 Self Sovereign Identity Concepts
 
 * [Decentralized Identifier (DID)](self-sovereign-identity-concepts/decentralized-identifier-did/README.md)
@@ -43,24 +58,9 @@
   * [OfflineSigner](developers/hid-ssi-sdk/offlinesigner.md)
 * [Github](https://github.com/hypersign-protocol/)
 
-## 🆔 Entity Studio
+## 🤵 Hypersign Identity Wallet
 
-* [Introduction](entity-studio/introduction.md)
-* [Developer Dashboard](entity-studio/developer-dashboard.md)
-* [API Reference](entity-studio/api-doc/README.md)
-  * [Authentication](entity-studio/api-doc/authentication.md)
-  * [DID](entity-studio/api-doc/did.md)
-  * [Schema](entity-studio/api-doc/schema.md)
-  * [Verifiable Credential](entity-studio/api-doc/verifiable-credential.md)
-  * [Verifiable Presentation](entity-studio/api-doc/verifiable-presentation/README.md)
-    * [Presentation Template](entity-studio/api-doc/verifiable-presentation/presentation-template.md)
-    * [Presentation](entity-studio/api-doc/verifiable-presentation/presentation.md)
-* [SSI Playground](entity-studio/ssi-playground.md)
-* [API Playground](entity-studio/api-playground.md)
-
-***
-
-* [🤵 Hypersign Identity Wallet](hypersign-identity-wallet.md)
+* [Introduction](hypersign-identity-wallet/introduction.md)
 
 ## 🌐 Ecosystem
 

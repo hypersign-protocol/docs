@@ -1,10 +1,10 @@
 # 💬 Welcome
 
-Welcome to the Hypersign relam;&#x20;
+&#x20;Hi, welcome to the realm of Hypersign!&#x20;
 
 
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Hypersign Identity  Network</td><td></td><td></td><td><a href=".gitbook/assets/Hypersign_Logo_Varients-4.png">Hypersign_Logo_Varients-4.png</a></td></tr><tr><td>Hypersign Entity Studio</td><td></td><td></td><td><a href=".gitbook/assets/Entity Studio logo (1).png">Entity Studio logo (1).png</a></td></tr><tr><td>Hypersign Identity Wallet</td><td></td><td></td><td></td></tr><tr><td>Developers</td><td></td><td></td><td></td></tr><tr><td>Validators</td><td></td><td></td><td></td></tr><tr><td>Traders</td><td></td><td></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Hypersign Identity  Network</strong></mark></td><td><em>A Proof Of Stake (PoS) based permissionless blockchain network for digital identity</em></td><td></td><td></td><td><a href="hypersign-identity-network/">hypersign-identity-network</a></td></tr><tr><td><mark style="color:blue;"><strong>Hypersign Entity Studio</strong></mark></td><td><em>A full stack identity infrastructure for building ID products</em></td><td></td><td></td><td><a href="entity-studio/introduction.md">introduction.md</a></td></tr><tr><td><mark style="color:blue;"><strong>Hypersign Identity Wallet</strong></mark></td><td><em>A mobile and web wallet to manage your DIDs and credentials</em></td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><mark style="color:blue;"><strong>Developers</strong></mark></td><td><em>Start building your ID products or navigate to learn SSI</em></td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><mark style="color:blue;"><strong>Validators</strong></mark></td><td><em>Run our hid-node and earn reward for securing the network</em> </td><td></td><td></td><td><a href="hypersign-identity-network/validators/">validators</a></td></tr><tr><td><mark style="color:blue;"><strong>Governance</strong></mark></td><td><em>Raise proposals, stake and delegate $hid</em></td><td></td><td></td><td><a href="hypersign-identity-network/governance/">governance</a></td></tr></tbody></table>
 
 
 
