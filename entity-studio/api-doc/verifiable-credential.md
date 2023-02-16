@@ -36,6 +36,10 @@ NOTE: Verifying a credential document is different than verifying a [verifiable 
 [api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
+{% hint style="info" %}
+Pass `false` value to parameter `retrieveCredential` to only retrieve status of  the credential
+{% endhint %}
+
 ### Fetch list of verifiable credentials
 
 {% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential" method="get" %}
