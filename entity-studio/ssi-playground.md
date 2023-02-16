@@ -6,3 +6,6 @@ description: >-
 
 # SSI Playground
 
+{% embed url="https://www.youtube.com/watch?v=27E4KpIhF90" %}
+Watch demo of Entity Studio Playground
+{% endembed %}
