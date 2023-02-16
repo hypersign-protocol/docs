@@ -1,6 +1,6 @@
 # Table of contents
 
-* [💬 Welcome](README.md)
+* [💬 Welcome!](README.md)
 
 ## ⛓ Hypersign Identity Network
 
@@ -50,7 +50,7 @@
 ## 👩💻 Developers
 
 * [HID Node](developers/hid-node.md)
-* [Hypersign-SSI-SDK](developers/hid-ssi-sdk/README.md)
+* [Hypersign SSI SDK](developers/hid-ssi-sdk/README.md)
   * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
   * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)
   * [Hypersign Verifiable Credential SDK](developers/hid-ssi-sdk/hypersign-verifiable-credential-sdk.md)
