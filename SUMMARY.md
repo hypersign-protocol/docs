@@ -58,6 +58,10 @@
 * [SSI Playground](entity-studio/ssi-playground.md)
 * [API Playground](entity-studio/api-playground.md)
 
+***
+
+* [🤵 Hypersign Identity Wallet](hypersign-identity-wallet.md)
+
 ## 🌐 Ecosystem
 
 * [🔍 HID Explorer](https://explorer.hypersign.id/hypersign-testnet)
