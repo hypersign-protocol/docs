@@ -47,7 +47,7 @@
 
 * [Introduction](entity-studio/introduction.md)
 * [Developer Dashboard](entity-studio/developer-dashboard.md)
-* [API Documentation](entity-studio/api-doc/README.md)
+* [API Reference](entity-studio/api-doc/README.md)
   * [Authentication](entity-studio/api-doc/authentication.md)
   * [DID](entity-studio/api-doc/did.md)
   * [Schema](entity-studio/api-doc/schema.md)
