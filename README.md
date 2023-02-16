@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/2022-11-24 12.19.00 (1).jpg
+cover: .gitbook/assets/2022-11-24 12.19.00.jpg
 coverY: -124
 ---
 
