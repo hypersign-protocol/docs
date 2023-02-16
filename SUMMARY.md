@@ -16,6 +16,8 @@
     * [Blockchain Parameter Change Proposal](hypersign-identity-network/governance/proposals/submitting-blockchain-parameter-change-proposal.md)
     * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
   * [Delegation](hypersign-identity-network/governance/delegation.md)
+* [💰 FAUCET](hypersign-identity-network/faucet.md)
+* [🔍 Blockchain Explorer](https://explorer.hypersign.id/hypersign-testnet)
 
 ## 🆔 Entity Studio
 
@@ -58,6 +60,7 @@
   * [Hypersign Verifiable Presentation SDK](developers/hid-ssi-sdk/hypersign-verifiable-presentation-sdk.md)
   * [OfflineSigner](developers/hid-ssi-sdk/offlinesigner.md)
 * [Github](https://github.com/hypersign-protocol/)
+* [Forum](https://discord.gg/2hbU9Tsw)
 
 ## 🤵 Hypersign Identity Wallet
 
