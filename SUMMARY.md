@@ -1,21 +1,21 @@
 # Table of contents
 
-* [💬 Introduction](README.md)
+* [💬 Welcome](README.md)
 
-## 💻 Validator
+## ⛓ Hypersign Identity Network
 
-* [Installation of Node](validator/installation-of-node.md)
-* [Running a Localnet](validator/running-a-localnet.md)
-* [Running a Testnet Validator Node](validator/running-a-testnet-validator-node.md)
-
-## 🗳 Governance
-
-* [Proposals](governance/proposals/README.md)
-  * [Blockchain Node Upgrade](governance/blockchain-node-upgrade.md)
-  * [Community Pool Spend Proposal](governance/submitting-community-pool-spend-proposal.md)
-  * [Blockchain Parameter Change Proposal](governance/submitting-blockchain-parameter-change-proposal.md)
-  * [Text Proposal](governance/submitting-text-proposal.md)
-* [Delegation](governance/delegation.md)
+* [💬 Introduction](hypersign-identity-network/readme.md)
+* [🔨 VALIDATORS](hypersign-identity-network/validators/README.md)
+  * [Installation of Node](hypersign-identity-network/validators/installation-of-node.md)
+  * [Running a Localnet](hypersign-identity-network/validators/running-a-localnet.md)
+  * [Running a Testnet Validator Node](hypersign-identity-network/validators/running-a-testnet-validator-node.md)
+* [🗳 GOVERNANCE](hypersign-identity-network/governance/README.md)
+  * [Proposals](hypersign-identity-network/governance/proposals/README.md)
+    * [Blockchain Node Upgrade](hypersign-identity-network/governance/proposals/blockchain-node-upgrade.md)
+    * [Community Pool Spend Proposal](hypersign-identity-network/governance/proposals/submitting-community-pool-spend-proposal.md)
+    * [Blockchain Parameter Change Proposal](hypersign-identity-network/governance/proposals/submitting-blockchain-parameter-change-proposal.md)
+    * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
+  * [Delegation](hypersign-identity-network/governance/delegation.md)
 
 ## 📖 Self Sovereign Identity Concepts
 

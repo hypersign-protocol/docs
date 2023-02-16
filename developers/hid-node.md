@@ -478,8 +478,8 @@ hid-noded q bank balances <account-address>
 
 ### Staking
 
-{% content-ref url="../validator/running-a-testnet-validator-node.md" %}
-[running-a-testnet-validator-node.md](../validator/running-a-testnet-validator-node.md)
+{% content-ref url="../hypersign-identity-network/validators/running-a-testnet-validator-node.md" %}
+[running-a-testnet-validator-node.md](../hypersign-identity-network/validators/running-a-testnet-validator-node.md)
 {% endcontent-ref %}
 
 ### Governance
