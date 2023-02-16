@@ -2,8 +2,8 @@
 
 ### Issue a credential
 
-{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential" method="post" %}
-[api-json.json](../../.gitbook/assets/api-json.json)
+{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/issue" method="post" %}
+[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
 
 ### Fetch a credential by Id
