@@ -35,21 +35,23 @@
 * [SSI Playground](entity-studio/ssi-playground.md)
 * [API Playground](entity-studio/api-playground.md)
 
-## 📖 Self Sovereign Identity Concepts
+## 📖 Concepts
 
-* [Introduction](self-sovereign-identity-concepts/introduction.md)
-* [Decentralized Identifier (DID)](self-sovereign-identity-concepts/decentralized-identifier-did/README.md)
-  * [DID Registry](self-sovereign-identity-concepts/decentralized-identifier-did/did-registry.md)
-  * [Private and Public DID](self-sovereign-identity-concepts/decentralized-identifier-did/private-and-public-did.md)
-  * [DID Authentication](self-sovereign-identity-concepts/decentralized-identifier-did/did-authentication.md)
-  * [DID Communication (DIDComm)](self-sovereign-identity-concepts/decentralized-identifier-did/did-communication-didcomm.md)
-  * [Adding multiple controller to DID](self-sovereign-identity-concepts/decentralized-identifier-did/adding-multiple-controller-to-did.md)
-  * [Adding multiple verification methods](self-sovereign-identity-concepts/decentralized-identifier-did/adding-multiple-verification-methods.md)
-* [Schema](self-sovereign-identity-concepts/schema/README.md)
-  * [Schema Registry](self-sovereign-identity-concepts/schema/schema-registry.md)
-* [Verifiable Credential (VC)](self-sovereign-identity-concepts/verifiable-credential-vc/README.md)
-  * [Credential Revocation Registry](self-sovereign-identity-concepts/verifiable-credential-vc/credential-revocation-registry.md)
-* [Verifiable Presentation (VP)](self-sovereign-identity-concepts/verifiable-presentation-vp.md)
+* [Introduction](concepts/introduction.md)
+* [Decentralized Identifier (DID)](concepts/decentralized-identifier-did/README.md)
+  * [DID Registry](concepts/decentralized-identifier-did/did-registry.md)
+  * [Private and Public DID](concepts/decentralized-identifier-did/private-and-public-did.md)
+  * [DID Authentication](concepts/decentralized-identifier-did/did-authentication.md)
+  * [DID Communication (DIDComm)](concepts/decentralized-identifier-did/did-communication-didcomm.md)
+  * [Adding multiple controller to DID](concepts/decentralized-identifier-did/adding-multiple-controller-to-did.md)
+  * [Adding multiple verification methods](concepts/decentralized-identifier-did/adding-multiple-verification-methods.md)
+* [Schema](concepts/schema/README.md)
+  * [Schema Registry](concepts/schema/schema-registry.md)
+* [Verifiable Credential (VC)](concepts/verifiable-credential-vc/README.md)
+  * [Credential Revocation Registry](concepts/verifiable-credential-vc/credential-revocation-registry.md)
+* [Verifiable Presentation (VP)](concepts/verifiable-presentation-vp.md)
+* [Specifications](concepts/specifications/README.md)
+  * [Supported Signature Algorithms](concepts/specifications/supported-signature-algorithms.md)
 
 ## 👩💻 Developers
 

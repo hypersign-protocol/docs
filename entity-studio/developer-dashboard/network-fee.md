@@ -8,7 +8,7 @@ Since many SSI APIs are on-chain activities, `$hid` token is required to pay for
 
 Go to the developer dashboard and click on **Edit** icon of your application's card.  Right slider will be opened where you can see details of your wallet.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Wallet created for the application</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Wallet created for the application</p></figcaption></figure>
 
 {% hint style="info" %}
 Initially balance of this wallet is 0, all on-chain API requests will fail.  You can request hid testnet tokens from our Faucet

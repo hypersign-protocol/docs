@@ -4,7 +4,7 @@ Please [generate access token](authentication.md) before proceeding.  Once you g
 
 ### Issue a verifiable credential
 
-An issuer may issue a [verifiable credential](../../self-sovereign-identity-concepts/verifiable-credential-vc/) to a subject using this API. The credential document is signed by issuer's identity key and its status is registered on the blockchain.&#x20;
+An issuer may issue a [verifiable credential](../../concepts/verifiable-credential-vc/) to a subject using this API. The credential document is signed by issuer's identity key and its status is registered on the blockchain.&#x20;
 
 {% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/issue" method="post" %}
 [api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
