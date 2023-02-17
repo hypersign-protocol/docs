@@ -5,18 +5,18 @@
 ## ⛓ Hypersign Identity Network
 
 * [💬 Introduction](hypersign-identity-network/readme.md)
-* [🔨 VALIDATORS](hypersign-identity-network/validators/README.md)
-  * [Installation of Node](hypersign-identity-network/validators/installation-of-node.md)
-  * [Running a Localnet](hypersign-identity-network/validators/running-a-localnet.md)
-  * [Running a Testnet Validator Node](hypersign-identity-network/validators/running-a-testnet-validator-node.md)
-* [🗳 GOVERNANCE](hypersign-identity-network/governance/README.md)
+* [🔨 Validator](hypersign-identity-network/validator/README.md)
+  * [Installation of Node](hypersign-identity-network/validator/installation-of-node.md)
+  * [Running a Localnet](hypersign-identity-network/validator/running-a-localnet.md)
+  * [Running a Testnet Validator Node](hypersign-identity-network/validator/running-a-testnet-validator-node.md)
+* [🗳 Governance](hypersign-identity-network/governance/README.md)
   * [Proposals](hypersign-identity-network/governance/proposals/README.md)
     * [Blockchain Node Upgrade](hypersign-identity-network/governance/proposals/blockchain-node-upgrade.md)
     * [Community Pool Spend Proposal](hypersign-identity-network/governance/proposals/submitting-community-pool-spend-proposal.md)
     * [Blockchain Parameter Change Proposal](hypersign-identity-network/governance/proposals/submitting-blockchain-parameter-change-proposal.md)
     * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
   * [Delegation](hypersign-identity-network/governance/delegation.md)
-* [💰 FAUCET](hypersign-identity-network/faucet.md)
+* [💰 Faucet](hypersign-identity-network/faucet.md)
 * [🔍 Blockchain & ID Explorer](https://explorer.hypersign.id/hypersign-testnet)
 
 ## 🆔 Entity Studio
