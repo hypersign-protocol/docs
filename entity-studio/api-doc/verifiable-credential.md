@@ -48,6 +48,6 @@ Pass `false` value to parameter `retrieveCredential` to only retrieve status of 
 
 ### Update credential status of a verifiable credential
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/{credentialId}" method="patch" %}
+{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/status/{credentialId}" method="patch" %}
 [api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
