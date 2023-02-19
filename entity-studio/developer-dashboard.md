@@ -22,7 +22,7 @@ Fill basic details like application name, description and allowed origins and hi
 
 ### API Secret Key
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>API secret Key</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>API secret Key</p></figcaption></figure>
 
 Upon successful registration, an API secret key will be generated for your app. You may use this API secret key to generate access token to access all SSI APIs. Read more about it in [authentication](api-doc/authentication.md) section.&#x20;
 

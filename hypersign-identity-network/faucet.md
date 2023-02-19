@@ -2,7 +2,7 @@
 description: Testnet (Jagrat) faucet bot
 ---
 
-# 💰 FAUCET
+# 💰 Faucet
 
 You may earn testnet (jagrat) tokens from Jagrat faucet bot. Join the [jagrat-faucet channel](https://discord.gg/haDhhyzT) on our Discord server and simply request token for your wallet.&#x20;
 
@@ -22,7 +22,7 @@ $request hid18tzg64ur6t60denq4p0vyzvwt64ghuh8ck9rxx jagrat
 
 The bot will reply with the transaction URL:
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Checking balance
 
