@@ -6,8 +6,8 @@ Please [generate access token](authentication.md) before proceeding.  Once you g
 
 An issuer may issue a [verifiable credential](../../concepts/verifiable-credential-vc/) to a subject using this API. The credential document is signed by issuer's identity key and its status is registered on the blockchain.&#x20;
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/issue" method="post" %}
-[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/issue" method="post" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 {% hint style="info" %}
@@ -22,8 +22,8 @@ A signed verifiable credential must has signature of the issuer. Any one may ver
 > * _This document have not been tampered_
 > * _This document have not been revoked_
 
-{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/verify" method="post" %}
-[api-json.json](../../.gitbook/assets/api-json.json)
+{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/verify" method="post" %}
+[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
 
 {% hint style="info" %}
@@ -32,8 +32,8 @@ NOTE: Verifying a credential document is different than verifying a [verifiable 
 
 ### Fetch a verifiable credential and/or its status by Id
 
-{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/{credentialId}" method="get" %}
-[api-json.json](../../.gitbook/assets/api-json.json)
+{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/{credentialId}" method="get" %}
+[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
 
 {% hint style="info" %}
@@ -42,12 +42,12 @@ Pass `false` value to parameter `retrieveCredential` to only retrieve status of 
 
 ### Fetch list of verifiable credentials
 
-{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential" method="get" %}
-[api-json.json](../../.gitbook/assets/api-json.json)
+{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential" method="get" %}
+[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
 
 ### Update credential status of a verifiable credential
 
-{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/{credentialId}" method="patch" %}
-[api-json.json](../../.gitbook/assets/api-json.json)
+{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/credential/{credentialId}" method="patch" %}
+[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
