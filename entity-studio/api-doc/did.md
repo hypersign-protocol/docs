@@ -47,6 +47,10 @@ You can use this API to do all three or choose to skip the optional ones via `op
 
 Register a Signed DID Document in [DID registry](../../concepts/decentralized-identifier-did/did-registry.md). The Gas fee ([network fee](../developer-dashboard/network-fee.md)) for this DID regiration will be done by applications' walletAddress.&#x20;
 
+{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did/register" method="post" %}
+[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% endswagger %}
+
 > TODO: Add API Method here for /api/v1/did/**register**
 
 ### Resolve a DID
