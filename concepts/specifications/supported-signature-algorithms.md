@@ -13,10 +13,15 @@
 * [EdDSA](https://www.rfc-editor.org/rfc/rfc8032)
 * [ES256K](https://www.rfc-editor.org/rfc/rfc6979)
 
+**Verification Key Representation Formats**
+
+* Multibase
+* CAIP-10
+
 #### Verification Method Key type
 
 * [Ed25519VerificationKey2020](https://github.com/digitalbazaar/ed25519-verification-key-2020)
-* [EcdsaSecp256k1VerificationKey2019](https://w3c-ccg.github.io/security-vocab/#EcdsaSecp256k1RecoveryMethod2020)
+* [EcdsaSecp256k1VerificationKey2019](https://w3c-ccg.github.io/security-vocab/#EcdsaSecp256k1VerificationKey2019)
 * [EcdsaSecp256k1RecoveryMethod2020](https://w3c-ccg.github.io/security-vocab/#EcdsaSecp256k1RecoveryMethod2020)
 
 #### Verification Method Signature type
