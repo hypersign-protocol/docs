@@ -1,5 +1,9 @@
 # Presentation Template
 
+{% hint style="info" %}
+Entity Studio SSI API base URL: [https://api.entity.hypersign.id](https://api.entity.hypersign.id)
+{% endhint %}
+
 {% swagger src="../../../.gitbook/assets/api-json (1).json" path="/api/v1/presentation/template" method="post" %}
 [api-json (1).json](<../../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}

@@ -6,6 +6,10 @@ Please [generate access token](authentication.md) before proceeding.  Once you g
 
 An issuer may issue a [verifiable credential](../../concepts/verifiable-credential-vc/) to a subject using this API. The credential document is signed by issuer's identity key and its status is registered on the blockchain.&#x20;
 
+{% hint style="info" %}
+Entity Studio SSI API base URL: [https://api.entity.hypersign.id](https://api.entity.hypersign.id)
+{% endhint %}
+
 {% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/credential/issue" method="post" %}
 [api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}

@@ -10,6 +10,10 @@ Please [generate access token](authentication.md) before proceeding.  Once you g
 **NOTE:** Some of these APIs are on-chain APIs which means they need network fee to successfully execute, so make sure that your application wallet address has $hid tokens. Read [network fee](../developer-dashboard/network-fee.md) section for more details.
 {% endhint %}
 
+{% hint style="info" %}
+Entity Studio SSI API base URL: [https://api.entity.hypersign.id](https://api.entity.hypersign.id)
+{% endhint %}
+
 ### Create a DID
 
 Generates a new DID Document.&#x20;
