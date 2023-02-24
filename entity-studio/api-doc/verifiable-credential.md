@@ -1,6 +1,6 @@
 # Verifiable Credential
 
-Please [generate access token](authentication.md) before proceeding.  Once you generated the `access_token`, you can pass this token as bearer authorization token in the header for all APIs.&#x20;
+Please [generate access token](authentication.md) before proceeding.  Once you generated the `access_token`, you can pass this token as  _<mark style="background-color:yellow;">bearer authorization token</mark>_  in the header for all APIs.&#x20;
 
 ### Issue a verifiable credential
 

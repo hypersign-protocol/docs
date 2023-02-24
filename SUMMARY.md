@@ -45,6 +45,8 @@
   * [DID Communication (DIDComm)](concepts/decentralized-identifier-did/did-communication-didcomm.md)
   * [Adding multiple controller to DID](concepts/decentralized-identifier-did/adding-multiple-controller-to-did.md)
   * [Adding multiple verification methods](concepts/decentralized-identifier-did/adding-multiple-verification-methods.md)
+  * [Verification Method vs Recovery Signature](concepts/decentralized-identifier-did/verification-method-vs-recovery-signature.md)
+  * [Blockchain Account Id](concepts/decentralized-identifier-did/blockchain-account-id.md)
 * [Schema](concepts/schema/README.md)
   * [Schema Registry](concepts/schema/schema-registry.md)
 * [Verifiable Credential (VC)](concepts/verifiable-credential-vc/README.md)

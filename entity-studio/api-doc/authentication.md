@@ -18,3 +18,4 @@ Entity Studio SSI API base URL: [https://api.entity.hypersign.id](https://api.en
 [api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
 
+Once you generated the `access_token`, you can pass this token as _<mark style="background-color:yellow;">bearer authorization token</mark>_ in the header for all APIs.&#x20;
