@@ -47,6 +47,7 @@
   * [Adding multiple verification methods](concepts/decentralized-identifier-did/adding-multiple-verification-methods.md)
   * [Verification Method vs Recovery Signature](concepts/decentralized-identifier-did/verification-method-vs-recovery-signature.md)
   * [Blockchain Account Id](concepts/decentralized-identifier-did/blockchain-account-id.md)
+  * [Client Specification](concepts/decentralized-identifier-did/client-specification.md)
 * [Schema](concepts/schema/README.md)
   * [Schema Registry](concepts/schema/schema-registry.md)
 * [Verifiable Credential (VC)](concepts/verifiable-credential-vc/README.md)
