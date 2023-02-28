@@ -67,7 +67,7 @@ Registers a Signed DID Document in [DID registry](../../concepts/decentralized-i
 
 **Optional Parameters**
 
-* **clientSpec :** Wallet specifications which are used to sign the didDocument string. Use `eth-personalSign` for Metamask and `cosmos-ADR036` for Keplr wallet.&#x20;
+* **clientSpec :** Wallet specifications which are used to sign the didDocument string. Use `eth-personalSign` for Metamask and `cosmos-ADR036` for Keplr wallet. Learn more about client specifications [here](../../concepts/specifications/client-specification/).
 * **signature:** If didDocument is signed using client wallets (Metamask or Keply) then pass the signature hex string.&#x20;
 
 Note: Read how to use Metamask to create Hypersign DID.&#x20;
@@ -102,7 +102,7 @@ Update a DIDDocument
 
 **Optional Parameters**
 
-* **clientSpec :** Wallet specifications which are used to sign the didDocument string. Use `eth-personalSign` for Metamask and `cosmos-ADR036` for Keplr wallet.&#x20;
+* **clientSpec :** Wallet specifications which are used to sign the didDocument string. Use `eth-personalSign` for Metamask and `cosmos-ADR036` for Keplr wallet. Learn more about client specifications [here](../../concepts/specifications/client-specification/).
 * **signature:** If didDocument is signed using client wallets (Metamask or Keply) then pass the signature hex string.&#x20;
 
 ###
