@@ -34,7 +34,7 @@ Generates the a new DID  and DID Document.&#x20;
 
 ### Request Body Parameters
 
-* **Namespace:** DID name space. Possible values `testnet` & `' '`  &#x20;
+* **Namespace:** DID name space. Possible value is `testnet` &#x20;
 
 #### Optional Parameters
 
@@ -62,11 +62,19 @@ Registers a Signed DID Document in [DID registry](../../concepts/decentralized-i
 
 #### Request Parameters
 
+* **didDocument :**  DID documented generated using `/api1/v1/did/create` API
+* **verificationMethodId** :  Verification Method id of referred verification method in the didDocument
 
+**Optional Parameters**
+
+* **clientSpec :** Wallet specifications which are used to sign the didDocument string. Use `eth-personalSign` for Metamask and `cosmos-ADR036` for Keplr wallet.&#x20;
+* **signature:** If didDocument is signed using client wallets (Metamask or Keply) then pass the signature hex string.&#x20;
+
+Note: Read how to use Metamask to create Hypersign DID.&#x20;
 
 ### Resolve a DID
 
-Given a DID Id (example: `did:hid:testnet:0x123123123123`) this API will resolve the corresponding DID Document from the [DID registry](../../concepts/decentralized-identifier-did/did-registry.md).&#x20;
+Given a DID Id (example: `did:hid:testnet:0x123123123123`), this API will resolve the corresponding DID Document from the [DID registry](../../concepts/decentralized-identifier-did/did-registry.md) (or Hypersign Blockchain).&#x20;
 
 {% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did/resolve/{did}" method="get" %}
 [api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
@@ -80,8 +88,21 @@ Given a DID Id (example: `did:hid:testnet:0x123123123123`) this API will resolve
 
 ### Update a DID
 
+Update a DIDDocument
+
 {% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did" method="patch" %}
 [api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
 {% endswagger %}
+
+#### Request Parameters
+
+* **didDocument :**  DID documented to be updated
+* **verificationMethodId** :  Verification Method id of referred verification method in the didDocument
+* **deactivate** : `true` is you want to deactivate this DID, `false` otherwise.&#x20;
+
+**Optional Parameters**
+
+* **clientSpec :** Wallet specifications which are used to sign the didDocument string. Use `eth-personalSign` for Metamask and `cosmos-ADR036` for Keplr wallet.&#x20;
+* **signature:** If didDocument is signed using client wallets (Metamask or Keply) then pass the signature hex string.&#x20;
 
 ###

@@ -88,6 +88,7 @@
 * [🔥 Fyre](https://fyre.id)
 * [🏟 Entity Studio](https://entity.hypersign.id)
 * [✅ MetaAuth](https://metaauth.id)
+* [🆔 DODO-Wallet](https://hypersign-protocol.github.io/dodo-wallet/)
 
 ***
 
