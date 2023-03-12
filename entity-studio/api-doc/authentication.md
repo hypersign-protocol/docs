@@ -14,8 +14,9 @@ Once the API secret key is generated, you can use the API below to generate a ne
 Entity Studio SSI API base URL: [https://api.entity.hypersign.id](https://api.entity.hypersign.id)
 {% endhint %}
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/app/oauth" method="post" %}
-[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/app/oauth" method="post" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 Once you generated the `access_token`, you can pass this token as _<mark style="background-color:yellow;">bearer authorization token</mark>_ in the header for all APIs.&#x20;
+

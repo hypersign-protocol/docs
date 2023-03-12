@@ -28,8 +28,8 @@ There are 3 steps involved in DID creation:&#x20;
 
 Generates the a new DID  and DID Document.&#x20;
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did/create" method="post" %}
-[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did/create" method="post" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 ### Request Body Parameters
@@ -56,8 +56,8 @@ Generates the a new DID  and DID Document.&#x20;
 
 Registers a Signed DID Document in [DID registry](../../concepts/decentralized-identifier-did/did-registry.md). The Gas fee ([network fee](../developer-dashboard/network-fee.md)) for this DID registration will be done by applications' walletAddress.&#x20;
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did/register" method="post" %}
-[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did/register" method="post" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 #### Request Parameters
@@ -76,22 +76,22 @@ Note: Read how to use Metamask to create Hypersign DID.&#x20;
 
 Given a DID Id (example: `did:hid:testnet:0x123123123123`), this API will resolve the corresponding DID Document from the [DID registry](../../concepts/decentralized-identifier-did/did-registry.md) (or Hypersign Blockchain).&#x20;
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did/resolve/{did}" method="get" %}
-[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did/resolve/{did}" method="get" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 ### Fetch all DIDs for your apps
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did" method="get" %}
-[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did" method="get" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 ### Update a DID
 
 Update a DIDDocument
 
-{% swagger src="../../.gitbook/assets/api-json (1).json" path="/api/v1/did" method="patch" %}
-[api-json (1).json](<../../.gitbook/assets/api-json (1).json>)
+{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did" method="patch" %}
+[api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
 #### Request Parameters
