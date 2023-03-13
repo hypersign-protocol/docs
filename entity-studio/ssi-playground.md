@@ -4,7 +4,7 @@ description: >-
   Entity Studio playground.
 ---
 
-# SSI Playground
+# 🏑 SSI Playground
 
 Login to [Entity Studio dashboard](https://entity.hypersign.id/) and click on **SSI Playground** button to navigate to the playground dashboard.
 

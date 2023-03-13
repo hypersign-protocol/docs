@@ -1,4 +1,4 @@
-# Running a Localnet
+# Running one-node local hid network
 
 If you are looking to simulate a single-node blockchain on a local environment, following are the steps
 

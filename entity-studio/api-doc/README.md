@@ -4,7 +4,7 @@ description: >-
   Entity Studio infrastructure.
 ---
 
-# API Reference
+# 🔗 API Reference
 
 Register your application on [Entity Studio Developer Dashboard](../developer-dashboard.md) and generate your API secret Key before proceeding.&#x20;
 

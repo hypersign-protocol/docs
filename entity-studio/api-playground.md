@@ -4,7 +4,7 @@ description: >-
   SSI APIs
 ---
 
-# API Playground
+# 🎰 API Playground
 
 Login to [Entity Studio dashboard](https://entity.hypersign.id/) and click on **API Playground** button to navigate to the Swagger playground to try API.
 

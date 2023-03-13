@@ -14,6 +14,6 @@ Go to the developer dashboard and click on **Edit** icon of your application's c
 Initially balance of this wallet is 0, all on-chain API requests will fail.  You can request hid testnet tokens from our Faucet
 {% endhint %}
 
-{% content-ref url="../../hypersign-identity-network/faucet-testnet.md" %}
-[faucet-testnet.md](../../hypersign-identity-network/faucet-testnet.md)
+{% content-ref url="../../hypersign-identity-network/faucet.md" %}
+[faucet.md](../../hypersign-identity-network/faucet.md)
 {% endcontent-ref %}

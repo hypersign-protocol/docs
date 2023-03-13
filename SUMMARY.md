@@ -15,20 +15,15 @@
     * [Blockchain Parameter Change Proposal](hypersign-identity-network/governance/proposals/submitting-blockchain-parameter-change-proposal.md)
     * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
   * [Delegation](hypersign-identity-network/governance/delegation.md)
-* [💰 Faucet (testnet)](hypersign-identity-network/faucet-testnet.md)
-* [Setting up local hid-node tutorial](hypersign-identity-network/setting-up-local-hid-node-tutorial/README.md)
-  * [Running one-node local hid network](hypersign-identity-network/setting-up-local-hid-node-tutorial/running-a-localnet.md)
-  * [Create and fund new account](hypersign-identity-network/setting-up-local-hid-node-tutorial/create-and-fund-new-account.md)
-  * [Transfer funds](hypersign-identity-network/setting-up-local-hid-node-tutorial/transfer-funds.md)
-  * [Connect Kpler to local hid network](hypersign-identity-network/setting-up-local-hid-node-tutorial/connect-kpler-to-local-hid-network.md)
+* [💰 Faucet (testnet)](hypersign-identity-network/faucet.md)
 * [🔍 Blockchain & ID Explorer](https://explorer.hypersign.id/hypersign-testnet)
 
 ## 🆔 Entity Studio
 
 * [Introduction](entity-studio/introduction.md)
-* [Developer Dashboard](entity-studio/developer-dashboard.md)
+* [📈 Developer Dashboard](entity-studio/developer-dashboard.md)
   * [Network Fee](entity-studio/developer-dashboard/network-fee.md)
-* [API Reference](entity-studio/api-doc/README.md)
+* [🔗 API Reference](entity-studio/api-doc/README.md)
   * [Authentication](entity-studio/api-doc/authentication.md)
   * [DID](entity-studio/api-doc/did.md)
   * [Schema](entity-studio/api-doc/schema.md)
@@ -36,8 +31,23 @@
   * [Verifiable Presentation](entity-studio/api-doc/verifiable-presentation/README.md)
     * [Presentation Template](entity-studio/api-doc/verifiable-presentation/presentation-template.md)
     * [Presentation](entity-studio/api-doc/verifiable-presentation/presentation.md)
-* [SSI Playground](entity-studio/ssi-playground.md)
-* [API Playground](entity-studio/api-playground.md)
+* [🏑 SSI Playground](entity-studio/ssi-playground.md)
+* [🎰 API Playground](entity-studio/api-playground.md)
+
+## 👩💻 Developers
+
+* [👨💻 HID Node](developers/hid-node.md)
+* [⚙ Setting up local hid-node tutorial](developers/setting-up-local-hid-node-tutorial/README.md)
+  * [Running one-node local hid network](developers/setting-up-local-hid-node-tutorial/running-a-localnet.md)
+  * [Create and fund new account](developers/setting-up-local-hid-node-tutorial/create-and-fund-new-account.md)
+  * [Transfer funds](developers/setting-up-local-hid-node-tutorial/transfer-funds.md)
+  * [Connect Kpler to local hid network](developers/setting-up-local-hid-node-tutorial/connect-kpler-to-local-hid-network.md)
+* [♾ Hypersign SSI SDK](developers/hid-ssi-sdk/README.md)
+  * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
+  * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)
+  * [Hypersign Verifiable Credential SDK](developers/hid-ssi-sdk/hypersign-verifiable-credential-sdk.md)
+  * [Hypersign Verifiable Presentation SDK](developers/hid-ssi-sdk/hypersign-verifiable-presentation-sdk.md)
+  * [OfflineSigner](developers/hid-ssi-sdk/offlinesigner.md)
 
 ## 📖 Concepts
 
@@ -70,29 +80,19 @@
     * [EVM based chains](concepts/specifications/client-specification/evm-based-chains.md)
     * [Cosmos based chains](concepts/specifications/client-specification/cosmos-based-chains.md)
 
-## 👩💻 Developers
-
-* [HID Node](developers/hid-node.md)
-* [Hypersign SSI SDK](developers/hid-ssi-sdk/README.md)
-  * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
-  * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)
-  * [Hypersign Verifiable Credential SDK](developers/hid-ssi-sdk/hypersign-verifiable-credential-sdk.md)
-  * [Hypersign Verifiable Presentation SDK](developers/hid-ssi-sdk/hypersign-verifiable-presentation-sdk.md)
-  * [OfflineSigner](developers/hid-ssi-sdk/offlinesigner.md)
-* [Github](https://github.com/hypersign-protocol/)
-* [Forum](https://discord.gg/2hbU9Tsw)
-
 ## 🤵 Hypersign Identity Wallet
 
 * [Introduction](hypersign-identity-wallet/introduction.md)
 
 ## 🌐 Ecosystem
 
-* [🔍 HID Explorer](https://explorer.hypersign.id/hypersign-testnet)
-* [🔥 Fyre](https://fyre.id)
-* [🏟 Entity Studio](https://entity.hypersign.id)
-* [✅ MetaAuth](https://metaauth.id)
-* [🆔 DODO-Wallet](https://hypersign-protocol.github.io/dodo-wallet/)
+* [Forum](https://discord.gg/2hbU9Tsw)
+* [Github](https://github.com/hypersign-protocol/)
+* [HID Explorer](https://explorer.hypersign.id/hypersign-testnet)
+* [Fyre](https://fyre.id)
+* [Entity Studio](https://entity.hypersign.id)
+* [MetaAuth](https://metaauth.id)
+* [DODO-Wallet](https://dodo.hypersign.id)
 
 ***
 

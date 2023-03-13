@@ -4,7 +4,7 @@ description: >-
   on our infrastructure
 ---
 
-# Developer Dashboard
+# 📈 Developer Dashboard
 
 ### Register Application&#x20;
 
