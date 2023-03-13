@@ -4,7 +4,7 @@ First install [Keplr wallet extension](https://www.keplr.app/) in your web brows
 
 Keplr does not support adding custom network from its user interface.  But it provides a way (using code) add local network its UI.&#x20;
 
-Click on the "Add Hypersign Local Network To Keplr" button codepen below. &#x20;
+Click on "Run Pen" button below and then click on the "Add Hypersign Local Network To Keplr" button. &#x20;
 
 {% embed url="https://codepen.io/Vishwas1/pen/PodQxWy" %}
 
