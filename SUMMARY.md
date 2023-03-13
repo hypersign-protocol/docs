@@ -7,7 +7,6 @@
 * [💬 Introduction](hypersign-identity-network/readme.md)
 * [🔨 Validator](hypersign-identity-network/validator/README.md)
   * [Installation of Node](hypersign-identity-network/validator/installation-of-node.md)
-  * [Running a Localnet](hypersign-identity-network/validator/running-a-localnet.md)
   * [Running a Testnet Validator Node](hypersign-identity-network/validator/running-a-testnet-validator-node.md)
 * [🗳 Governance](hypersign-identity-network/governance/README.md)
   * [Proposals](hypersign-identity-network/governance/proposals/README.md)
@@ -16,7 +15,12 @@
     * [Blockchain Parameter Change Proposal](hypersign-identity-network/governance/proposals/submitting-blockchain-parameter-change-proposal.md)
     * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
   * [Delegation](hypersign-identity-network/governance/delegation.md)
-* [💰 Faucet](hypersign-identity-network/faucet.md)
+* [💰 Faucet (testnet)](hypersign-identity-network/faucet-testnet.md)
+* [Setting up local hid-node tutorial](hypersign-identity-network/setting-up-local-hid-node-tutorial/README.md)
+  * [Running one-node local hid network](hypersign-identity-network/setting-up-local-hid-node-tutorial/running-a-localnet.md)
+  * [Create and fund new account](hypersign-identity-network/setting-up-local-hid-node-tutorial/create-and-fund-new-account.md)
+  * [Transfer funds](hypersign-identity-network/setting-up-local-hid-node-tutorial/transfer-funds.md)
+  * [Connect Kpler to local hid network](hypersign-identity-network/setting-up-local-hid-node-tutorial/connect-kpler-to-local-hid-network.md)
 * [🔍 Blockchain & ID Explorer](https://explorer.hypersign.id/hypersign-testnet)
 
 ## 🆔 Entity Studio
