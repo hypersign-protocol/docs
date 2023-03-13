@@ -26,4 +26,4 @@ cd hid-node
 hid-noded start
 ```
 
-* Now, you have a single node blockchain running with `chain-id` as `hidnode` and `chain_namespace` as `testnet`.
+* Now, you have a single node blockchain running with `chain-id` as `hidnode` and `chain_namespace` as "`devnet"`.
