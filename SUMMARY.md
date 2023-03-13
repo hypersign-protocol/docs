@@ -41,7 +41,7 @@
   * [Running one-node local hid network](developers/setting-up-local-hid-node-tutorial/running-a-localnet.md)
   * [Create and fund new account](developers/setting-up-local-hid-node-tutorial/create-and-fund-new-account.md)
   * [Transfer funds](developers/setting-up-local-hid-node-tutorial/transfer-funds.md)
-  * [Connect Kpler to local hid network](developers/setting-up-local-hid-node-tutorial/connect-kpler-to-local-hid-network.md)
+  * [Connect Kplr to local hid network](developers/setting-up-local-hid-node-tutorial/connect-kplr-to-local-hid-network.md)
 * [♾ Hypersign SSI SDK](developers/hid-ssi-sdk/README.md)
   * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
   * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)

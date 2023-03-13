@@ -1,4 +1,4 @@
-# Connect Kpler to local hid network
+# Connect Kplr to local hid network
 
 First install [Keplr wallet extension](https://www.keplr.app/) in your web browser.
 
@@ -8,7 +8,7 @@ Click on "Run Pen" button below and then click on the "Add Hypersign Local Netwo
 
 {% embed url="https://codepen.io/Vishwas1/pen/PodQxWy" %}
 
-The Keplr will popup will and ask you to accept. Once accepted , you will see your local network in the network list of Keplr wallet.&#x20;
+The Keplr will popup and ask you to accept. Once accepted , you will see your local network in the network list of Keplr wallet.&#x20;
 
 Note: Make sure you network is running on port 25567
 
