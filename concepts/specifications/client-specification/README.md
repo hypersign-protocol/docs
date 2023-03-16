@@ -1,5 +1,5 @@
 ---
-description: Specification for data signing
+description: Supported Message Signature Specifications on Hypersign Network
 ---
 
 # Client Specification
