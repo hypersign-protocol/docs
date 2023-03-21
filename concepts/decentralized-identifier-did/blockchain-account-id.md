@@ -113,4 +113,16 @@ bip122:000000000019d6689c085ae165831e93:128Lkh3S7CkDTBZ8W7BbpsN3YYizJMp8p6
     }
 ```
 
+#### Supported Chains
+
+> TODO: Add list of supported chains by Hypersign
+
+#### Example of EVM based wallet address
+
+> TODO: Give one example of EVM based wallet
+
+#### Example of Cosmos based wallet address
+
+> TODO: Give one example of EVM based wallet
+
 [^1]: 
