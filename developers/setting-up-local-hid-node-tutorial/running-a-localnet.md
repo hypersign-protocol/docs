@@ -2,28 +2,94 @@
 
 If you are looking to simulate a single-node blockchain on a local environment, following are the steps
 
-* Clone the hid-node repo&#x20;
+### For Linux: &#x20;
+
+#### Download hid-node binary compressed file&#x20;
 
 ```
-git clone https://github.com/hypersign-protocol/hid-node.git
+wget https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.7/hid-noded-0.1.7-linux-amd64.tar.gz
 ```
 
-* Head over to cloned `hid-node` repo directory
+#### Extract the binary&#x20;
 
 ```bash
-cd hid-node
+tar -xvzf hid-noded-0.1.7-linux-amd64.tar.gz
 ```
 
-* Initialize the node config and setup a validator
+#### Move the hid-node binary to /usr/local/bin
 
-<pre class="language-bash"><code class="lang-bash"><strong>chmod +x ./scripts/localnet-single-node/setup.sh 
-</strong><strong>bash ./scripts/localnet-single-node/setup.sh
+<pre class="language-bash"><code class="lang-bash"><strong>sudo mv hid-noded-0.1.7-linux-amd64/hid-noded /usr/local/bin
 </strong></code></pre>
 
-* Run the node
+#### Check the version
 
+```bash
+hid-noded version
 ```
+
+#### Download and run the one-node network setup script
+
+```bash
+wget https://raw.githubusercontent.com/hypersign-protocol/hid-node/main/localnetsetup.sh && bash localnetsetup.sh
+```
+
+This script will setup validators and its cryptographic keys. It will also fund token in your genesis account.&#x20;
+
+#### Finally Run the one-node network
+
+```bash
 hid-noded start
 ```
 
-* Now, you have a single node blockchain running with `chain-id` as `hidnode` and `chain_namespace` as "`devnet"`.
+```bash
+➜  /tmp hid-noded start
+7:54PM INF starting node with ABCI Tendermint in-process
+7:54PM INF service start impl=multiAppConn module=proxy msg={}
+7:54PM INF service start connection=query impl=localClient module=abci-client msg={}
+7:54PM INF service start connection=snapshot impl=localClient module=abci-client msg={}
+7:54PM INF service start connection=mempool impl=localClient module=abci-client msg={}
+7:54PM INF service start connection=consensus impl=localClient module=abci-client msg={}
+7:54PM INF service start impl=EventBus module=events msg={}
+7:54PM INF service start impl=PubSub module=pubsub msg={}
+7:54PM INF service start impl=IndexerService module=txindex msg={}
+```
+
+### For MacOS:
+
+#### Download hid-node binary compressed file&#x20;
+
+```bash
+wget https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.7/hid-noded-0.1.7-darwin-arm64.tar.gz
+```
+
+#### Extract the binary&#x20;
+
+```bash
+tar -xvzf hid-noded-0.1.7-darwin-arm64.tar.gz
+```
+
+#### Move the hid-node binary to /usr/local/bin
+
+```bash
+sudo mv hid-noded-0.1.7-darwin-arm64/hid-noded /usr/local/bin
+```
+
+#### Check the version
+
+```bash
+hid-noded version
+```
+
+#### Download and run the one-node network setup script
+
+```bash
+wget https://raw.githubusercontent.com/hypersign-protocol/hid-node/main/localnetsetup.sh && bash localnetsetup.sh
+```
+
+This script will setup validators and its cryptographic keys. It will also fund token in your genesis account.&#x20;
+
+#### Finally Run the one-node network
+
+```bash
+hid-noded start
+```
