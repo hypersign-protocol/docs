@@ -2,8 +2,8 @@
 
 If you are looking to simulate a single-node blockchain on a local environment, following are the steps
 
-### For Linux: &#x20;
-
+{% tabs %}
+{% tab title="Linux" %}
 #### Download hid-node binary compressed file&#x20;
 
 ```
@@ -54,8 +54,10 @@ hid-noded start
 7:54PM INF service start impl=IndexerService module=txindex msg={}
 ```
 
-### For MacOS:
 
+{% endtab %}
+
+{% tab title="Mac Os" %}
 #### Download hid-node binary compressed file&#x20;
 
 ```bash
@@ -93,3 +95,8 @@ This script will setup validators and its cryptographic keys. It will also fund 
 ```bash
 hid-noded start
 ```
+{% endtab %}
+{% endtabs %}
+
+
+
