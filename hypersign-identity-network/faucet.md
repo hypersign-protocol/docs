@@ -4,7 +4,7 @@ description: Testnet (Jagrat) faucet bot
 
 # 💰 Faucet (testnet)
 
-You may earn testnet (jagrat) tokens from Jagrat faucet bot. Join the [jagrat-faucet channel](https://discord.gg/haDhhyzT) on our Discord server and simply request token for your wallet.&#x20;
+You may earn testnet (jagrat) tokens from Jagrat faucet bot. Join the [jagrat-faucet channel](https://discord.gg/kfWbXsZ7ay) on our Discord server and simply request token for your wallet.&#x20;
 
 #### Requesting Tokens
 
