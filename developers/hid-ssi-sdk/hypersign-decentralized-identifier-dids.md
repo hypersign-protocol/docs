@@ -64,7 +64,7 @@ Generate a new key pair of type `Ed25519VerificationKey2020`
 **API Definition**
 
 ```javascript
-generateKeys(params: { seed?: string }): Promise<{ privateKeyMultibase: string; publicKeyMultibase: string }>;
+generateKeys(params: { seed?: string,   controller?: string }): Promise<{ privateKeyMultibase: string; publicKeyMultibase: string }>;
 ```
 
 **Usage**
@@ -81,8 +81,10 @@ const kp = await hypersignDID.generateKeys({seed});
 
 ```javascript
 {
-  privateKeyMultibase: 'zrv5GBX5VGiyxUS6iWyRHDWVYSkKEGk8Qsmuj9GBJQK8KMFPVrReX1rBKHoFqgf2HGwYqVzH92pwnqbxhDAJNqsa668',
-  publicKeyMultibase: 'z6MkhHLrnL288X2dXRBVQ9KUDRi8LLUb6sb7zo1oUUjEqTVN'
+  id: undefined,
+  type: 'Ed25519VerificationKey2020',
+  publicKeyMultibase: 'z6MkqscpLqc2FioZvbtq4SZsW3Bh8LYwD8npYEFYBWuMd5Dn',
+  privateKeyMultibase: 'zrv4iHZUdacccLse5xfD1YuAFTyLtSL9i9o7Di7k6gXPhyuMxofjMmZ92hdim5vfS5r2nDtrCJCTLno36j4kWnzJRCY'
 }
 ```
 
