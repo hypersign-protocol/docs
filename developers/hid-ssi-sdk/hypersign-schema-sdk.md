@@ -34,13 +34,13 @@ Is a javascript library for Schema related operation (generate, sign, register e
 ## Install The Package
 
 ```bash
-npm i hid-ssi-sdk --save
+npm i https://github.com/hypersign-protocol/hid-ssi-js-sdk  --save
 ```
 
 ## Import The Package
 
 ```javascript
-import { HypersignSchema } from 'hid-ssi-sdk';
+import { HypersignSchema } from 'hs-ssi-sdk';
 ```
 
 ## Offchain APIs

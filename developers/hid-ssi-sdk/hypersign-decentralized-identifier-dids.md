@@ -35,13 +35,13 @@ Is a javascript library for DID related operation (generate, sign, verify etc). 
 ## Install The Package
 
 ```bash
-npm i hid-ssi-sdk --save
+npm i https://github.com/hypersign-protocol/hid-ssi-js-sdk  --save
 ```
 
 ## Import The Package
 
 ```javascript
-import { HypersignDID } from 'hid-ssi-sdk';
+import { HypersignDID } from 'hs-ssi-sdk';
 ```
 
 ## Offchain APIs
@@ -51,7 +51,7 @@ import { HypersignDID } from 'hid-ssi-sdk';
 ```javascript
 const hypersignDID = new HypersignDID();
 
-// OR initialize by passing a namepace. Default 'did:hid'
+// OR initialize by passing a namepace. Default 'testnet'
 // More complex way to initialize this class can be found in this documentation later
 const namespace = 'did:hid';
 const hypersignDID = new HypersignDID({ namespace });

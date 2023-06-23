@@ -30,13 +30,13 @@ Is a javascript library for verifiable credentials operation (generate, issue et
 ### Install The Package
 
 ```bash
-npm i hid-ssi-sdk --save
+npm i https://github.com/hypersign-protocol/hid-ssi-js-sdk  --save
 ```
 
 ### Import The Package
 
 ```javascript
-import { HypersignVerifiableCredential } from 'hid-ssi-sdk';
+import { HypersignVerifiableCredential } from 'hs-ssi-sdk';
 ```
 
 ### APIs
