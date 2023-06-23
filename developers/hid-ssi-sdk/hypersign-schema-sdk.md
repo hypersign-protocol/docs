@@ -4,6 +4,10 @@ description: A Javascript  based SDK for Schema Operations
 
 # Hypersign Schema SDK
 
+
+
+
+
 The Hypersign Schema comply [Verifiable Credentials JSON Schema 2022 data model](https://w3c-ccg.github.io/vc-json-schemas/#data\_model) specification and is stored on [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet) as it is [adviced to store](https://w3c-ccg.github.io/vc-json-schemas/#storage) schema documents and made available as immutable objects.
 
 Read  [Hypersign Schema](../../concepts/schema/)  section for more details.&#x20;
@@ -186,7 +190,15 @@ const hypersignSchema = new HypersignSchema({
 })
 ```
 
-**Call `init()` to initalize the offlineSigner**
+**OfflineSigner**
+
+You may follow this [this code snippet](https://github.com/hypersign-protocol/hid-ssi-js-sdk/blob/develop/src/tests/config.ts) for creating `OfflineSigner`
+
+```js
+offlineSigner = await createWallet(mnemonic);
+```
+
+**Call `init()` to initialize the offlineSigner**
 
 ```javascript
 await hypersignSchema.init();

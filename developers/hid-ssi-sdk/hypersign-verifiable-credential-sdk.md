@@ -59,7 +59,15 @@ const hypersignVC = new HypersignVerifiableCredential({
 })
 ```
 
-**Call `init()` to initalize the offlineSigner**
+**OfflineSigner**
+
+You may follow this [this code snippet](https://github.com/hypersign-protocol/hid-ssi-js-sdk/blob/develop/src/tests/config.ts) for creating `OfflineSigner`
+
+```js
+offlineSigner = await createWallet(mnemonic);
+```
+
+**Call `init()` to initialize the offlineSigner**
 
 ```javascript
 await hypersignVC.init();
