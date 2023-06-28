@@ -42,7 +42,7 @@ hid-noded start
 ```
 
 ```bash
-➜  /tmp hid-noded start
+➜ hid-noded start
 7:54PM INF starting node with ABCI Tendermint in-process
 7:54PM INF service start impl=multiAppConn module=proxy msg={}
 7:54PM INF service start connection=query impl=localClient module=abci-client msg={}
