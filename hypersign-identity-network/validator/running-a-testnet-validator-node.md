@@ -1,7 +1,5 @@
 # Running a Testnet Validator Node
 
-// test
-
 ### Hardware Requirements
 
 * **Minimal**
