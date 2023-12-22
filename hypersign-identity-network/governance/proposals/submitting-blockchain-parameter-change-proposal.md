@@ -1,4 +1,4 @@
-# Submitting Blockchain Parameter Change Proposal
+# Blockchain Parameter Change Proposal
 
 ## Proposal Structure
 
@@ -41,5 +41,5 @@ Example:
 * Run the following to submit a blockchain parameter change proposal:
 
 ```
-hid-noded tx gov submit-proposal param-change "<path-of-proposal-json-file>" --from <key-name> --yes
+hid-noded tx gov submit-legacy-proposal param-change "<path-of-proposal-json-file>" --from <key-name> --yes
 ```

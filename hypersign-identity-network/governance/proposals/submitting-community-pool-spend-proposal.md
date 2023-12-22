@@ -1,4 +1,4 @@
-# Submitting Community Pool Spend Proposal
+# Community Pool Spend Proposal
 
 ## Proposal Structure
 
@@ -31,5 +31,5 @@ Example:
 * Run the following to submit a community pool spend proposal:
 
 ```
-hid-noded tx gov submit-proposal community-pool-spend "<path-to-proposal-json-file>" --from <key-name> --yes
+hid-noded tx gov submit-legacy-proposal community-pool-spend "<path-to-proposal-json-file>" --from <key-name> --yes
 ```

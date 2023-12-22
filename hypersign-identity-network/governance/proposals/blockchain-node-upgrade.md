@@ -15,7 +15,7 @@
 * Run the following to submit a blockchain node upgrade proposal:
 
 ```
-hid-noded tx gov submit-legacy-proposal submit-proposal software-upgrade <Proposal Name> \
+hid-noded tx gov submit-legacy-proposal software-upgrade <Proposal Name> \
 --title "<Proposal Title>" \
 --description "<Proposal Description>" \
 --upgrade-height "<Blockchain Height at which the upgrade should occur>" \
