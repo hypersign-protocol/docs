@@ -16,10 +16,7 @@ git clone https://github.com/hypersign-protocol/hid-node.git
 
 ```bash
 cd hid-node
-
-HIDNODE_VERSION=v$(curl -s https://rpc.jagrat.hypersign.id/abci_info | jq -r .result.response.version)
-git checkout $HIDNODE_VERSION
-
+git checkout v0.2.0
 make install
 ```
 
@@ -35,10 +32,7 @@ hid-noded version
 
 <pre class="language-bash"><code class="lang-bash">export OS=&#x3C;operating-system>
 <strong>export ARCH=&#x3C;system-architecture>
-</strong>
-<strong># Get the list of tags: https://github.com/hypersign-protocol/hid-node/tags
-</strong># Exclude the `v` prefix while entering
-<strong>export TAG=0.1.2  # Latest Testnet Tag
+</strong><strong>export TAG=0.2.0
 </strong>
 <strong># Download the binary
 </strong>wget https://github.com/hypersign-protocol/hid-node/releases/download/v${TAG}/hid-noded-${TAG}-${OS}-${ARCH}.tar.gz
@@ -50,4 +44,4 @@ Refer the following table to obtain the environment variables for your system co
 | :--------------: | :----: | :---: |
 |   Linux 64-bit   |  linux | amd64 |
 |    Linux ARMv7   |  linux | arm64 |
-|      Darwin      | darwin | arm64 |
+|       MacOS      | darwin | amd64 |
