@@ -16,7 +16,7 @@
     * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
   * [Delegation](hypersign-identity-network/governance/delegation.md)
 * [💰 Faucet (testnet)](hypersign-identity-network/faucet.md)
-* [🔍 Blockchain & ID Explorer](https://explorer.hypersign.id/hypersign-testnet)
+* [🔍 Blockchain & ID Explorer](https://explorer.hypersign.id/hypersign-prajna-testnet)
 
 ## 🆔 Entity Studio
 
