@@ -14,12 +14,11 @@ The Hypersign Identity Network is built using [Cosmos-SDK](https://tendermint.co
 
 ## Public Endpoints
 
-| Type | Link                                   |
-| ---- | -------------------------------------- |
-| RPC  | https://rpc.jagrat.hypersign.id/       |
-| API  | https://api.jagrat.hypersign.id/       |
-| gRPC | https://grpc.jagrat.hypersign.id:5099/ |
+| Type | Link                             |
+| ---- | -------------------------------- |
+| RPC  | https://rpc.prajna.hypersign.id/ |
+| API  | https://api.prajna.hypersign.id/ |
 
 ## Blockchain Explorers
 
-[Testnet Explorer (Jagrat)](https://explorer.hypersign.id/hypersign-testnet)
+[Testnet Explorer - Prajna](https://explorer.hypersign.id/hypersign-prajna-testnet)
