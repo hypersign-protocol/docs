@@ -3,17 +3,17 @@
 ### Hardware Requirements
 
 * **Minimal**
-  * 8 GB RAM
-  * 250 GB SSD Storage
+  * 16 GB RAM
+  * 300 GB SSD Storage
   * 1.4 GHz x2 CPU
 * **Recommended**
-  * 16 GB RAM
-  * 500 GB SSD Storage
+  * 32 GB RAM
+  * 600 GB SSD Storage
   * 2.0 GHx x4 CPU
 
 ### Prerequisites
 
-* Golang 1.18+ required. ([Installation Ref](https://go.dev/doc/install))
+* Golang 1.21 required. ([Installation Ref](https://go.dev/doc/install))
 * git [Installation Ref](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * make [Installation Ref](https://linuxhint.com/install-make-ubuntu/)
 
@@ -42,22 +42,15 @@ hid-noded keys add <key-name> --recover
 * Initialise the node with a moniker name.
 
 ```
-hid-noded init <moniker-name> --chain-id jagrat
+hid-noded init <moniker-name> --chain-id prajna-1
 ```
 
 Configuration files of the node are stored in the default location: `$HOME/.hid-node`. If you want to specify a different location, append the flag `--home <hid-node-home-directory>` to the above command. In this case, for every transaction based commands, you have to explicitly pass this flag.
 
-* Replace `genesis.json` present in `<hid-node-home-directory>/config` with the Testnet genesis [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/jagrat/final\_genesis.json).
-* Copy the final peers from [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/jagrat/final\_peers.txt). Open `<hid-node-home-directory>/config/config.toml` and the add the peers in the field `persistent_peers`.
-* Set the `minimum-gas-price` in `<hid-node-home-directory>/config/app.toml` to `0.02uhid`.
+* Replace `genesis.json` present in `<hid-node-home-directory>/config` with the Testnet genesis [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/prajna/final\_genesis.json).
+* Copy the final peers from [here](https://github.com/hypersign-protocol/networks/blob/master/testnet/prajna/final\_peers.txt). Open `<hid-node-home-directory>/config/config.toml` and the add the peers in the field `persistent_peers`.
 
 ### Run Full Node
-
-**NOTE: The network is live since 28th September 2022, and have gone through two governance based upgrades. Hence, it's highly advisable to use State Sync. Please donot rely on Foundation Node for state sync, as we don't provide the service yet.**
-
-The node can be run in either of the following ways:
-
-**Standalone**
 
 `hid-noded` binary can be run in either of the following ways:
 
@@ -76,55 +69,9 @@ hid-noded start
   * To check the status of service: `sudo systemctl status hidnoded-standalone.service`
   * To restart the service: `sudo systemctl restart hidnoded-standalone.service`
 
-**Cosmovisor**
-
-> Cosmovisor is a tool which will enable automatic upgrade of a blockchain, once a software upgrade governance proposal is passed. More information on Cosmovisor [here](https://docs.cosmos.network/v0.45/run-node/cosmovisor.html).
-
-> Use this approach only if you already have some basic understanding or experience in running Cosmovisor.
-
-*   Setup Cosmovisor
-
-    * Download and Install Cosmovisor
-
-    ```
-    wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.2.0/cosmovisor-v1.2.0-linux-amd64.tar.gz && tar -C /usr/local/bin/ -xzf cosmovisor-v1.2.0-linux-amd64.tar.gz
-    ```
-
-    * Export the following environment variables which are needed by `cosmovisor`
-
-    ```
-    export DAEMON_NAME=hid-noded
-    export DAEMON_PATH=$(which hid-noded)
-    export DAEMON_HOME=<Blockchain Config Path Directory>/.hid-node  # Example: $HOME/.hid-node
-    ```
-
-    * Create the `cosmovisor` directory and copy the existing blockchain binary to the following location
-
-    ```
-    mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
-    cp $DAEMON_PATH $DAEMON_HOME/cosmovisor/genesis/bin
-    ```
-*   Cosmovisor can be run in either of the following ways:
-
-    * Standalone
-
-    ```
-    cosmovisor run start
-    ```
-
-    * As a system service
-      * Change directory: `cd /etc/systemd/system`
-      * Add the [Cosmovisor system service file](https://github.com/hypersign-protocol/hid-node/blob/main/contrib/hidnoded-cosmovisor.service) to `/etc/systemd/system` directory.
-      * Open the system service file and make necessary changes in line 7, in case your `hid-node` config path is different.
-      * Reload service files: `sudo systemctl daemon-reload`
-      * To make sure your service starts on every reboot (Optional): `sudo systemctl enable hidnoded-cosmovisor.service`
-      * To start the service: `sudo systemctl start hidnoded-cosmovisor.service`
-      * To check the status of service: `sudo systemctl status hidnoded-cosmovisor.service`
-      * To restart the service: `sudo systemctl restart hidnoded-cosmovisor.service`
-
 ### Important Points
 
-If you haven't run any Tendermint-based chains before, please note the following points before moving to the upcoming sections below:-
+If you haven't run any CometBFT based chains before, please note the following points before moving to the upcoming sections below:-
 
 * RPC and gRPC ports can be modified in `<blockchain-config-dir>/config/config.toml`
 * API port can be modified in `<blockchain-config-dir>/config/app.toml`
@@ -132,25 +79,25 @@ If you haven't run any Tendermint-based chains before, please note the following
   * Transaction based. It starts with `hid-noded tx ...`
   * Query based. It starts with `hid-noded q ...`
 * Transaction based commands may/always require the following flags:
-  * `--chain-id jagrat`
+  * `--chain-id prajna-1`
   * `--fees 4000uhid`: The value of fees is arbitrary, but it should be sufficiently high enough for the transaction to go through. `4000uhid` is an appropriate value for almost every transaction
   * `--node <rpc-ip-or-dns:rpc-port>`: The node expects RPC to run on default port 26657. If your RPC port is different from default, you need to explicitly pass this flag. In case of default port, it can be skipped.
 * Query based commands may require the following flag:
   * `--node <rpc-ip-or-dns:rpc-port>`: The node expects RPC to run on default port 26657. If your RPC port is different from default, you need to explicitly pass this flag. In case of default port, it can be skipped.
-* Learn more about Cosmos SDK's modules and their respective commands from [here](https://docs.cosmos.network/v0.45/modules/)
+* Learn more about Cosmos SDK's modules and their respective commands from [here](https://docs.cosmos.network/v0.47/build/modules)
 
 ### Promotion of Full Node to Validator Node
 
 * Perform these steps only when your node is completely **synced** with the testnet.
-* Acquire some **$HID** tokens. Use the faucet channel of Hypersign Protocol's Discord Server from [here](https://discord.com/channels/777575858075861033/1024638479818293318)
+* Acquire some **$HID** tokens. Use the faucet channel of Hypersign Protocol's Discord Server from [here](https://discord.com/channels/777575858075861033/1186968387860049920)
 * Perform the following validator creation transaction.
 
 ```
 hid-noded tx staking create-validator \
 --from <key-name> \
 --amount 1000000uhid \
---pubkey "$(hid-noded tendermint show-validator)" \
---chain-id jagrat \
+--pubkey "$(hid-noded comet show-validator)" \
+--chain-id prajna-1 \
 --moniker="<validator-name>" \
 --commission-max-change-rate=0.01 \
 --commission-max-rate=1.0 \
@@ -185,7 +132,7 @@ hid-noded q distribution validator-outstanding-rewards <validator-addr>
 
 ### Unjailing a validator node
 
-In Tendermint-based blockchain, if a node is not active for a certain period of time or if the current self stake falls below the minimum self stake, it is temporarily moved out of the validator set. This situation is called Jailing of a validator. The validator remains in the jailed period for about 10 minutes.
+In CometBFT-based blockchain, if a node is not active for a certain period of time or if the current self stake falls below the minimum self stake, it is temporarily moved out of the validator set. This situation is called Jailing of a validator. The validator remains in the jailed period for about 10 minutes.
 
 The validator can only be unjailed manually through a transaction after the jailed period is over and if the current self stake is above the required self stake at the time the time of performing the following unjail transaction:
 
