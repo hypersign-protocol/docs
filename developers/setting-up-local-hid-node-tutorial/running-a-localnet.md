@@ -7,18 +7,18 @@ If you are looking to simulate a single-node blockchain on a local environment, 
 #### Download hid-node binary compressed file&#x20;
 
 ```
-wget https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.7/hid-noded-0.1.7-linux-amd64.tar.gz
+wget https://github.com/hypersign-protocol/hid-node/releases/download/v0.2.0/hid-noded-0.2.0-linux-amd64.tar.gz
 ```
 
 #### Extract the binary&#x20;
 
 ```bash
-tar -xvzf hid-noded-0.1.7-linux-amd64.tar.gz
+tar -xvzf hid-noded-0.2.0-linux-amd64.tar.gz
 ```
 
 #### Move the hid-node binary to /usr/local/bin
 
-<pre class="language-bash"><code class="lang-bash"><strong>sudo mv hid-noded-0.1.7-linux-amd64/hid-noded /usr/local/bin
+<pre class="language-bash"><code class="lang-bash"><strong>sudo mv hid-noded-0.2.0-linux-amd64/hid-noded /usr/local/bin
 </strong></code></pre>
 
 #### Check the version
@@ -30,7 +30,7 @@ hid-noded version
 #### Download and run the one-node network setup script
 
 ```bash
-wget https://raw.githubusercontent.com/hypersign-protocol/hid-node/main/localnetsetup.sh && bash localnetsetup.sh
+wget https://github.com/hypersign-protocol/hid-node/raw/main/scripts/localnet-single-node/setup.sh && bash setup.sh
 ```
 
 This script will setup validators and its cryptographic keys. It will also fund token in your genesis account.&#x20;

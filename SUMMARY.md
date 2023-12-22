@@ -88,7 +88,7 @@
 
 * [Forum](https://discord.gg/2hbU9Tsw)
 * [Github](https://github.com/hypersign-protocol/)
-* [HID Explorer](https://explorer.hypersign.id/hypersign-testnet)
+* [HID Explorer](https://explorer.hypersign.id/hypersign-prajna-testnet)
 * [Fyre](https://fyre.id)
 * [Entity Studio](https://entity.hypersign.id)
 * [MetaAuth](https://metaauth.id)

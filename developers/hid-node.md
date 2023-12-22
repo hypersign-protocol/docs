@@ -1,4 +1,4 @@
-# HID Node
+# 👨💻 HID Node
 
 **Hypersign Identity Network (HID Node)** is built on top of **Cosmos SDK**. This documentation only covers the **SSI module** and the basic commands of **Cosmos SDK** modules. It is recommended to have a good understanding of **Cosmos SDK.** Please refer Cosmos SDK docs [here](https://docs.cosmos.network/v0.45/).
 
