@@ -30,54 +30,54 @@ The Presentation Query request is a way to request user's credential from their 
 
 Below is the sample presentation query request object:&#x20;
 
-```javascript
+```json
 {
-                "query": [
-                    {
-                        "type": "QueryByExample",
-                        "credentialQuery": [
-                            {
-                                "example": {
-                                    "type": "PersonhoodCredential",
-                                    "credentialSchema": {
-                                        "id": "sch:hid:testnet:z6Mkvtd73dDgg7HU8wLCmXbe2RAHPAU1Ex1VUXCFtPV7u36i:1.0"
-                                    }
-                                },
-                                "trustedIssuer": [
-                                    {
-                                        "required": true,
-                                        "issuer": "did:hid:testnet:zCyAz2wfKjAaWE4FW75KxpZh2wuo9kRAUZyV2xEe93cKr"
-                                    }
-                                ]
-                            }
-                        ]
+    "query": [
+        {
+            "type": "QueryByExample",
+            "credentialQuery": [
+                {
+                    "example": {
+                        "type": "PersonhoodCredential",
+                        "credentialSchema": {
+                            "id": "sch:hid:testnet:z6Mkvtd73dDgg7HU8wLCmXbe2RAHPAU1Ex1VUXCFtPV7u36i:1.0"
+                        }
                     },
-                    {
-                        "type": "QueryByExample",
-                        "credentialQuery": [
-                            {
-                                "example": {
-                                    "type": "PassportCredential",
-                                    "credentialSchema": {
-                                        "id": "sch:hid:testnet:z6MkgMXXQL7YD7BufNLbjrwueoj4nmih9xujJ6aozJDmzFWx:1.0"
-                                    }
-                                },
-                                "trustedIssuer": [
-                                    {
-                                        "required": true,
-                                        "issuer": "did:hid:testnet:zCyAz2wfKjAaWE4FW75KxpZh2wuo9kRAUZyV2xEe93cKr"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                "reason": "<Provide a vaild reason>",
-                "issuerDID": "did:hid:testnet:3d11e40f-2250-4846-bd23-bfb58cf4eea5",
-                "issuerDIDVerificationMethod": "did:hid:testnet:3d11e40f-2250-4846-bd23-bfb58cf4eea5#key-1",
-                "domain": window.location.href,
-                "logoUrl": "<Your Logo Url>"
-            }
+                    "trustedIssuer": [
+                        {
+                            "required": true,
+                            "issuer": "did:hid:testnet:zCyAz2wfKjAaWE4FW75KxpZh2wuo9kRAUZyV2xEe93cKr"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "QueryByExample",
+            "credentialQuery": [
+                {
+                    "example": {
+                        "type": "PassportCredential",
+                        "credentialSchema": {
+                            "id": "sch:hid:testnet:z6MkgMXXQL7YD7BufNLbjrwueoj4nmih9xujJ6aozJDmzFWx:1.0"
+                        }
+                    },
+                    "trustedIssuer": [
+                        {
+                            "required": true,
+                            "issuer": "did:hid:testnet:zCyAz2wfKjAaWE4FW75KxpZh2wuo9kRAUZyV2xEe93cKr"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "reason": "<Provide a vaild reason>",
+    "issuerDID": "did:hid:testnet:3d11e40f-2250-4846-bd23-bfb58cf4eea5",
+    "issuerDIDVerificationMethod": "did:hid:testnet:3d11e40f-2250-4846-bd23-bfb58cf4eea5#key-1",
+    "domain": window.location.href,
+    "logoUrl": "<Your Logo Url>"
+}
 ```
 
 1. **Reason**: Please furnish a legitimate justification for why you are seeking access to user data. This information will be displayed on the consent screen for users to review and authorize your app to access their data. Max `110` chars are supported.
