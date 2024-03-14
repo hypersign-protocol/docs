@@ -12,7 +12,7 @@ Navigate to [Entity Studio Developer dashboard ](https://entity.hypersign.id)and
 
 <figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Developer dashboard</p></figcaption></figure>
 
-Upon login, click on **+Create** button **** to register an application.&#x20;
+Upon login, click on **+Create** button to register an application.&#x20;
 
 <figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>App registration form</p></figcaption></figure>
 

@@ -4,7 +4,7 @@ description: A full stack identity infrastructure for building ID products
 
 # Introduction
 
-<mark style="color:blue;">****</mark>[<mark style="color:blue;">**Entity Studio**</mark> is a full stack identity infrastructure that enables rapid development of digital identity products. It is built on the **Hypersign Identity Blockchain Network** and adheres to the **W3C** DID and Verifiable Credential specifications. The platform incorporates a low-code approach and offers APIs and SDKs to empower developers to swiftly deploy applications in production.](#user-content-fn-1)[^1]
+[<mark style="color:blue;">**Entity Studio**</mark> is a full stack identity infrastructure that enables rapid development of digital identity products. It is built on the **Hypersign Identity Blockchain Network** and adheres to the **W3C** DID and Verifiable Credential specifications. The platform incorporates a low-code approach and offers APIs and SDKs to empower developers to swiftly deploy applications in production.](#user-content-fn-1)[^1]
 
 The Entity Studio also provides an interactive playground, called **Entity Studio SSI Playground**,  to learn and test the Self Sovereign Identity (SSI) concepts.&#x20;
 

@@ -2,13 +2,13 @@
 
 * [💬 Welcome!](README.md)
 
-## ⛓ Hypersign Identity Network
+## ⛓️ Hypersign Identity Network
 
 * [💬 Introduction](hypersign-identity-network/readme.md)
 * [🔨 Validator](hypersign-identity-network/validator/README.md)
   * [Installation of Node](hypersign-identity-network/validator/installation-of-node.md)
   * [Running a Testnet Validator Node](hypersign-identity-network/validator/running-a-testnet-validator-node.md)
-* [🗳 Governance](hypersign-identity-network/governance/README.md)
+* [🗳️ Governance](hypersign-identity-network/governance/README.md)
   * [Proposals](hypersign-identity-network/governance/proposals/README.md)
     * [Blockchain Node Upgrade](hypersign-identity-network/governance/proposals/blockchain-node-upgrade.md)
     * [Community Pool Spend Proposal](hypersign-identity-network/governance/proposals/submitting-community-pool-spend-proposal.md)
@@ -34,15 +34,15 @@
 * [🏑 SSI Playground](entity-studio/ssi-playground.md)
 * [🎰 API Playground](entity-studio/api-playground.md)
 
-## 👩💻 Developers
+## 👩‍💻 Developers
 
-* [👨💻 HID Node](developers/hid-node.md)
-* [⚙ Setting up local hid-node tutorial](developers/setting-up-local-hid-node-tutorial/README.md)
+* [👨‍💻 HID Node](developers/hid-node.md)
+* [⚙️ Setting up local hid-node tutorial](developers/setting-up-local-hid-node-tutorial/README.md)
   * [Running one-node local hid network](developers/setting-up-local-hid-node-tutorial/running-a-localnet.md)
   * [Create and fund new account](developers/setting-up-local-hid-node-tutorial/create-and-fund-new-account.md)
   * [Transfer funds](developers/setting-up-local-hid-node-tutorial/transfer-funds.md)
   * [Connect Keplr to local hid network](developers/setting-up-local-hid-node-tutorial/connect-keplr-to-local-hid-network.md)
-* [♾ Hypersign SSI SDK](developers/hid-ssi-sdk/README.md)
+* [♾️ Hypersign SSI SDK](developers/hid-ssi-sdk/README.md)
   * [Hypersign DID SDK](developers/hid-ssi-sdk/hypersign-decentralized-identifier-dids.md)
   * [Hypersign Schema SDK](developers/hid-ssi-sdk/hypersign-schema-sdk.md)
   * [Hypersign Verifiable Credential SDK](developers/hid-ssi-sdk/hypersign-verifiable-credential-sdk.md)
@@ -79,6 +79,16 @@
   * [Client Specification](concepts/specifications/client-specification/README.md)
     * [EVM based chains](concepts/specifications/client-specification/evm-based-chains.md)
     * [Cosmos based chains](concepts/specifications/client-specification/cosmos-based-chains.md)
+
+## Hypersign KYC
+
+* [Concepts](hypersign-kyc/concepts/README.md)
+  * [Facial Recognition](hypersign-kyc/concepts/facial-recognition.md)
+  * [ID Verification (via OCR)](hypersign-kyc/concepts/id-verification-via-ocr.md)
+  * [Reusable KYC](hypersign-kyc/concepts/reusable-kyc.md)
+  * [Encrypted Data Vault](hypersign-kyc/concepts/encrypted-data-vault.md)
+* [Integrations](hypersign-kyc/integrations/README.md)
+  * [Staging](hypersign-kyc/integrations/staging.md)
 
 ## 🤵 Hypersign Identity Wallet
 
