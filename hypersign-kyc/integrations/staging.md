@@ -73,15 +73,19 @@ Below is the sample presentation query request object:&#x20;
         }
     ],
     "reason": "<Provide a vaild reason>",
-    "issuerDID": "did:hid:testnet:3d11e40f-2250-4846-bd23-bfb58cf4eea5",
-    "issuerDIDVerificationMethod": "did:hid:testnet:3d11e40f-2250-4846-bd23-bfb58cf4eea5#key-1",
+    "issuerDID": "<Provide Issuer DID>",
+    "issuerDIDVerificationMethod": "<Provide Issuer DID Verification Method>",
     "domain": window.location.href,
     "logoUrl": "<Your Logo Url>"
 }
 ```
 
 1. **Reason**: Please furnish a legitimate justification for why you are seeking access to user data. This information will be displayed on the consent screen for users to review and authorize your app to access their data. Max `110` chars are supported.
-2. **LogoUrl**: Provide a URL for the monologue that users can view on the consent screen. See the example widget consent screen for reference.&#x20;
+2. **IssuerDID**:  Kindly contact Hypersign Admin
+3. **IssuerDIDVerificationMethod**:  Kindly contact Hypersign Admin
+4. **LogoUrl**: Provide a URL for the monologue that users can view on the consent screen. See the example widget consent screen for reference.&#x20;
+
+> Keep rest of the fields in the `query` as it is.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
