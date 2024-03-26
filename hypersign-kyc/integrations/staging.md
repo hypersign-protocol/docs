@@ -162,7 +162,7 @@ Once you receive the `idToken`, you can query the KYC service to extract user da
 KYC  service URL:
 
 ```html
-https://ent-4c71874.api.cavach.hypersign.id/api/v1/e-kyc/verification/consent?idToken=${idToken}
+https://ent-4c71874.api.cavach.hypersign.id/api/v1/e-kyc/verification/user-consent?idToken=${idToken}
 ```
 
 Method:
