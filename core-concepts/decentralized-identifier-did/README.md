@@ -1,3 +1,7 @@
+---
+icon: face-dotted
+---
+
 # Decentralized Identifier (DID)
 
 ## What is a DID?

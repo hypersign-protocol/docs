@@ -1,3 +1,7 @@
+---
+icon: database
+---
+
 # Schema
 
 ## What is Verifiable Credential Schema or Data Models?

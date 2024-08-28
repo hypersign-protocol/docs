@@ -61,15 +61,15 @@
 
 ## Hypersign Developer Dashboard
 
-* [Login](hypersign-developer-dashboard/login.md)
 * [Service](hypersign-developer-dashboard/developer-dashboard/README.md)
   * [Managing API keys](hypersign-developer-dashboard/developer-dashboard/managing-api-keys.md)
   * [Network Fee](hypersign-developer-dashboard/developer-dashboard/network-fee.md)
-* [Teams & Access](hypersign-developer-dashboard/teams-and-access/README.md)
-  * [Members](hypersign-developer-dashboard/teams-and-access/members.md)
-  * [Teams](hypersign-developer-dashboard/teams-and-access/teams.md)
-  * [Access List](hypersign-developer-dashboard/teams-and-access/access-list.md)
+* [Roles & Access](hypersign-developer-dashboard/roles-and-access/README.md)
+  * [Members](hypersign-developer-dashboard/roles-and-access/members.md)
+  * [Teams](hypersign-developer-dashboard/roles-and-access/teams.md)
+  * [Access List](hypersign-developer-dashboard/roles-and-access/access-list.md)
 * [Security](hypersign-developer-dashboard/security/README.md)
+  * [Login](hypersign-developer-dashboard/security/login.md)
   * [Multi factor Authentication (MFA)](hypersign-developer-dashboard/security/multi-factor-authentication-mfa.md)
 
 ## Hypersign Identity Network
