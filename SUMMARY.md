@@ -11,21 +11,50 @@
   * [ID Verification (via OCR)](hypersign-kyc/concepts/id-verification-via-ocr.md)
   * [Reusable KYC](hypersign-kyc/concepts/reusable-kyc.md)
   * [Encrypted Data Vault](hypersign-kyc/concepts/encrypted-data-vault.md)
+* [KYC Widget](hypersign-kyc/kyc-widget/README.md)
+  * [Web](hypersign-kyc/kyc-widget/web.md)
+* [Dashboard](hypersign-kyc/dashboard.md)
+
+## Hypersign SSI
+
+* [Introduction](hypersign-ssi/introduction.md)
+* [🔗 API Reference](hypersign-ssi/api-doc/README.md)
+  * [Authentication](hypersign-ssi/api-doc/authentication.md)
+  * [DID](hypersign-ssi/api-doc/did.md)
+  * [Schema](hypersign-ssi/api-doc/schema.md)
+  * [Verifiable Credential](hypersign-ssi/api-doc/verifiable-credential.md)
+  * [Verifiable Presentation](hypersign-ssi/api-doc/verifiable-presentation/README.md)
+    * [Presentation Template](hypersign-ssi/api-doc/verifiable-presentation/presentation-template.md)
+    * [Presentation](hypersign-ssi/api-doc/verifiable-presentation/presentation.md)
+* [🎰 API Playground](hypersign-ssi/api-playground.md)
+* [🏑 SSI Playground](hypersign-ssi/ssi-playground.md)
+
+***
+
+* [Hypersign Developer Dashboard](hypersign-developer-dashboard/README.md)
+  * [Service](hypersign-developer-dashboard/developer-dashboard/README.md)
+    * [Network Fee](hypersign-developer-dashboard/developer-dashboard/network-fee.md)
+  * [Teams & Access](hypersign-developer-dashboard/teams-and-access/README.md)
+    * [Members](hypersign-developer-dashboard/teams-and-access/members.md)
+    * [Teams](hypersign-developer-dashboard/teams-and-access/teams.md)
+    * [Access List](hypersign-developer-dashboard/teams-and-access/access-list.md)
+  * [Security](hypersign-developer-dashboard/security/README.md)
+    * [Multi factor Authentication (MFA)](hypersign-developer-dashboard/security/multi-factor-authentication-mfa.md)
 
 ## Hypersign Identity Network
 
-* [💬 Introduction](hypersign-identity-network/readme.md)
-* [🔨 Validators & Delegators](hypersign-identity-network/validator/README.md)
+* [Introduction](hypersign-identity-network/readme.md)
+* [Validators & Delegators](hypersign-identity-network/validator/README.md)
   * [Installation of Node](hypersign-identity-network/validator/installation-of-node.md)
   * [Running a Testnet Validator Node](hypersign-identity-network/validator/running-a-testnet-validator-node.md)
-* [🗳️ Governance](hypersign-identity-network/governance/README.md)
+* [Governance](hypersign-identity-network/governance/README.md)
   * [Proposals](hypersign-identity-network/governance/proposals/README.md)
     * [Blockchain Node Upgrade](hypersign-identity-network/governance/proposals/blockchain-node-upgrade.md)
     * [Community Pool Spend Proposal](hypersign-identity-network/governance/proposals/submitting-community-pool-spend-proposal.md)
     * [Blockchain Parameter Change Proposal](hypersign-identity-network/governance/proposals/submitting-blockchain-parameter-change-proposal.md)
     * [Text Proposal](hypersign-identity-network/governance/proposals/submitting-text-proposal.md)
   * [Delegation](hypersign-identity-network/governance/delegation.md)
-* [💸 Faucet (testnet)](hypersign-identity-network/faucet.md)
+* [Faucet (testnet)](hypersign-identity-network/faucet.md)
 * [Developers](hypersign-identity-network/developers/README.md)
   * [HID-Node Codebase](hypersign-identity-network/developers/hid-node.md)
   * [⚙️ Setup Local hid-network Tutorial](hypersign-identity-network/developers/setting-up-local-hid-node-tutorial/README.md)
@@ -39,23 +68,7 @@
     * [Hypersign Verifiable Credential SDK](hypersign-identity-network/developers/hid-ssi-sdk/hypersign-verifiable-credential-sdk.md)
     * [Hypersign Verifiable Presentation SDK](hypersign-identity-network/developers/hid-ssi-sdk/hypersign-verifiable-presentation-sdk.md)
     * [OfflineSigner](hypersign-identity-network/developers/hid-ssi-sdk/offlinesigner.md)
-* [🔍 Blockchain & ID Explorer](https://explorer.hypersign.id/hypersign-prajna-testnet)
-
-## 🆔 Entity Studio
-
-* [Introduction](entity-studio/introduction.md)
-* [📈 Developer Dashboard](entity-studio/developer-dashboard.md)
-  * [Network Fee](entity-studio/developer-dashboard/network-fee.md)
-* [🔗 API Reference](entity-studio/api-doc/README.md)
-  * [Authentication](entity-studio/api-doc/authentication.md)
-  * [DID](entity-studio/api-doc/did.md)
-  * [Schema](entity-studio/api-doc/schema.md)
-  * [Verifiable Credential](entity-studio/api-doc/verifiable-credential.md)
-  * [Verifiable Presentation](entity-studio/api-doc/verifiable-presentation/README.md)
-    * [Presentation Template](entity-studio/api-doc/verifiable-presentation/presentation-template.md)
-    * [Presentation](entity-studio/api-doc/verifiable-presentation/presentation.md)
-* [🏑 SSI Playground](entity-studio/ssi-playground.md)
-* [🎰 API Playground](entity-studio/api-playground.md)
+* [Blockchain & ID Explorer](https://explorer.hypersign.id/hypersign-prajna-testnet)
 
 ## Core Concepts
 

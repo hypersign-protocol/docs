@@ -7,7 +7,7 @@ description: Manage DID operation using DID APIs
 Please [generate access token](authentication.md) before proceeding.  Once you generated the `access_token`, you can pass this token as _<mark style="background-color:yellow;">bearer authorization token</mark>_ in the header for all APIs.&#x20;
 
 {% hint style="info" %}
-**Note:** Some of these APIs are on-chain APIs which means they need network fee to successfully execute, so make sure that your application wallet address has $hid tokens. Read [network fee](../developer-dashboard/network-fee.md) section for more details.
+**Note:** Some of these APIs are on-chain APIs which means they need network fee to successfully execute, so make sure that your application wallet address has $hid tokens. Read [network fee](../../hypersign-developer-dashboard/developer-dashboard/network-fee.md) section for more details.
 {% endhint %}
 
 {% hint style="info" %}
@@ -54,7 +54,7 @@ Generates the a new DID  and DID Document.&#x20;
 
 ### Register a DID
 
-Registers a Signed DID Document in [DID registry](../../core-concepts/decentralized-identifier-did/did-registry.md). The Gas fee ([network fee](../developer-dashboard/network-fee.md)) for this DID registration will be done by applications' walletAddress.&#x20;
+Registers a Signed DID Document in [DID registry](../../core-concepts/decentralized-identifier-did/did-registry.md). The Gas fee ([network fee](../../hypersign-developer-dashboard/developer-dashboard/network-fee.md)) for this DID registration will be done by applications' walletAddress.&#x20;
 
 {% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/did/register" method="post" %}
 [api-json.json](../../.gitbook/assets/api-json.json)

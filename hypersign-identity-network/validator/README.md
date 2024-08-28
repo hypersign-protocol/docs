@@ -1,2 +1,6 @@
-# 🔨 VALIDATORS
+---
+icon: shield-check
+---
+
+# Validators & Delegators
 

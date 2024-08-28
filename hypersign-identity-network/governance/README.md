@@ -1,2 +1,6 @@
-# 🗳 GOVERNANCE
+---
+icon: box-ballot
+---
+
+# Governance
 
