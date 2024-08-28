@@ -12,6 +12,6 @@ Let's call these accessToken as `kycAccessToken` and `ssiAccessToken` for KYC se
 
 Once you have both `kycAccessToken` as well as `ssiAccessToken`you may now proceed to frontend integration of the KYC widget.
 
-{% content-ref url="../frontend-integration.md" %}
-[frontend-integration.md](../frontend-integration.md)
+{% content-ref url="../frontend-integration/" %}
+[frontend-integration](../frontend-integration/)
 {% endcontent-ref %}

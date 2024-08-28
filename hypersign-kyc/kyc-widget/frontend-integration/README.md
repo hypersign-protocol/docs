@@ -4,14 +4,14 @@
 
 Generate your access tokens before proceeding:
 
-{% content-ref url="backend-integration/generate-accesstokens.md" %}
-[generate-accesstokens.md](backend-integration/generate-accesstokens.md)
+{% content-ref url="../backend-integration/generate-accesstokens.md" %}
+[generate-accesstokens.md](../backend-integration/generate-accesstokens.md)
 {% endcontent-ref %}
 
 Optionally, generate KYC `sessionId` as well.&#x20;
 
-{% content-ref url="backend-integration/generate-kyc-session-id.md" %}
-[generate-kyc-session-id.md](backend-integration/generate-kyc-session-id.md)
+{% content-ref url="../backend-integration/generate-kyc-session-id.md" %}
+[generate-kyc-session-id.md](../backend-integration/generate-kyc-session-id.md)
 {% endcontent-ref %}
 
 ### Widget Integration
