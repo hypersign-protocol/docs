@@ -42,7 +42,7 @@ Also make sure you associate SSI service and link issuer DID which you had creat
 
 An API secret key is generated for this service. You can save copy and save this Secret key for later purpose. Additionally you can always generate a new secret key, if you happen to loose it.&#x20;
 
-Your KYC Service has been successfully created. You may also take note of your KYC service **Tenant URL** which we will use latter.  You may also notice that the service by default runs in "**dev**" mode.&#x20;
+Your KYC Service has been successfully created. You may also take note of your KYC service **Tenant URL** which we will use latter.  You may also notice that the service by default runs in "[**dev**" mode](environments/development.md).&#x20;
 
 <figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 

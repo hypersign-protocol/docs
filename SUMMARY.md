@@ -9,6 +9,7 @@
   * [KYC Service](hypersign-kyc/integrations/kyc-service.md)
   * [Widget Configuration](hypersign-kyc/integrations/widget-configuration.md)
   * [Environments](hypersign-kyc/integrations/environments/README.md)
+    * [Development](hypersign-kyc/integrations/environments/development.md)
     * [Production](hypersign-kyc/integrations/environments/production.md)
 * [KYC Widget](hypersign-kyc/kyc-widget/README.md)
   * [Integrations](hypersign-kyc/kyc-widget/integrations/README.md)
@@ -26,6 +27,7 @@
     * [User Session Details](hypersign-kyc/kyc-widget/user-data/user-session-details.md)
     * [idToken](hypersign-kyc/kyc-widget/user-data/idtoken.md)
 * [Hypersign ID Wallet](hypersign-kyc/hypersign-id-wallet.md)
+* [On-Chain KYC](hypersign-kyc/on-chain-kyc.md)
 * [Concepts](hypersign-kyc/concepts/README.md)
   * [Facial Recognition](hypersign-kyc/concepts/facial-recognition.md)
   * [ID Verification (via OCR)](hypersign-kyc/concepts/id-verification-via-ocr.md)
@@ -39,7 +41,6 @@
   * [Proof Types](hypersign-kyc/concepts/proof-types.md)
 * [Tutorials](hypersign-kyc/tutorials/README.md)
   * [Integrate KYC in minutes](hypersign-kyc/tutorials/integrate-kyc-in-minutes.md)
-* [On-Chain KYC](hypersign-kyc/on-chain-kyc.md)
 
 ## Hypersign SSI
 
