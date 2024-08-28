@@ -6,8 +6,8 @@ In order to use APIs of your services, you need `accessToken` generated using yo
 
 Let's call these accessToken as `kycAccessToken` and `ssiAccessToken` for KYC service and SSI service respectively.
 
-{% content-ref url="../../../hypersign-ssi/api-doc/authentication.md" %}
-[authentication.md](../../../hypersign-ssi/api-doc/authentication.md)
+{% content-ref url="../../../../hypersign-ssi/api-doc/authentication.md" %}
+[authentication.md](../../../../hypersign-ssi/api-doc/authentication.md)
 {% endcontent-ref %}
 
 Once you have both `kycAccessToken` as well as `ssiAccessToken`you may now proceed to frontend integration of the KYC widget.

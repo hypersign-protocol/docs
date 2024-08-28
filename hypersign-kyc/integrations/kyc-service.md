@@ -1,6 +1,10 @@
+---
+description: Setup KYC service for your app on developer dashboard
+---
+
 # KYC Service
 
-Inorder to use Hypersign KYC, you need to setup your account on Entity Developer Dashboard and setup your KYC service.
+Inorder to use Hypersign KYC, you need to setup your account on [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/) and setup your KYC service.
 
 ### Pre-requisite
 
@@ -20,11 +24,11 @@ You will need Issuer DID to setup KYC service and Issuer DID can only be created
 
 ### KYC Service Setup
 
-Once you have setup your SSI service and created your issuer DID, now you are ready to setup your KYC service on the Entity Developer Dashboard.&#x20;
+Once you have setup your SSI service and created your issuer DID, now you are ready to setup your KYC service on the [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/).&#x20;
 
 Login  to Entity Developer Dashboard and click on **'+Create'** to create a new serivce just like you did for SSI service.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Create KYC Service</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Create KYC Service</p></figcaption></figure>
 
 > _If you have not created SSI service before, you will see the above screen other wise you will see list of services you have on the home screen_
 
@@ -42,12 +46,4 @@ Now that your KYC service is created, you are ready to setup KYC widget configur
 
 {% content-ref url="widget-configuration.md" %}
 [widget-configuration.md](widget-configuration.md)
-{% endcontent-ref %}
-
-{% content-ref url="../../hypersign-ssi/api-doc/authentication.md" %}
-[authentication.md](../../hypersign-ssi/api-doc/authentication.md)
-{% endcontent-ref %}
-
-{% content-ref url="../../hypersign-developer-dashboard/developer-dashboard/managing-api-keys.md" %}
-[managing-api-keys.md](../../hypersign-developer-dashboard/developer-dashboard/managing-api-keys.md)
 {% endcontent-ref %}
