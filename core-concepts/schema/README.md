@@ -4,7 +4,7 @@
 
 As per the [Verifiable Credentials JSON Schema 2022](https://w3c-ccg.github.io/vc-json-schemas/#verifiable\_credentials\_data\_model) specification:
 
-> The Credential Schema is a document that is used to guarantee the structure, and by extension the semantics, of the set of claims comprising a [Verifiable Credential](../../developers/hid-ssi-sdk/hypersign-schema-sdk.md). A shared Credential Schema allows all parties to reference data in a _"known way"_.
+> The Credential Schema is a document that is used to guarantee the structure, and by extension the semantics, of the set of claims comprising a [Verifiable Credential](../../hypersign-identity-network/developers/hid-ssi-sdk/hypersign-schema-sdk.md). A shared Credential Schema allows all parties to reference data in a _"known way"_.
 
 A schema can be viewed from four perspectives: the author, issuer, verifier and holder.
 

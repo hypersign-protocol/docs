@@ -1,4 +1,9 @@
-# 👨💻 HID Node
+---
+description: Quick go through the code base of hid-node
+icon: code-simple
+---
+
+# HID-Node Codebase
 
 **Hypersign Identity Network (HID Node)** is built on top of **Cosmos SDK**. This documentation only covers the **SSI module** and the basic commands of **Cosmos SDK** modules. It is recommended to have a good understanding of **Cosmos SDK.** Please refer Cosmos SDK docs [here](https://docs.cosmos.network/v0.45/).
 
@@ -478,8 +483,8 @@ hid-noded q bank balances <account-address>
 
 ### Staking
 
-{% content-ref url="../hypersign-identity-network/validator/running-a-testnet-validator-node.md" %}
-[running-a-testnet-validator-node.md](../hypersign-identity-network/validator/running-a-testnet-validator-node.md)
+{% content-ref url="../validator/running-a-testnet-validator-node.md" %}
+[running-a-testnet-validator-node.md](../validator/running-a-testnet-validator-node.md)
 {% endcontent-ref %}
 
 ### Governance

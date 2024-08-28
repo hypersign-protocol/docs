@@ -2,7 +2,7 @@
 description: Testnet (Prajna) Faucet Bot
 ---
 
-# 💰 Faucet (testnet)
+# 💸 Faucet (testnet)
 
 You may earn testnet (Prajna) tokens from Prajna faucet bot. Join the [prajna-faucet-1 channel](https://discord.com/channels/777575858075861033/1186968387860049920) on our Discord server and simply request token for your wallet.&#x20;
 

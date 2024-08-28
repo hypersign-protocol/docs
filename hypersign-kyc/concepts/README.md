@@ -1,2 +1,6 @@
+---
+icon: graduation-cap
+---
+
 # Concepts
 
