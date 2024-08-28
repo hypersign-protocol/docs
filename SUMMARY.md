@@ -29,17 +29,16 @@
 * [🎰 API Playground](hypersign-ssi/api-playground.md)
 * [🏑 SSI Playground](hypersign-ssi/ssi-playground.md)
 
-***
+## Hypersign Developer Dashboard
 
-* [Hypersign Developer Dashboard](hypersign-developer-dashboard/README.md)
-  * [Service](hypersign-developer-dashboard/developer-dashboard/README.md)
-    * [Network Fee](hypersign-developer-dashboard/developer-dashboard/network-fee.md)
-  * [Teams & Access](hypersign-developer-dashboard/teams-and-access/README.md)
-    * [Members](hypersign-developer-dashboard/teams-and-access/members.md)
-    * [Teams](hypersign-developer-dashboard/teams-and-access/teams.md)
-    * [Access List](hypersign-developer-dashboard/teams-and-access/access-list.md)
-  * [Security](hypersign-developer-dashboard/security/README.md)
-    * [Multi factor Authentication (MFA)](hypersign-developer-dashboard/security/multi-factor-authentication-mfa.md)
+* [Service](hypersign-developer-dashboard/developer-dashboard/README.md)
+  * [Network Fee](hypersign-developer-dashboard/developer-dashboard/network-fee.md)
+* [Teams & Access](hypersign-developer-dashboard/teams-and-access/README.md)
+  * [Members](hypersign-developer-dashboard/teams-and-access/members.md)
+  * [Teams](hypersign-developer-dashboard/teams-and-access/teams.md)
+  * [Access List](hypersign-developer-dashboard/teams-and-access/access-list.md)
+* [Security](hypersign-developer-dashboard/security/README.md)
+  * [Multi factor Authentication (MFA)](hypersign-developer-dashboard/security/multi-factor-authentication-mfa.md)
 
 ## Hypersign Identity Network
 
