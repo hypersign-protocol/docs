@@ -2,7 +2,7 @@
 description: Generate access token using API secret Key
 ---
 
-# Service Authentication
+# Service Authentication API
 
 Register your service on [Entity Studio Developer Dashboard](../../hypersign-developer-dashboard/developer-dashboard/) and generate your API secret Key before proceeding.&#x20;
 
@@ -16,5 +16,8 @@ Entity Studio SSI API base URL: [https://api.entity.dashboard.hypersign.id/](htt
 [api-json.json](../../.gitbook/assets/api-json.json)
 {% endswagger %}
 
-Once you generated the `access_token`, you can pass this token as _<mark style="background-color:yellow;">bearer authorization token</mark>_ in the header for all APIs.&#x20;
+Once you generated the `accessToken`, you can pass this token as _<mark style="background-color:yellow;">bearer authorization token</mark>_ in the header for all APIs.&#x20;
 
+{% content-ref url="../../hypersign-kyc/kyc-widget/integrations/backend-integration/generate-accesstokens.md" %}
+[generate-accesstokens.md](../../hypersign-kyc/kyc-widget/integrations/backend-integration/generate-accesstokens.md)
+{% endcontent-ref %}

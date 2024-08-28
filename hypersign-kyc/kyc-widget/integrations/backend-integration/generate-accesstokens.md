@@ -2,7 +2,7 @@
 
 You must have SSI service secret key and KYC service secret key with you before proceeding to this step.&#x20;
 
-In order to use APIs of your services, you need `accessToken` generated using your API secret keys. Generate accessToken by calling service authentication APIs using API secret keys. You might want to **implement an API** in your backend which will call **Service Authentication API** to generate accessTokens for SSI and KYC service, so that your API secrets are not exposed in your frontend or anywhere else.
+In order to use APIs of your services, you need `accessToken` generated using your API secret keys. Generate accessToken by calling **Service Authentication API** using API secret keys. You might want to **implement an API** in your backend which will call **Service Authentication API** to generate accessTokens for SSI and KYC services, so that your API secrets are not exposed in your frontend or anywhere else.
 
 Let's call these accessToken as `kycAccessToken` and `ssiAccessToken` for KYC service and SSI service respectively.
 

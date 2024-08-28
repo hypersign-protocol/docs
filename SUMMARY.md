@@ -48,7 +48,7 @@
   * [Create Your First DID](hypersign-ssi/setup-ssi-service/create-your-first-did.md)
   * [Credits](hypersign-ssi/setup-ssi-service/credits.md)
 * [🔗 API Reference](hypersign-ssi/api-doc/README.md)
-  * [Service Authentication](hypersign-ssi/api-doc/authentication.md)
+  * [Service Authentication API](hypersign-ssi/api-doc/authentication.md)
   * [DID](hypersign-ssi/api-doc/did.md)
   * [Schema](hypersign-ssi/api-doc/schema.md)
   * [Verifiable Credential](hypersign-ssi/api-doc/verifiable-credential.md)
