@@ -10,5 +10,5 @@ Login to [Entity Studio dashboard](https://entity.hypersign.id/) and click on **
 
 <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>Entity Studio Dashboard</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>API Playground</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>API Playground</p></figcaption></figure>
 

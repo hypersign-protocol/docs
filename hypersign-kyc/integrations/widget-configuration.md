@@ -1,6 +1,6 @@
 # Widget Configuration
 
-[Hypersign KYC widget](../kyc-widget/) is web based application to capture user's data. It is used to capture, user facial detail, ID document, user consent etc. In order to use KYC Widget in your frontend, you first need to configure it in the [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/).
+[Hypersign KYC widget](../kyc-widget/) is web based application to capture user's data. It is used to capture, user facial detail, ID document, user consent etc. In order to use KYC Widget in your frontend, you first need to configure it in the [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/). Widget configuration enable you to do custom configurations of KYC widget for your users.&#x20;
 
 Logon to [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/). and proceed to "**Know Your Customer**" tab of your services and click on your KYC service tile.
 
@@ -43,9 +43,22 @@ Check list of all supported credentials and proofs types here.
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
+Configure user consent page by providing a valid reason for "why you are collecting user's data". Read more about user consent here:
+
+{% content-ref url="../kyc-widget/data-capture/capture-user-consent.md" %}
+[capture-user-consent.md](../kyc-widget/data-capture/capture-user-consent.md)
+{% endcontent-ref %}
+
 ### Trusted Issuer
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
+Select one or more trusted issuers, with the default being 'self' - your own KYC service. This pertains to [**Reusable KYC**](../concepts/reusable-kyc.md). If configured, users who already possess KYC credentials issued by these trusted issuers in their [data vault](../kyc-widget/data-capture/data-vault-setup.md) will not need to repeat the KYC steps in the widget. They can simply authorise the sharing of their existing credentials with your app, streamlining user onboarding for your application and providing a smoother experience for your users.&#x20;
 
+***
 
+Now that your widget configuration is finished, you are ready to integrate Hypersign KYC in your application.&#x20;
+
+{% content-ref url="../kyc-widget/integrations/" %}
+[integrations](../kyc-widget/integrations/)
+{% endcontent-ref %}

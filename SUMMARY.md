@@ -4,12 +4,10 @@
 
 ## Hypersign KYC
 
+* [Introduction](hypersign-kyc/introduction.md)
 * [Integrations](hypersign-kyc/integrations/README.md)
   * [KYC Service](hypersign-kyc/integrations/kyc-service.md)
   * [Widget Configuration](hypersign-kyc/integrations/widget-configuration.md)
-  * [User Data](hypersign-kyc/integrations/user-data/README.md)
-    * [Web Events](hypersign-kyc/integrations/user-data/web-events.md)
-    * [Web Hooks](hypersign-kyc/integrations/user-data/web-hooks.md)
   * [Environments](hypersign-kyc/integrations/environments/README.md)
     * [Production](hypersign-kyc/integrations/environments/production.md)
 * [KYC Widget](hypersign-kyc/kyc-widget/README.md)
@@ -24,6 +22,9 @@
     * [Capture Facial Recognition](hypersign-kyc/kyc-widget/data-capture/capture-facial-recognition.md)
     * [Capture ID Document](hypersign-kyc/kyc-widget/data-capture/capture-id-document.md)
     * [Capture User Consent](hypersign-kyc/kyc-widget/data-capture/capture-user-consent.md)
+  * [User Data](hypersign-kyc/kyc-widget/user-data/README.md)
+    * [Web Events](hypersign-kyc/kyc-widget/user-data/web-events.md)
+    * [Web Hooks](hypersign-kyc/kyc-widget/user-data/web-hooks.md)
 * [Hypersign ID Wallet](hypersign-kyc/hypersign-id-wallet.md)
 * [Concepts](hypersign-kyc/concepts/README.md)
   * [Facial Recognition](hypersign-kyc/concepts/facial-recognition.md)
@@ -31,9 +32,14 @@
   * [Reusable KYC](hypersign-kyc/concepts/reusable-kyc.md)
   * [Encrypted Data Vault](hypersign-kyc/concepts/encrypted-data-vault.md)
   * [Facial Authentication](hypersign-kyc/concepts/facial-authentication.md)
-  * [Untitled](hypersign-kyc/concepts/untitled.md)
+  * [Issuer Marketplace](hypersign-kyc/concepts/issuer-marketplace.md)
+  * [Security](hypersign-kyc/concepts/security.md)
+  * [Privacy](hypersign-kyc/concepts/privacy.md)
+  * [Credentials Types](hypersign-kyc/concepts/credentials-types.md)
+  * [Proof Types](hypersign-kyc/concepts/proof-types.md)
 * [Tutorials](hypersign-kyc/tutorials/README.md)
   * [Integrate KYC in minutes](hypersign-kyc/tutorials/integrate-kyc-in-minutes.md)
+* [On-Chain KYC](hypersign-kyc/on-chain-kyc.md)
 
 ## Hypersign SSI
 
