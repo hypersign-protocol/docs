@@ -1,6 +1,10 @@
 # Widget Configuration
 
+Hypersign KYC widget is a webwidget&#x20;
+
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
