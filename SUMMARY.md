@@ -5,7 +5,13 @@
 ## Hypersign KYC
 
 * [Integrations](hypersign-kyc/integrations/README.md)
-  * [Staging](hypersign-kyc/integrations/staging.md)
+  * [KYC Service](hypersign-kyc/integrations/kyc-service.md)
+  * [Widget Configuration](hypersign-kyc/integrations/widget-configuration.md)
+  * [User Data](hypersign-kyc/integrations/user-data/README.md)
+    * [Web Events](hypersign-kyc/integrations/user-data/web-events.md)
+    * [Web Hooks](hypersign-kyc/integrations/user-data/web-hooks.md)
+  * [Environments](hypersign-kyc/integrations/environments/README.md)
+    * [Production](hypersign-kyc/integrations/environments/production.md)
 * [Concepts](hypersign-kyc/concepts/README.md)
   * [Facial Recognition](hypersign-kyc/concepts/facial-recognition.md)
   * [ID Verification (via OCR)](hypersign-kyc/concepts/id-verification-via-ocr.md)
@@ -13,13 +19,17 @@
   * [Encrypted Data Vault](hypersign-kyc/concepts/encrypted-data-vault.md)
 * [KYC Widget](hypersign-kyc/kyc-widget/README.md)
   * [Web](hypersign-kyc/kyc-widget/web.md)
-* [Dashboard](hypersign-kyc/dashboard.md)
+* [Tutorials](hypersign-kyc/tutorials/README.md)
+  * [Integrate KYC in minutes](hypersign-kyc/tutorials/integrate-kyc-in-minutes.md)
 
 ## Hypersign SSI
 
 * [Introduction](hypersign-ssi/introduction.md)
+* [Setup SSI Service](hypersign-ssi/setup-ssi-service/README.md)
+  * [Create Your First DID](hypersign-ssi/setup-ssi-service/create-your-first-did.md)
+  * [Credits](hypersign-ssi/setup-ssi-service/credits.md)
 * [🔗 API Reference](hypersign-ssi/api-doc/README.md)
-  * [Authentication](hypersign-ssi/api-doc/authentication.md)
+  * [Service Authentication](hypersign-ssi/api-doc/authentication.md)
   * [DID](hypersign-ssi/api-doc/did.md)
   * [Schema](hypersign-ssi/api-doc/schema.md)
   * [Verifiable Credential](hypersign-ssi/api-doc/verifiable-credential.md)
@@ -31,7 +41,9 @@
 
 ## Hypersign Developer Dashboard
 
+* [Login](hypersign-developer-dashboard/login.md)
 * [Service](hypersign-developer-dashboard/developer-dashboard/README.md)
+  * [Managing API keys](hypersign-developer-dashboard/developer-dashboard/managing-api-keys.md)
   * [Network Fee](hypersign-developer-dashboard/developer-dashboard/network-fee.md)
 * [Teams & Access](hypersign-developer-dashboard/teams-and-access/README.md)
   * [Members](hypersign-developer-dashboard/teams-and-access/members.md)

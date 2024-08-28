@@ -12,5 +12,5 @@ The Keplr will popup and ask you to accept. Once accepted , you will see your lo
 
 Note: Make sure you network is running on port 25567
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 

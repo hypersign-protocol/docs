@@ -1,8 +1,8 @@
 ---
+icon: bell-concierge
 description: >-
   Manage your service and API keys and start building your identity product on
   our infrastructure
-icon: bell-concierge
 ---
 
 # Service
@@ -11,11 +11,11 @@ icon: bell-concierge
 
 Navigate to [Entity Studio Developer dashboard ](https://entity.hypersign.id)and login. You will land on your dashboard.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Developer dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Upon login, click on **+Create** button to register an application.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>App registration form</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>App registration form</p></figcaption></figure>
 
 Fill basic details like application name, description and allowed origins and hit **Save** button to register your brand new application.
 
@@ -23,7 +23,7 @@ Fill basic details like application name, description and allowed origins and hi
 
 ### API Secret Key
 
-<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>API secret Key</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption><p>API secret Key</p></figcaption></figure>
 
 Upon successful registration, an API secret key will be generated for your app. You may use this API secret key to generate access token to access all SSI APIs. Read more about it in [authentication](../../hypersign-ssi/api-doc/authentication.md) section.&#x20;
 
@@ -66,10 +66,6 @@ Read network fee section for detail
 
 
 \----
-
-
-
-
 
 Now that you have generated your API secret Key you can either go through our [API documentation](../../hypersign-ssi/api-doc/) and start coding or jump into the [SSI API playground](../../hypersign-ssi/api-playground.md) to play around with SSI APIs right before coding. Optionally, if you want  to get hands with concepts of the Self sovereign identiy (SSI), you can checkout [SSI playground](../../hypersign-ssi/ssi-playground.md) for that.&#x20;
 
