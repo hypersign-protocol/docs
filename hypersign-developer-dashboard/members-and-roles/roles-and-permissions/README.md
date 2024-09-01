@@ -14,6 +14,6 @@
 
 
 
-{% content-ref url="../members/assign-role-to-member.md" %}
-[assign-role-to-member.md](../members/assign-role-to-member.md)
+{% content-ref url="assign-role-to-member.md" %}
+[assign-role-to-member.md](assign-role-to-member.md)
 {% endcontent-ref %}
