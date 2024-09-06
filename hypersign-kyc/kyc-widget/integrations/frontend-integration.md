@@ -57,9 +57,8 @@ window.addEventListener('message', function (event) {
         
         // we send these 3 vaules: 
         // status = success / fail, 
-        // idToken = you will use this token to extract user's data
         // message = a simple message (if any)
-        const { status, idToken, message} = data;
+        const { status, message} = data;
         if (status === 'success') {
             console.log('Successfully finished the KYC')
         }
@@ -69,3 +68,9 @@ window.addEventListener('message', function (event) {
     }
 });
 ```
+
+You can only obtain status of verification through events. But in order to **get user data,** developers need to configure the **webhook** on their KYC dashboard.&#x20;
+
+{% content-ref url="../../integrations/webhook.md" %}
+[webhook.md](../../integrations/webhook.md)
+{% endcontent-ref %}
