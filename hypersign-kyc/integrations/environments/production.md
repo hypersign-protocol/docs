@@ -14,8 +14,10 @@ Provide a valid domain name for your doman and add the provided TXT record in yo
 
 Once your domain is verified, you will see "**Green tick**" mark next to your service name on the tile. Thats it, now you are ready for production.&#x20;
 
-And now in "**prod**" mode you get all sorts of verifcations which were not present in the **"dev"** mode.&#x20;
+And now in "**prod**" mode you get all sorts of verifications which were not present in the **"dev"** mode.&#x20;
 
 * You get [Facial Authentication](../../concepts/facial-authentication.md).
 * You get [Uniqueness check ](../../concepts/uniqueness-check.md)
 * You get Document verification.&#x20;
+* Credential status gets registered on the blockchain - [Credential Revocability](../../concepts/credential-revocability.md)!
+* Emails are sent to user about their verification status.

@@ -42,6 +42,7 @@
   * [Credentials Types](hypersign-kyc/concepts/credentials-types.md)
   * [Proof Types](hypersign-kyc/concepts/proof-types.md)
   * [Uniqueness Check](hypersign-kyc/concepts/uniqueness-check.md)
+  * [Credential Revocability](hypersign-kyc/concepts/credential-revocability.md)
 * [Tutorials](hypersign-kyc/tutorials/README.md)
   * [How to Integrate KYC in minutes?](hypersign-kyc/tutorials/how-to-integrate-kyc-in-minutes.md)
   * [How to add your team member?](hypersign-kyc/tutorials/how-to-add-your-team-member.md)
