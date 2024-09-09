@@ -6,13 +6,13 @@ description: A Javascript  based SDK for DID Operations
 
 Hypersign Decentralized Identifiers (Hypersign DID) comply [W3C DID specification](https://www.w3.org/TR/did-core/) and is built on top of [Hypersign Identity Blockchain Network](https://explorer.hypersign.id/hypersign-testnet). It implements [Hypersign DID scheme (`did:hid`)](https://docs.hypersign.id/self-sovereign-identity-ssi/decentralized-identifier-did).
 
-Note: `did:hid` DID scheme is yet to be offcially registered on [W3C DID registry](https://www.w3.org/TR/did-spec-registries/).
+Note: `did:hid` DID scheme is yet to be officially registered on [W3C DID registry](https://www.w3.org/TR/did-spec-registries/).
 
 Read [decentralized-identifier-did](../../../core-concepts/decentralized-identifier-did/ "mention") section for more details.&#x20;
 
 ## Hypersign DID SDK
 
-Is a javascript library for DID related operation (generate, sign, verify etc). It also provides APIs to store/update/retrive DID and DID Documents to/from the [Hypersign DID Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/decentralized-identifier-did/did-registry) on the Hypersign Blockchain network easily.
+Is a javascript library for DID related operation (generate, sign, verify etc). It also provides APIs to store/update/retrieve DID and DID Documents to/from the [Hypersign DID Registry](https://docs.hypersign.id/self-sovereign-identity-ssi/decentralized-identifier-did/did-registry) on the Hypersign Blockchain network easily.
 
 ## Table of Contents
 
@@ -51,7 +51,7 @@ import { HypersignDID } from 'hs-ssi-sdk';
 ```javascript
 const hypersignDID = new HypersignDID();
 
-// OR initialize by passing a namepace. Default 'testnet'
+// OR initialize by passing a namespace. Default 'testnet'
 // More complex way to initialize this class can be found in this documentation later
 const namespace = 'testnet';
 const hypersignDID = new HypersignDID({ namespace });
@@ -150,7 +150,7 @@ Sing a DID Document and generated proof
 ```javascript
 sign(params: {
     didDocument: object;            // A DID Document to signed
-    privateKeyMultibase: string;    // private key mulibase of type ED25519
+    privateKeyMultibase: string;    // private key multibase of type ED25519
     challenge: string;              // Random challenge
     domain: string;                 // Domain name
     did: string;                    // DID, if passed then DID will be resolved and `didDocument` parameter will not be used
@@ -232,7 +232,7 @@ Verifies a signed DID Document.
 
 ```javascript
 verify(params: { 
-  didDocument: object;            // Signed did documen
+  didDocument: object;            // Signed did document
   verificationMethodId: string;   // The verification method
   challenge: string;              // Random challenge
   domain?: string                 // The domain name
@@ -305,7 +305,7 @@ const hypersignDid = new HypersignDID({
     namespace: 'testnet',   // OPTIONAL namespace of did, Default ''
   });
 
-// OR Just initalize with offlineSigner
+// OR Just initialize with offlineSigner
 const hypersignDid = new HypersignDID({
     offlineSigner
 })
