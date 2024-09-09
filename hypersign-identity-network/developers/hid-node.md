@@ -99,7 +99,7 @@ The generation of Golang code is done by the script `scripts/protogenc.sh`. The 
 
 ### DID Document
 
-The [DID-Core](https://www.w3.org/TR/did-core/) W3C Specification has been followed to frame the structure of a DID Document. It's proto representation is mentioned in `proto/ssi/v1/did.proto`. The message `DidDocumentState` is stored on chain.
+The [DID-Core](https://www.w3.org/TR/did-core/) W3C Specification has been followed to frame the structure of a DID Document. Its proto representation is mentioned in `proto/ssi/v1/did.proto`. The message `DidDocumentState` is stored on chain.
 
 ```
 // proto/ssi/v1/did.proto
@@ -148,7 +148,7 @@ message Credential {
 
 ## `x/ssi` Module
 
-In Cosmos SDK, every operations related to blockchain such as staking, delegation, token trasfer, etc are handled by different modules. They are defined in the `x` directory of Cosmos SDK (See [here](https://github.com/cosmos/cosmos-sdk/tree/main/x)). For instance, `x/bank` module handles the functionality of token transfer. `x/ssi` module lets you store documents such as Decentralised Identifiers (DID), Schema Document and Verifiable credential Status on chain.
+In Cosmos SDK, every operation related to blockchain such as staking, delegation, token trasfer, etc are handled by different modules. They are defined in the `x` directory of Cosmos SDK (See [here](https://github.com/cosmos/cosmos-sdk/tree/main/x)). For instance, `x/bank` module handles the functionality of token transfer. `x/ssi` module lets you store documents such as Decentralised Identifiers (DID), Schema Document and Verifiable credential Status on chain.
 
 **Quick Overview**
 
@@ -156,13 +156,13 @@ In Cosmos SDK, every operations related to blockchain such as staking, delegatio
 
 `x/ssi/keeper`: Interaction with the state of blockchain
 
-`x/ssi/genesis.go`: - Initialising and Exporting of genesis variables of `x/ssi` module, such as `chain_namespace`. - For public mainnet chain, `chain_namespace` should be empty. In case of testnet, the name of the testnet should be assigned. If you are running a private network, you can specify your own chain namepsace.
+`x/ssi/genesis.go`: - Initialising and Exporting of genesis variables of `x/ssi` module, such as `chain_namespace`. - For public mainnet chain, `chain_namespace` should be empty. In case of testnet, the name of the testnet should be assigned. If you are running a private network, you can specify your own chain namespace.
 
 `x/ssi/modules.go`: Defines the interface for `ssi` module
 
 ### Keeper
 
-Keepers provides an abstraction to interact with the state of the blockchain. The store is a data structure which persists the state. The `Get` and `Set` methods of the store are handled by the Keeper. There are Keeper functions defined for each of the RPCs. Transaction-based RPCs share a similar workflow, while Query-based share different workflow similarity among themeselves.
+Keepers provides an abstraction to interact with the state of the blockchain. The store is a data structure which persists the state. The `Get` and `Set` methods of the store are handled by the Keeper. There are Keeper functions defined for each of the RPCs. Transaction-based RPCs share a similar workflow, while Query-based share different workflow similarity among themselves.
 
 **Transaction Based Keepers**
 
@@ -202,7 +202,7 @@ func (k msgServer) CreateDID(goCtx context.Context, msg *types.MsgCreateDID) (*t
     didDocument <- get the DID Document from `msg` arg
     signature <- get the signature information from `msg` arg
 
-    // Verfication of Document //
+    // Verification of Document //
     err = ValidateDidDocumentElements(didDocument)
     if err != nil {
         return nil, err
@@ -572,7 +572,7 @@ The `50uhid` is deduced from the **Identity Provider** account
 
 The cross-chain transfer of tokens between Cosmos-based chains is possible using Inter-Blockchain Communication (IBC) Protocol. Refer the IBC Documentation [here](https://ibc.cosmos.network/main/ibc/overview.html).
 
-Run the following to transfer tokens between two accounts located on seperate chains
+Run the following to transfer tokens between two accounts located on separate chains
 
 ```
 hid-noded tx ibc-transfer transfer <source-ibc-port> <source-ibc-channel> <destination-chain-wallet-address> <amount> --from <source-chain-wallet-address> 
@@ -590,11 +590,11 @@ This node stores the complete state of blockchain. However, it does not actively
 
 #### Validator Node
 
-It is a full node, which has a significant stake in the network and activately takes part in the validation process.
+It is a full node, which has a significant stake in the network and actively takes part in the validation process.
 
 #### Seed Node
 
-It's purpose is to introduce newly connected nodes, to other nodes in the network, and disconnects after doing so.
+Its purpose is to introduce newly connected nodes, to other nodes in the network, and disconnects after doing so.
 
 In order to run in seed mode, set `pex = true` and `seed_mode = true` in `<hid-node config dir>/config/config.toml`
 
