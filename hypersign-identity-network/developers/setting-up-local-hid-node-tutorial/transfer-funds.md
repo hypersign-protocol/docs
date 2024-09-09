@@ -26,11 +26,11 @@ List all accounts.
   mnemonic: ""
 ```
 
-`node1` is the first account which has balance and be used as a sender of the the transaction.&#x20;
+`node1` is the first account which has balance and be used as a sender of the transaction.&#x20;
 
 ### Send amount from one account to other
 
-Create a new account called `my-account1`and lets send balance from account `node1` to `my-account1` and then finnally check balances.
+Create a new account called `my-account1`and lets send balance from account `node1` to `my-account1` and then finally check balances.
 
 ```bash
 hid-noded tx bank send <source-addr> <destination-addr> <amount> --keyring-backend test --chain-id hidnode
