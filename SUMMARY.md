@@ -46,6 +46,7 @@
   * [Uniqueness Check](hypersign-kyc/concepts/uniqueness-check.md)
   * [Credential Revocability](hypersign-kyc/concepts/credential-revocability.md)
   * [Machine Readable Zone (MRZ)](hypersign-kyc/concepts/machine-readable-zone-mrz.md)
+  * [Liveliness Check](hypersign-kyc/concepts/liveliness-check.md)
 * [Tutorials](hypersign-kyc/tutorials/README.md)
   * [How to Integrate KYC in minutes?](hypersign-kyc/tutorials/how-to-integrate-kyc-in-minutes.md)
   * [How to add your team member?](hypersign-kyc/tutorials/how-to-add-your-team-member.md)
