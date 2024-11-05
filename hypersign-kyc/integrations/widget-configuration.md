@@ -8,7 +8,7 @@ Logon to [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/). a
 
 Your KYC service dashboard opens up.  Now navigate to "**Widget Configuration**" page by clicking on "**Widget**" menu item in the side nav bar.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Facial Recognition
 
@@ -48,6 +48,28 @@ Configure user consent page by providing a valid reason for "why you are collect
 {% content-ref url="../kyc-widget/data-capture/capture-user-consent.md" %}
 [capture-user-consent.md](../kyc-widget/data-capture/capture-user-consent.md)
 {% endcontent-ref %}
+
+### Zero Knowledge Proof (zk-proof)
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Enable zk-proof configuration if do not want to collect user's personal data but the proof of facts. We have following proofs available.
+
+1. **Proof Of KYC**:  Proves that user has finished his/her KYC
+2. **Proof Of Personhood**: Proves that user is not a bot
+3. **Proof Of Age**: Proves user is above the specified age (age need to be specified in text box)
+
+Configure one of more proofs and click on **Update Configuration** button to save your settings.&#x20;
+
+### On-Chain KYC
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+You might want to provide service to  users based on verification in your Dapp. For that your smart contracts wants to verify user's Identity before allowing to access other features of the smart contract. Since users cannot send his personal data to a contract because of obvious privacy issues with public blockchains, user first generates zk-proofs of their ID claims and only sends proofs to contracts, preserving privacy while enabling secure verification.  Make sure to create [On-Chain KYC configuration](widget-configuration.md#on-chain-kyc) in one of the supported blockchain before enabling this setting.
+
+{% hint style="info" %}
+First enable zk-proof configuration to configure On-Chain KYC configruation
+{% endhint %}
 
 ### Trusted Issuer
 
