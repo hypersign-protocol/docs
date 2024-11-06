@@ -27,7 +27,7 @@
     * [idToken](hypersign-kyc/kyc-widget/user-data/idtoken.md)
 * [Hypersign ID Wallet](hypersign-kyc/hypersign-id-wallet.md)
 * [On-Chain KYC](hypersign-kyc/on-chain-kyc/README.md)
-  * [Configuration](hypersign-kyc/on-chain-kyc/configuration.md)
+  * [Contracts Deployment](hypersign-kyc/on-chain-kyc/contracts-deployment.md)
   * [Use Cases](hypersign-kyc/on-chain-kyc/use-cases.md)
   * [Supported Blockchains](hypersign-kyc/on-chain-kyc/supported-blockchains.md)
 * [Dashboard](hypersign-kyc/dashboard/README.md)

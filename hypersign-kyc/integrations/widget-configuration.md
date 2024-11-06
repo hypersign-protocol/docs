@@ -65,10 +65,10 @@ Configure one of more proofs and click on **Update Configuration** button to sav
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-You might want to provide service to  users based on verification in your Dapp. For that your smart contracts wants to verify user's Identity before allowing to access other features of the smart contract. Since users cannot send his personal data to a contract because of obvious privacy issues with public blockchains, user first generates zk-proofs of their ID claims and only sends proofs to contracts, preserving privacy while enabling secure verification.  Make sure to create On-Chain KYC configuration in one of the supported blockchain before enabling this setting.
+You might want to provide service to  users based on verification in your Dapp. For that your smart contracts wants to verify user's Identity before allowing to access other features of the smart contract. Since users cannot send his personal data to a contract because of obvious privacy issues with public blockchains, user first generates zk-proofs of their ID claims and only sends proofs to contracts, preserving privacy while enabling secure verification.  Make sure to [create On-Chain KYC configuration](../on-chain-kyc/contracts-deployment.md) in one of the supported blockchain before enabling this setting.
 
-{% content-ref url="../on-chain-kyc/configuration.md" %}
-[configuration.md](../on-chain-kyc/configuration.md)
+{% content-ref url="../on-chain-kyc/contracts-deployment.md" %}
+[contracts-deployment.md](../on-chain-kyc/contracts-deployment.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
