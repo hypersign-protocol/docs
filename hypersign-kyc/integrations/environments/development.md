@@ -2,7 +2,7 @@
 
 You may have noticed that by default, our KYC service was created in "**dev**" - Development mode.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In "**dev**" mode following verifications are not performed by AI models integrated in the KYC service:&#x20;
 

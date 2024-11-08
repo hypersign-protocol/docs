@@ -51,13 +51,13 @@ Configure user consent page by providing a valid reason for "why you are collect
 
 ### Zero Knowledge Proof (zk-proof)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enable zk-proof configuration if do not want to collect user's personal data but the proof of facts. We have following proofs available.
 
-1. **Proof Of KYC**:  Proves that user has finished his/her KYC
-2. **Proof Of Personhood**: Proves that user is not a bot
-3. **Proof Of Age**: Proves user is above the specified age (age need to be specified in text box)
+1. [**Proof Of KYC (PoK)**](../concepts/zk-proof-types/proof-of-kyc-pok.md):  Proves that user has finished his/her KYC. &#x20;
+2. [**Proof Of Personhood (PoP)**](../concepts/zk-proof-types/proof-of-personhood-pop.md): Proves that user is not a bot
+3. [**Proof Of Age (PoA)**](../concepts/zk-proof-types/proof-of-age-poa.md): Proves user is above the specified age (age need to be specified in text box)
 
 Configure one of more proofs and click on **Update Configuration** button to save your settings.&#x20;
 

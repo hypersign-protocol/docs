@@ -39,7 +39,7 @@ For any dApp that wishes to implement an on-chain KYC system, they simply call t
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
