@@ -60,6 +60,7 @@
   * [Zero Knowledge Proof (zkp)](hypersign-kyc/concepts/zero-knowledge-proof-zkp/README.md)
     * [Introduction](hypersign-kyc/concepts/zero-knowledge-proof-zkp/introduction.md)
     * [zk-SNARK](hypersign-kyc/concepts/zero-knowledge-proof-zkp/zk-snark.md)
+    * [Circuits](hypersign-kyc/concepts/zero-knowledge-proof-zkp/circuits.md)
     * [SSI and ZKP](hypersign-kyc/concepts/zero-knowledge-proof-zkp/ssi-and-zkp.md)
 * [Tutorials](hypersign-kyc/tutorials/README.md)
   * [How to Integrate KYC in minutes?](hypersign-kyc/tutorials/how-to-integrate-kyc-in-minutes.md)

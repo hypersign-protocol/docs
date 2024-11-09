@@ -27,11 +27,12 @@ Although, Groth16 required circuit-specific [trusted setup](zk-snark.md#trusted-
 2. Be pairing-friendly, for proof verification
 3. Have a highly 2-adic subgroup order, for efficient proof generation.
 
-We had three objectives while choosing the curve,&#x20;
+We had four objectives while choosing the curve,&#x20;
 
 * a) Proofs generation should be fast (should generate proofs in seconds and not in minutes)
 * b) Proofs should be decently secure (we are "okay" with 128bit security)
 * c) Proofs should be compatible (proofs generated should be compatible with Ethereum as well as Cosmwasm contracts)
+* d) Proofs must be cost effective (should consume less gas)
 
 We decided to go with `BN128` since its fast and is natively supported in Ethereum 1.0, which provides precompiled contracts for efficient pairing operations on this curve. As far as Cosmwasm is concerned, we had to use [3rd party libraries](https://github.com/hypersign-protocol/hypersign-kyc-contracts/blob/main/packages/hypersign-zk-verifier/Cargo.toml) to give support for `BN128` based proofs since Cosmwasm do not natively support this curve (yet).
 
@@ -52,7 +53,7 @@ The CRS is generated in two phases:&#x20;
 * The first phase (phase-1) referred to as “**Powers of Tau**”, produces generic setup parameters that can be used for all circuits of the scheme, up to a given size. This ceremony is _perpetual_ — that is, there is no limit to the number of participants required, and any zk-SNARK project can pick any point of the ceremony to begin their circuit-specific second phase (phase-2).
 * The second phase (phase-2) converts the output of the "Powers of Tau" phase (phase-1) into an NP-relation-specific (circuit-specific) CRS.
 
-How does PoT (phase-1) ceremony works?&#x20;
+<mark style="color:orange;">How does PoT (phase-1) ceremony works?</mark>&#x20;
 
 * Each participant will receive a _challenge_ file.
 * They must generate a _response_ file in a secure and honest manner.&#x20;
