@@ -45,9 +45,32 @@ Setting up the ZK-SNARK protocol requires the creation of a **Universal Common R
 
 The preferred technique for setup ceremonies has been multi-party computation (MPC). Setup ceremony MPC schemes are interactive protocols involving multiple parties who _**contribute randomness**_ to iteratively construct the CRS. A typical ceremony consists of `N` number of players, the coordinator, and the verifier. The MPC protocols are always of a round-robin nature, where a player `Pi` receives a single message from player `Pi-1.`Payer `Pi` adds their input to _accumulated randomness_ before passing it onto Player `Pi+1`. In the end, the final result is the CRS.
 
-<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption><p>BGM17 MPC Protocol</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption><p>BGM17 MPC Protocol, Ref: <a href="https://zkproof.org/2021/06/30/setup-ceremonies/">https://zkproof.org/2021/06/30/setup-ceremonies/</a></p></figcaption></figure>
 
 The CRS is generated in two phases:&#x20;
 
-* The first phase referred to as “**Powers of Tau**”, produces generic setup parameters that can be used for all circuits of the scheme, up to a given size.
-* The second phase converts the output of the Powers of Tau phase into an NP-relation-specific CRS.
+* The first phase (phase-1) referred to as “**Powers of Tau**”, produces generic setup parameters that can be used for all circuits of the scheme, up to a given size. This ceremony is _perpetual_ — that is, there is no limit to the number of participants required, and any zk-SNARK project can pick any point of the ceremony to begin their circuit-specific second phase (phase-2).
+* The second phase (phase-2) converts the output of the "Powers of Tau" phase (phase-1) into an NP-relation-specific (circuit-specific) CRS.
+
+How does PoT (phase-1) ceremony works?&#x20;
+
+* Each participant will receive a _challenge_ file.
+* They must generate a _response_ file in a secure and honest manner.&#x20;
+
+> As long as one participant discards the toxic waste after this process, the entire ceremony can be trusted.
+
+{% hint style="info" %}
+We did not run our own PoT phase-1 ceremony, instead we used Ptau files (of power `19` or `512` max constraints) for BN128 curve with 54 contributions from iden3 [here](https://github.com/iden3/snarkjs?tab=readme-ov-file#7-prepare-phase-2).
+{% endhint %}
+
+<mark style="color:orange;">You might be wondering what exactly is this max-constraints?</mark>
+
+* The Power of  Tau setup generates a series of powers of a secret value, `τ`, up to a specific limit, say `τ^N` . This maximum power `N` directly determines the maximum number of constraints that can be supported in circuits using these parameters.
+* If the setup phase generates up to `τ^N`, it means that the final setup parameters can support up to **N constraints** in the ZK-SNARK circuit.
+* iden3 ceremonies have gone as high as `τ^2^28`, which allows for up to **268 million constraints**.
+* Higher values of `𝑁` increase the computational load of the setup ceremony but offer more flexibility for complex circuits in the future.
+
+<mark style="color:orange;">and why did we choose 512 as our max constraints?</mark>&#x20;
+
+Choosing the power `N` depends on circuits and its completxity. For example, for our custom KYC circuits we needed minimum power `19` to put in perspective zk-rollups may need millions of constraints hence they need to use higher power value.
+
