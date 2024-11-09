@@ -1,6 +1,6 @@
 # Proof Of Personhood (PoP)
 
-Hypersign’s PoP leverages video KYC and Zero-Knowledge Proofs (ZKPs) to verify if a specific account (or wallet address) belongs to a real human.
+Hypersign’s PoP leverages video KYC and [Zero-Knowledge Proofs (ZKPs)](../zero-knowledge-proof-zkp/) to verify if a specific account (or wallet address) belongs to a real human.
 
 <figure><img src="../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
@@ -19,7 +19,7 @@ Once all checks pass, the KYC issuer provides a Personhood Credential. This cred
 
 3\. **Zero-Knowledge Proof (ZKP) Generation**
 
-After receiving the credential, the user generates a zero-knowledge proof (zk proof) of it. This proof, also known as the Proof of Personhood (PoP), is created by submitting the credential to a custom-built zk circuit, where a groth16-based zk proof is generated. This proof maintains privacy while verifying personhood.
+After receiving the credential, the user generates a [zero-knowledge proof (zk proof)](../zero-knowledge-proof-zkp/) of it. This proof, also known as the Proof of Personhood (PoP), is created by submitting the credential to a custom-built [zk circuit](../zero-knowledge-proof-zkp/circuits.md), where a groth16-based zk proof is generated. This proof maintains privacy while verifying personhood.
 
 4\. **Proof of Personhood Token Generation**
 

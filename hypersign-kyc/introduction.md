@@ -6,7 +6,7 @@ description: Hypersign OnChain KYC
 
 ### Basic Architecture and Flow
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 1. The user navigates to the dApp’s UI.
 2. The dApp prompts the user to connect their wallet.

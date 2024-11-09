@@ -18,7 +18,7 @@ The on-chain KYC feature enables you to verify users' identities in a privacy-pr
 
 #### Token Minting
 
-1. Users generate the required zk proofs from their identity credentials.
+1. Users generate the required [zk proofs](../concepts/zero-knowledge-proof-zkp/) from their identity credentials.
 2. Users mint Soulbound Tokens (SBTs) tied to their zk proofs.
 
 #### Token Verification
@@ -39,7 +39,7 @@ For any dApp that wishes to implement an on-chain KYC system, they simply call t
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

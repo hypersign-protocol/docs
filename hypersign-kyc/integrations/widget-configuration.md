@@ -8,7 +8,7 @@ Logon to [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/). a
 
 Your KYC service dashboard opens up.  Now navigate to "**Widget Configuration**" page by clicking on "**Widget**" menu item in the side nav bar.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Facial Recognition
 
@@ -51,7 +51,7 @@ Configure user consent page by providing a valid reason for "why you are collect
 
 ### Zero Knowledge Proof (zk-proof)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enable zk-proof configuration if do not want to collect user's personal data but the proof of facts. We have following proofs available.
 
@@ -63,7 +63,7 @@ Configure one of more proofs and click on **Update Configuration** button to sav
 
 ### On-Chain KYC
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You might want to provide service to  users based on verification in your Dapp. For that your smart contracts wants to verify user's Identity before allowing to access other features of the smart contract. Since users cannot send his personal data to a contract because of obvious privacy issues with public blockchains, user first generates zk-proofs of their ID claims and only sends proofs to contracts, preserving privacy while enabling secure verification.  Make sure to [create On-Chain KYC configuration](../on-chain-kyc/contracts-deployment.md) in one of the supported blockchain before enabling this setting.
 
