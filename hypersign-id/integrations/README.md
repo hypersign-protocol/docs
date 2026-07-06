@@ -7,7 +7,11 @@ icon: plug
 
 ### Now let's with the integration:
 
+### Quick Tutorials
 
+1. Go Live In Minutes - No integration needed
+2. [Embede Hypersign ID Widget in your app.](../tutorials/how-to-integrate-kyc-id-widget-in-an-app.md)
+3. Build Custom Onboarding using our ID Verification API
 
 ### Basic Integration
 
