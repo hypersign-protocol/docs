@@ -1,10 +1,10 @@
 ---
-description: Setup KYC service for your app on developer dashboard
+description: Setup ID service for your app on developer dashboard
 ---
 
-# KYC Service
+# ID Service
 
-Inorder to use Hypersign KYC, you need to setup your account on [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/) and setup your KYC service.
+Inorder to use Hypersign ID verification, you need to setup your account on [Entity Developer Dashboard](https://entity.dashboard.hypersign.id/) and setup your KYC service.
 
 ### Pre-requisite
 

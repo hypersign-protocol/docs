@@ -12,7 +12,7 @@ In "**dev**" mode following verifications are not performed by AI models integra
 4. No revocability of the credential (credential status is not registered on blockchain)
 5. Email is not sent to users
 
-Only data is captured and extracted from ID document. We suggest you to complete [full integration](../../kyc-widget/integrations/), test a couple of times and then go for production.&#x20;
+Only data is captured and extracted from ID document. We suggest you to complete [full integration](../../id-widget/integrations/), test a couple of times and then go for production.&#x20;
 
 {% content-ref url="production.md" %}
 [production.md](production.md)

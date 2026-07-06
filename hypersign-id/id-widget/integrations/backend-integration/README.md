@@ -10,8 +10,8 @@ Setup SSI service and get secret key:
 
 Setup KYC service and get secret key:
 
-{% content-ref url="../../../integrations/kyc-service.md" %}
-[kyc-service.md](../../../integrations/kyc-service.md)
+{% content-ref url="../../../integrations/id-service.md" %}
+[id-service.md](../../../integrations/id-service.md)
 {% endcontent-ref %}
 
 {% hint style="warning" %}

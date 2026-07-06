@@ -1,8 +1,8 @@
 ---
-description: How to integrate Hypersign KYC ID Widget
+description: How to integrate Hypersign ID Widget
 ---
 
-# How to Integrate KYC ID Widget In an App?
+# How to Integrate Hypersign ID Widget In your App?
 
 This document is a comprehensive integration guide for developers embedding the pre-built **Hypersign KYC ID Widget** into their web applications. By utilizing the pre-built widget, you can deploy a secure, compliant, and conversion-optimized identity verification flow with minimal development effort, while leaving the heavy lifting of biometric processing and decentralized identity (DID) registration to Hypersign's backend.
 
@@ -340,7 +340,7 @@ function buildWidgetUrl() {
 
 > Widget URL Format: `https://verify.hypersign.id?kycAccessToken=<kycAccessToken>&ssiAccessToken=<ssiAccessToken>&sessionId=<sessionId>&kycUserAccessToken=<kycUserAccessToken>`
 
-### Invoking the widget
+#### Step 3: Invoking the widget
 
 You can invoke the Hypersign KYC widget through popup from your page
 
@@ -367,7 +367,7 @@ function handleWidgetTermination() {
 }
 ```
 
-## Listening to Widget Events
+#### Step 4: Listening to Widget Events
 
 The Hypersign KYC Widget communicates with your application using the browser's `window.postMessage()` API.
 
@@ -401,7 +401,7 @@ window.addEventListener("message", (event) => {
 });
 ```
 
-## Event Payload
+### Event Payload
 
 Every event emitted by the widget follows the same structure.
 
@@ -411,19 +411,19 @@ Every event emitted by the widget follows the same structure.
 | `code`    | `string` | Machine-readable event or error code.                  |
 | `message` | `string` | Human-readable description of the event.               |
 
-#### Success Event
+**Success Event**
 
 ```
 {  "status": "success",  "code": "VERIFICATION_SUCCESS",  "message": "Successfully verified the user."}
 ```
 
-#### Error Event
+**Error Event**
 
 ```
 {  "status": "error",  "code": "SESSION_EXPIRED",  "message": "Session expired."}
 ```
 
-## Error Codes
+#### Error Codes
 
 The widget may emit the following error codes.
 
@@ -590,13 +590,9 @@ Example consentDataResponse for `Proof Of Age` consent
 }
 ```
 
-## Troubleshooting
-
-
+### Troubleshooting
 
 #### Popup window is blocked
-
-
 
 **Problem**
 
