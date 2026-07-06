@@ -22,6 +22,6 @@ icon: bell-concierge
 [authentication.md](../api-doc/authentication.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../hypersign-kyc/integrations/kyc-service.md" %}
-[kyc-service.md](../../hypersign-kyc/integrations/kyc-service.md)
+{% content-ref url="../../hypersign-id/integrations/kyc-service.md" %}
+[kyc-service.md](../../hypersign-id/integrations/kyc-service.md)
 {% endcontent-ref %}

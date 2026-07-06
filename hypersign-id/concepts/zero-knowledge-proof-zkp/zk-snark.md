@@ -4,7 +4,7 @@
 
 Zk-SNARKs are specifically [zero-knowledge proofs](introduction.md) that are:
 
-* **Succinct:** meaning they can be verified in the matter of milliseconds with a proof length of a few hundred bytes_._
+* **Succinct:** meaning they can be verified in the matter of milliseconds with a proof length of a few hundred byte&#x73;_._
 * **Non-interactive:** refers to fact that the prover can send a single message to the verifier, without having many back-and-forth interactions.&#x20;
 
 > Apart from these 3 requirements for zkp, **completeness**, **soundness**, and **zero-knowledge**, zk-SNARK adds few more for efficiency for the proving system.

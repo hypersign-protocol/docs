@@ -489,8 +489,8 @@ hid-noded q bank balances <account-address>
 
 ### Governance
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/bbk7IDepWqgMyOgcrWB1" %}
+[Broken link](/broken/pages/bbk7IDepWqgMyOgcrWB1)
 {% endcontent-ref %}
 
 ### PayTx: Pay fee on someone's behalf

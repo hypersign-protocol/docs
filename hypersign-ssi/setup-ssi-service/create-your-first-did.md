@@ -8,6 +8,6 @@
 
 <figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
-{% content-ref url="../../hypersign-kyc/integrations/kyc-service.md" %}
-[kyc-service.md](../../hypersign-kyc/integrations/kyc-service.md)
+{% content-ref url="../../hypersign-id/integrations/kyc-service.md" %}
+[kyc-service.md](../../hypersign-id/integrations/kyc-service.md)
 {% endcontent-ref %}

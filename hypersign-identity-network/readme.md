@@ -2,7 +2,6 @@
 description: >-
   A Proof Of Stake (PoS) based permissionless blockchain network for digital
   identity
-icon: comments
 cover: ../.gitbook/assets/2022-11-24 12.19.00.jpg
 coverY: -124
 ---

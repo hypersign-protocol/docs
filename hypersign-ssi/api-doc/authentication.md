@@ -12,12 +12,12 @@ Once the API secret key is generated, you can use the API below to generate a ne
 Entity Studio SSI API base URL: [https://api.entity.dashboard.hypersign.id/](https://api.entity.dashboard.hypersign.id/)
 {% endhint %}
 
-{% swagger src="../../.gitbook/assets/api-json.json" path="/api/v1/app/oauth" method="post" %}
+{% openapi src="../../.gitbook/assets/api-json.json" path="/api/v1/app/oauth" method="post" %}
 [api-json.json](../../.gitbook/assets/api-json.json)
-{% endswagger %}
+{% endopenapi %}
 
 Once you generated the `accessToken`, you can pass this token as _<mark style="background-color:yellow;">bearer authorization token</mark>_ in the header for all APIs.&#x20;
 
-{% content-ref url="../../hypersign-kyc/kyc-widget/integrations/backend-integration/generate-accesstokens.md" %}
-[generate-accesstokens.md](../../hypersign-kyc/kyc-widget/integrations/backend-integration/generate-accesstokens.md)
+{% content-ref url="../../hypersign-id/kyc-widget/integrations/backend-integration/generate-accesstokens.md" %}
+[generate-accesstokens.md](../../hypersign-id/kyc-widget/integrations/backend-integration/generate-accesstokens.md)
 {% endcontent-ref %}
