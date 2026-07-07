@@ -67,6 +67,7 @@
   * [How to add your team member?](hypersign-id/tutorials/how-to-add-your-team-member.md)
   * [How does Hypersign OnChain KYC Works?](hypersign-id/tutorials/how-does-hypersign-onchain-kyc-works.md)
   * [How to integrate Hypersign ID API in custom widget?](hypersign-id/tutorials/how-to-integrate-hypersign-id-api-in-custom-widget.md)
+  * [How to Verify Users Without Any Integration?](hypersign-id/tutorials/how-to-verify-users-without-any-integration.md)
 
 ## Hypersign SSI
 
