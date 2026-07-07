@@ -66,6 +66,7 @@
   * [How to Integrate Hypersign ID Widget In your App?](hypersign-id/tutorials/how-to-integrate-hypersign-id-widget-in-your-app.md)
   * [How to add your team member?](hypersign-id/tutorials/how-to-add-your-team-member.md)
   * [How does Hypersign OnChain KYC Works?](hypersign-id/tutorials/how-does-hypersign-onchain-kyc-works.md)
+  * [How to integrate Hypersign ID API in custom widget?](hypersign-id/tutorials/how-to-integrate-hypersign-id-api-in-custom-widget.md)
 
 ## Hypersign SSI
 
