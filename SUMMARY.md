@@ -68,6 +68,7 @@
   * [How does Hypersign OnChain KYC Works?](hypersign-id/tutorials/how-does-hypersign-onchain-kyc-works.md)
   * [How to Build a Custom KYC Flow with the Hypersign ID APIs?](hypersign-id/tutorials/how-to-build-a-custom-kyc-flow-with-the-hypersign-id-apis.md)
   * [How to Verify Users Without Any Integration?](hypersign-id/tutorials/how-to-verify-users-without-any-integration.md)
+  * [How to Integrate Aadhaar Verification APIs?](hypersign-id/tutorials/how-to-integrate-aadhaar-verification-apis.md)
 
 ## Hypersign SSI
 
