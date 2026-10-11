@@ -84,11 +84,30 @@ Generates an OTP on the mobile number linked with the Aadhaar number.
 {
     "success": false,
     "error": {
-        "code": "...",
-        "message": "..."
+        "code": "400",
+        "message": ""Invalid Aadhaar OTP""
     }
 }
 ```
+
+`error.details` holds one or more readable messages that you can show to the end user.
+
+#### Status codes
+
+| Status | Message in error.details                                                                        | Meaning and what to do                                                                                                                                                      |
+| ------ | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 201    | OTP sent successfully                                                                           | The OTP was sent. Keep `ref_id` for the verify call. It is valid for 10 minutes.                                                                                            |
+| 400    | Invalid Aadhaar number Invalid Aadhaar details                                                  | The Aadhaar number is not valid or not in the 12-digit format. Ask the user to check it. Retrying the same number will not help.                                            |
+| 400    | This Aadhaar number is not linked to a mobile number, so an OTP cannot be sent                  | OTP verification is not possible for this Aadhaar number. Offer the user another verification method.                                                                       |
+| 400    | aadhaar\_number must be a string reason should not be empty                                     | The request body is incomplete or has the wrong types. Fix the request.                                                                                                     |
+| 401    | Invalid or expired token Token expired                                                          | Your access token is missing, invalid or expired. Get a new token and retry.                                                                                                |
+| 402    | Insufficient credits                                                                            | Your account has run out of credits. Top up from the dashboard.                                                                                                             |
+| 429    | An OTP was already requested for this Aadhaar number. Please try again after 45 seconds         | An OTP was sent recently. Wait the number of seconds shown, then retry. The user may already have the earlier OTP, but it has no usable `ref_id`, so they need the new one. |
+| 429    | Aadhaar verification request limit exceeded. Please try again later                             | Too many requests. Back off and retry later.                                                                                                                                |
+| 502    | Aadhaar verification service is temporarily unavailable OTP could not be sent. Please try again | The Aadhaar network did not respond and no OTP was sent. Wait about 60 seconds and retry once. Don't retry in a tight loop.                                                 |
+| 500    | Internal server error                                                                           | An unexpected error on our side. Retry later, and contact support if it continues.                                                                                          |
+
+
 
 ## Verify Aadhaar OTP
 
@@ -146,6 +165,23 @@ Example
 | `data.aadhaarData` | object  | Verified Aadhaar details returned after successful verification.                     |
 
 The response contains verified Aadhaar information returned by UIDAI. The `photo` field can be directly used with the Face Match API.
+
+
+
+#### Status Codes
+
+| Status | Message in error.details                                                                                 | Meaning and what to do                                                                                                                  |
+| ------ | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 200    | (no error)                                                                                               | Verified. Read `data.aadhaarData`, or `data.presentation` if you sent a `QueryRequest`.                                                 |
+| 400    | Invalid Aadhaar OTP                                                                                      | The OTP is wrong. The user can enter it again with the same `ref_id`.                                                                   |
+| 400    | Aadhaar OTP could not be verified. Please request a new OTP and try again Invalid or expired Aadhaar OTP | This OTP can't be used. Call generate again for a new OTP.                                                                              |
+| 400    | OTP is required otp must be a string                                                                     | The request body is incomplete. Fix the request.                                                                                        |
+| 401    | Invalid or expired token                                                                                 | Your access token is missing, invalid or expired. Get a new token and retry.                                                            |
+| 402    | Insufficient credits                                                                                     | Your account has run out of credits. Top up from the dashboard.                                                                         |
+| 404    | Reference id not found OTP has expired or is no longer valid. Please request a new OTP                   | The `ref_id` is unknown, more than 10 minutes old, or its OTP has expired. Call generate again for a new OTP.                           |
+| 429    | OTP verification is still in progress. Please try again after 30 seconds                                 | An earlier verify for this OTP is still being processed. Wait the number of seconds shown, then retry with the same `ref_id` and OTP.   |
+| 502    | Aadhaar verification service is temporarily unavailable. Please request a new OTP and try again          | The Aadhaar network did not respond, and the OTP can no longer be used. Don't resubmit the same OTP. Call generate again for a new one. |
+| 500    | Internal server error                                                                                    | An unexpected error on our side. Retry later, and contact support if it continues.                                                      |
 
 ## Verify Aadhaar Secure QR
 
