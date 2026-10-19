@@ -44,4 +44,4 @@ mkdir -p <hid-node Config Directory>/cosmovisor/upgrades/<Proposal Name>/bin
 cp <Update Binary Location> <Binary Config Directory>/cosmovisor/upgrades/<Proposal Name>/bin
 ```
 
-* At the the proposed height, the upgrade would take place automatically.
+* At the proposed height, the upgrade would take place automatically.
