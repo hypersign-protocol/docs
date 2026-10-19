@@ -69,6 +69,7 @@
   * [How to Build a Custom KYC Flow with the Hypersign ID APIs?](hypersign-id/tutorials/how-to-build-a-custom-kyc-flow-with-the-hypersign-id-apis.md)
   * [How to Verify Users Without Any Integration?](hypersign-id/tutorials/how-to-verify-users-without-any-integration.md)
   * [How to Integrate Aadhaar Verification APIs?](hypersign-id/tutorials/how-to-integrate-aadhaar-verification-apis.md)
+  * [How to Integrate PAN Verification APIs?](hypersign-id/tutorials/how-to-integrate-pan-verification-apis.md)
 
 ## Hypersign SSI
 
